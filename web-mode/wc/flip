@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: wc-flip
+# key: wc-flip
+# --
+    	<div style="width:400px;height:200px;margin:100px">
+	    <wc-flip id="${1:my-flip}">
+		<wc-flip-front style="background:wheat;padding:30px;text-align:center">
+		    <h5>If you click on me, i Can flip and show you more stuff</h5>
+		</wc-flip-front>
+
+		<wc-flip-back style="background:khaki;padding:30px;text-align:center">
+		    <h5>Here is some more. if you move out, i will flip back</h5>
+		</wc-frlip-back>
+		</wc-flip>
+	</div>
+

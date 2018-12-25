@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: html-wc
+# key: html-wc
+# --
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>${1:Web Component Title}</title>
+
+	<!-- REQUIRED BY W3C STATS -->
+	<script>
+	 wcENV="prod";
+	 wcAPP="YOUR APPLICATION NAME GOES HERE";
+	 wcURL="http://www.melify.com/tk/lib/components/w";
+	</script>
+	
+	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
+	<link href="/Melify/fonts/fa/fa.base64.css" rel="stylesheet" />
+	<script src="/GitHub/document-register/build/document-register-element.js"></script>
+    </head>
+
+    <body id="wc" style="margin:0;padding:0;background:#FFF">
+	$0
+	
+	<script type="text/javascript" src="/Melify/mtk/dev/tk/lib/components/misc/webpack/prod/all/wc.bundle.gz.js"></script>
+    </body>
+</html>

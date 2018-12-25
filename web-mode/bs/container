@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: bs-container
+# key: bs-container
+# --
+<div class="container${1:-fluid}">
+    <div class="row">
+	<div class="col-${2:12}">
+	</div>
+    </div>
+</div>

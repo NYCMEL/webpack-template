@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wc-tabs
+# key: wc-tabs
+# --
+   <wc-tabs id="${1:my-tabs}" config="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" selected="1"></wc-tabs>
+
