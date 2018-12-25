@@ -6,5 +6,8 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+
+  <strong>Oh snap!</strong>
+  <a href="#!" class="alert-link">Change a few things up</a>
+  and try submitting again.
 </div>
