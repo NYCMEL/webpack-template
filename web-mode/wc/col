@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: <col
-# key: <col
-# --
-<div class="col-$1">
-$0
-</div>

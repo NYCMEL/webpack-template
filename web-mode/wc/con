@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: <con
-# key: <con
-# --
-<div class="container$1">
-$0
-</div>
