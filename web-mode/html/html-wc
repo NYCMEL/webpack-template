@@ -12,13 +12,13 @@
 	<!-- REQUIRED BY W3C STATS -->
 	<script>
 	 wcENV="prod";
-	 wcAPP="YOUR APPLICATION NAME GOES HERE";
-	 wcURL="http://www.melify.com/tk/lib/components/w";
+	 wcAPP="${2:YOUR APPLICATION NAME GOES HERE}";
+	 wcURL="${3:http://www.melify.com/tk/lib/components/w}";
 	</script>
 	
 	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
-	<link href="/Melify/fonts/fa/fa.base64.css" rel="stylesheet" />
-	<script src="/GitHub/document-register/build/document-register-element.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.13.1/document-register-element.max.js"></script>
     </head>
 
     <body id="wc" style="margin:0;padding:0;background:#FFF">
