@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: html-wc
-# key: html-wc
+# name: wc-html
+# key: wc-html
 # --
 <!doctype html>
 <html lang="en">
