@@ -2,11 +2,12 @@
 # name: bs-popover
 # key: bs-popover
 # --
-<!--
-$(function(){
-  $('[data-toggle="popover"]').popover()
-});
--->
-<button type="button" class="btn btn-${1:secondary}" data-container="body" data-toggle="popover" data-placement="${2:top}" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on top
+<button type="button" class="btn btn-secondary m-5" data-container="body" data-toggle="popover" data-placement="${1:top}" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+    Popover on $1
 </button>
+	
+<script>
+    jQuery(document).ready(function() {
+	$('[data-toggle="popover"]').popover()
+    });
+</script>
