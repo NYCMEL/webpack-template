@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: cdn-html
-# key: cdn-html
+# name: wc-html-cdn
+# key: wc-html-cdn
 # --
 <!doctype html>
 <html lang="en">
