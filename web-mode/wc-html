@@ -22,7 +22,7 @@
     </head>
 
     <body id="wc" style="margin:0;padding:0;background:#FFF">
-	$0
+    	${4:<h1>HELLO MEL</h1>}
 	
 	<script type="text/javascript" src="/Melify/mtk/dev/tk/lib/components/misc/webpack/prod/all/wc.bundle.gz.js"></script>
     </body>
