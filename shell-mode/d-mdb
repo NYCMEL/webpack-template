@@ -3,4 +3,4 @@
 # key: d-mdb
 # --
 
-cd /Melify/mtk/dev/app/_mdb/app.vfs/lib/app
+cd /Melify/mtk/dev/app/_mdb/app.vfs/lib/app/$0

@@ -3,4 +3,4 @@
 # key: d-search
 # --
 
-cd /Melify/mtk/dev/app/_search/app.vfs/lib/app
+cd /Melify/mtk/dev/app/_search/app.vfs/lib/app/$0

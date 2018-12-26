@@ -3,4 +3,4 @@
 # key: d-wcw
 # --
 
-cd /Melify/mtk/dev/app/_wcw/app.vfs/lib/app
+cd /Melify/mtk/dev/app/_wcw/app.vfs/lib/app/$0

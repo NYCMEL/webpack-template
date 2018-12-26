@@ -3,4 +3,4 @@
 # key: d-links
 # --
 
-cd /Melify/mtk/dev/app/links/app.vfs/lib/app/
+cd /Melify/mtk/dev/app/links/app.vfs/lib/app/$0

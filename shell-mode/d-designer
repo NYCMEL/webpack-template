@@ -3,4 +3,4 @@
 # key: d-designer
 # --
 
-cd /Melify/mtk/dev/app/designer/app.vfs/lib/app
+cd /Melify/mtk/dev/app/designer/app.vfs/lib/app/$0

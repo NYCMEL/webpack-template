@@ -3,4 +3,4 @@
 # key: d-misc
 # --
 
-cd /Melify/mtk/dev/tk/lib/components/misc/
+cd /Melify/mtk/dev/tk/lib/components/misc/$0

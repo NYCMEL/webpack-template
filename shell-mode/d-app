@@ -2,4 +2,4 @@
 # name: d-app
 # key: d-app
 # --
-cd /Melify/mtk/dev/app/
+cd /Melify/mtk/dev/app/$0
