@@ -1,0 +1,3 @@
+MULTIPLE CHOICE:
+
+${1:$$(yas-choose-value '("primary" "success" "info" "warning" "danger"))}
