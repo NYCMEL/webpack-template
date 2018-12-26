@@ -2,6 +2,6 @@
 # name: js-undefined
 # key: js-undefined
 # --
-if (typeof $1 !== "undefined") {
-} else {
+if (typeof $1 === "undefined") {
+$0 
 }
