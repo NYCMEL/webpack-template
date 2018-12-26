@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: wc-spinner
+# key: wc
+# --
+<div class="spinner-border text-${1:primary}" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
