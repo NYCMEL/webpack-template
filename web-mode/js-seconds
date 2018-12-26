@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: js-seconds
+# key: js-seconds
+# --
+t = new Date().getTime;

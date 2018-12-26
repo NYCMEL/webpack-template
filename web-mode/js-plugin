@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: js-plugin
+# key: js-plugin
+# --
+(function($, window ) {
+    ////////////////////////////////////////////////////////////
+    //// var c = $(\"#fun\").align();
+    ////////////////////////////////////////////////////////////
+    $.fn.align = function(options) {
+	console.group(\"align\");
+
+	var defaults = $.extend ({
+	    align : \"right\",
+	    color : \"red\"
+	}, options);
+
+	$(this)
+	    .css(\"text-align\", defaults.align)
+	    .css(\"color\",defaults.color);
+	
+	console.groupEnd();
+	return $(this);
+    };
+})( $, window );

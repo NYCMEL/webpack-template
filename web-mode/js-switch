@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: js-switch
+# key: js-switch
+# --
+switch(n) 
+    {
+    case 1:
+	break;
+    default:
+	break;
+    }
