@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: wc-file
 # key: wc
+# ref: https://hackerthemes.com/bootstrap-cheatsheet/#custom-file
 # --
 <div class="custom-file">
   <input type="file" class="custom-file-input" id="${1:custom-file}">
