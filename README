@@ -1,3 +1,4 @@
 MULTIPLE CHOICE:
 
-${1:$$(yas-choose-value '("primary" "success" "info" "warning" "danger"))}
+PICK A COLOR: ${1:$$(yas-choose-value '("Red" "Blue"))}
+
