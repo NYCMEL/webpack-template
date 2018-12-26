@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: js-undefined
+# key: js-undefined
+# --
+if (typeof $1 !== "undefined") {
+} else {
+}
