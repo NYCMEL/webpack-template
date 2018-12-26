@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: d-wcw
+# key: d-wcw
+# --
+
+cd /Melify/mtk/dev/app/_wcw/app.vfs/lib/app

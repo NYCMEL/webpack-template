@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: d-melify
+# key: d-melify
+# --
+
+cd /Melify/mtk/dev/app/melify/app.vfs/lib/app/

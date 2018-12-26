@@ -1,6 +1,5 @@
 # -*- mode: snippet -*-
 # name: d-app
-# key: d
+# key: d-app
 # --
-cd /Melify/mtk/dev/app
-$0
+cd /Melify/mtk/dev/app/

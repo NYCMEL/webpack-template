@@ -1,0 +1,28 @@
+#!/Melify/bin/mac/tclkit
+
+set x {
+    d-mdb      "cd /Melify/mtk/dev/app/_mdb/app.vfs/lib/app"
+    d-w        "cd /Melify/mtk/dev/tk/lib/components/w/"
+    d-wc       "cd /Melify/mtk/dev/tk/lib/components/wc/"
+    d-wcw      "cd /Melify/mtk/dev/app/_wcw/app.vfs/lib/app"
+    d-search   "cd /Melify/mtk/dev/app/_search/app.vfs/lib/app"
+    d-melify   "cd /Melify/mtk/dev/app/melify/app.vfs/lib/app/"
+    d-links    "cd /Melify/mtk/dev/app/links/app.vfs/lib/app/"
+    d-designer "cd /Melify/mtk/dev/app/designer/app.vfs/lib/app"
+    d-react    "cd /Melify/mtk/dev/tk/lib/components/misc/react/src/"
+    d-angular  "cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/"
+    d-misc     "cd /Melify/mtk/dev/tk/lib/components/misc/"
+}
+
+set h {# -*- mode: snippet -*-
+# name: $i
+# key: $i
+# --
+}
+
+foreach {i j} $x {
+    set f [open $i w]
+    puts $f [subst $h]
+    puts $f $j
+    close $f
+}

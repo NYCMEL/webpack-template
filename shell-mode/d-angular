@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: d-angular
+# key: d-angular
+# --
+
+cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/
