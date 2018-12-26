@@ -12,6 +12,7 @@ set x {
     d-react    "cd /Melify/mtk/dev/tk/lib/components/misc/react/src/"
     d-angular  "cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/"
     d-misc     "cd /Melify/mtk/dev/tk/lib/components/misc/"
+    d-snippet  "cd /Melify/private/emacs/common/snippet/"
 }
 
 set h {# -*- mode: snippet -*-
