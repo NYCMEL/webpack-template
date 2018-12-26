@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-tile
-# key: wc-tile
+# key: wc
 # --
     	    <wc-tile id="${1:my-tile-1}" style="width:400px;height:200px" clickable="true">
 		<wc-tile-title>

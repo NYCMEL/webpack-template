@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-menubar
-# key: wc-menubar
+# key: wc
 # --
     	    <wc-menubar id="${1:my-menubar}">
 		<div class="menu">

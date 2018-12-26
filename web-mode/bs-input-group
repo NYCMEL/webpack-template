@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: bs-input-group
-# key: bs-input-group
+# key: bs
 # --
 <div class="input-group">
   <div class="input-group-prepend">

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-dropdown
-# key: wc-dropdown
+# key: wc
 # --
     	    <wc-dropdown id="${1:my-dropdown}" style="width:300px" btn="btn-outline-primary" selected="eur" class="md">
 		<a href="#" id="usd">US Dollar ($)</a>
