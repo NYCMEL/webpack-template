@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: bs-con
-# key: bs
+# key: bs-con
 # --
 <div class="container${1:-fluid}">
 $0

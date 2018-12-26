@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-popup
-# key: wc
+# key: wc-popup
 # --
     	    <h1><a href="#" id="${1:pusher-1}">CURRENCY: USD</a></h1>
 

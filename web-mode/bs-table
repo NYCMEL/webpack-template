@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: bs-table
-# key: bs
+# key: bs-table
 # group: twitter-bootstrap
 # --
 <table class="table $1"${2: id="$3"}>

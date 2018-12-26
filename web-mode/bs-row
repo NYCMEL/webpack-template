@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: bs-row
-# key: bs
+# key: bs-row
 # --
 <div class="row">
 $0

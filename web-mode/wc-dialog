@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-dialog
-# key: wc
+# key: wc-dialog
 # --
     	    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my-dialog-modal">
 		Launch demo modal

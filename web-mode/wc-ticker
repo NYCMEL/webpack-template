@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-ticker
-# key: wc
+# key: wc-ticker
 # --
 <wc-ticker id="${1:my-ticker-1}" symbols="AAPL,HOV,C" interval="5"></wc-ticker>
 

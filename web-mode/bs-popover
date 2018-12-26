@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: bs-popover
-# key: bs
+# key: bs-popover
 # --
 <button type="button" class="btn btn-secondary m-5" data-container="body" data-toggle="popover" data-placement="${1:top}" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
     Popover on $1
