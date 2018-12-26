@@ -24,6 +24,6 @@ set h {# -*- mode: snippet -*-
 foreach {i j} $x {
     set f [open $i w]
     puts $f [subst $h]
-    puts $f "$j/\$0"
+    puts -nonewline $f "$j/\$0"
     close $f
 }
