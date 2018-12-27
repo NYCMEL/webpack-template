@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-errorTest
+# key: wcj
+# --
+
+wc.errorTest();

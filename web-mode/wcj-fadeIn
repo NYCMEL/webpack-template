@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-fadeIn
+# key: wcj
+# --
+
+wc.fadeIn(elem,ms);

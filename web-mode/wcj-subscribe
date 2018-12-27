@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-subscribe
+# key: wcj
+# --
+
+wc.subscribe(name,callback);

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-dialogTest
+# key: wcj
+# --
+
+wc.dialogTest();

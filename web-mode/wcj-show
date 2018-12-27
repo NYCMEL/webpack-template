@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-show
+# key: wcj
+# --
+
+wc.show(sel,a);

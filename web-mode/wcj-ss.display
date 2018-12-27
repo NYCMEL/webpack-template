@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-ss.display
+# key: wcj
+# --
+
+wc.ss.display(n);

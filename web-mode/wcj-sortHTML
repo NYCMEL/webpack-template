@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-sortHTML
+# key: wcj
+# --
+
+wc.sortHTML(id,sel,sortvalue);

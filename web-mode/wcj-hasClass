@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-hasClass
+# key: wcj
+# --
+
+wc.hasClass(el,className);

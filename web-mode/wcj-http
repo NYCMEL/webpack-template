@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-http
+# key: wcj
+# --
+
+wc.http(target,readyfunc,xml,method);

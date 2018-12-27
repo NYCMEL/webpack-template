@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-ss.next
+# key: wcj
+# --
+
+wc.ss.next();
