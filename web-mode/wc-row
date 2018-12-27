@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-row
-# key: wc-row
+# key: wc
 # --
 <div class="row">
 $0

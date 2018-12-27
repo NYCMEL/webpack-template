@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-card
-# key: wc-card
+# key: wc
 # --
     		<wc-card id="${1:my-card-1}" class="col-md-5 d-inline-block">
 		    <wc-card-header>

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-stocks
-# key: wc-stocks
+# key: wc
 # --
     <wc-stocks id="${1:my-stocks}" symbols="HOV,C,AAPL"></wc-stocks>
 

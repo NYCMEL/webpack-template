@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wc-file
-# key: wc-file
+# key: wc
 # ref: https://hackerthemes.com/bootstrap-cheatsheet/#custom-file
 # --
 <div class="custom-file">

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: js-switch
-# key: js-switch
+# key: js
 # --
 switch(n) 
     {

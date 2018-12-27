@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: js-mouseover
-# key: js-mouseover
+# key: js
 # --
 $("${1:#element}").mouseover(function() {
    console.log(">>>> MOUSEOVER: $1")
