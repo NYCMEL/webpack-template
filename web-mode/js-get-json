@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: js-get-json
+# key: js-get-json
+# --
+
+$.getJSON(${1:fileurl}, function(data) {
+    console.log(">>>>", data);			
+    $0
+}).error(function(jqXHR, textStatus, errorThrown) {
+    alert("incoming Text " + jqXHR.responseText);
+});
