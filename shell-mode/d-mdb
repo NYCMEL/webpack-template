@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-mdb
-# key: d-mdb
+# key: d
 # --
 
 cd /Melify/mtk/dev/app/_mdb/app.vfs/lib/app/$0

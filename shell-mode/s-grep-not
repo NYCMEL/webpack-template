@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: s-grep-no
-# key: s-grep-no
+# key: s
 # FIND FILES THAT DO NOT INCLUDE A STRING
 # --
 

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-snippet
-# key: d-snippet
+# key: d
 # --
 
 cd /Melify/private/emacs/common/snippet/$0

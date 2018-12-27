@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-designer
-# key: d-designer
+# key: d
 # --
 
 cd /Melify/mtk/dev/app/designer/app.vfs/lib/app/$0

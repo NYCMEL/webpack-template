@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-misc
-# key: d-misc
+# key: d
 # --
 
 cd /Melify/mtk/dev/tk/lib/components/misc/$0

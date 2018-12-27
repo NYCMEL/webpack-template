@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-wc
-# key: d-wc
+# key: d
 # --
 
 cd /Melify/mtk/dev/tk/lib/components/wc/$0

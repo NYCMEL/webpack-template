@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-react
-# key: d-react
+# key: d
 # --
 
 cd /Melify/mtk/dev/tk/lib/components/misc/react/src/$0

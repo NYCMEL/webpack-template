@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: d-links
-# key: d-links
+# key: d
 # --
 
 cd /Melify/mtk/dev/app/links/app.vfs/lib/app/$0

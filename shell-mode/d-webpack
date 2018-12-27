@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: d-webpack
-# key: d-webpack
+# key: d
 # --
 cd /Melify/mtk/dev/tk/lib/components/misc/webpack/$0
