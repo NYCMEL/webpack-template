@@ -6,6 +6,6 @@
 $.getJSON(${1:fileurl}, function(data) {
     console.log(">>>>", data);			
     $0
-}).error(function(jqXHR, textStatus, errorThrown) {
+}).fail(function(jqXHR, textStatus, errorThrown) {
     alert("incoming Text " + jqXHR.responseText);
 });
