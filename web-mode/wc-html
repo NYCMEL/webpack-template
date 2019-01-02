@@ -11,7 +11,7 @@
 
 	<!-- REQUIRED BY W3C STATS -->
 	<script>
-	 wcENV="prod";
+	 wcENV="dev";
 	 wcAPP="${2:YOUR APPLICATION NAME GOES HERE}";
 	 wcURL="${3:http://www.melify.com/tk/lib/components/w}";
 	</script>
