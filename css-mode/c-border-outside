@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: css-border-outside
-# key: css
+# name: c-border-outside
+# key: c
 # --
 box-sizing: border-box;
 -moz-box-sizing: border-box;

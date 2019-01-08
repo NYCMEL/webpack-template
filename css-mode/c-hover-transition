@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: css-hover-transition
-# key: css
+# name: c-hover-transition
+# key: c
 
 # --
 :hover {

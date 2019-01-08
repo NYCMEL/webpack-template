@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: css-blink
-# key: css
+# name: c-blink
+# key: c
 # --
 
 .blink{

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: css-ellipsis
-# key: css
+# name: c-ellipsis
+# key: c
 # --
 ${1:#div} {
     width: 400px;

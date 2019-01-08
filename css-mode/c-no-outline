@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: css-no-outline
-# key: css
+# name: c-no-outline
+# key: c
 # --
 
 * {
