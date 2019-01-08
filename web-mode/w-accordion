@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-accordion
-# key: wc
+# name: w-accordion
+# key: w
 # --
     		<wc-accordion id="${1:my-accordion}" show="1">
 		    <wc-card id="my-card-1">
