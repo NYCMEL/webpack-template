@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-btn-group-vertical
-# key: bs
+# name: b-btn-group-vertical
+# key: b
 # --
 <div id="${1:my-btn-group}" class="btn-group-vertical" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-secondary">Left</button>

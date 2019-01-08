@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-dropdown-split
-# key: bs
+# name: b-dropdown-split
+# key: b
 # --
 <div id="${1:my-dropdown}" class="btn-group">
   <button type="button" class="btn btn-warning">Dropdown</button>

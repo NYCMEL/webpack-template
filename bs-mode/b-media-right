@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-media-right
-# key: bs
+# name: b-media-right
+# key: b
 # --
 <div class="media">
   <div class="media-body">

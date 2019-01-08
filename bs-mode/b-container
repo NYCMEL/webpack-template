@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-container
-# key: bs
+# name: b-container
+# key: b
 # --
 <div class="container${1:-fluid}">
     <div class="row">

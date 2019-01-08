@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-input-group-append
-# key: bs
+# name: b-input-group-append
+# key: b
 # --
 <div class="input-group">
   <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">

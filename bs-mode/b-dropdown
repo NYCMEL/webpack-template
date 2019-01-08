@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-dropdown
-# key: bs
+# name: b-dropdown
+# key: b
 # --
 <div id="${1:my-dropdown}" class="dropdown open">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="$1-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

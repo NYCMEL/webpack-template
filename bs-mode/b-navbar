@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-navbar
-# key: bs
+# name: b-navbar
+# key: b
 # --
 	<div class="bg-dark">
 	    <div class="container">

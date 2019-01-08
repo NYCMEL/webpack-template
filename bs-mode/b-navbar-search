@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-navbar-search
-# key: bs
+# name: b-navbar-search
+# key: b
 # --
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: bs-alert
-# key: bs
+# name: b-alert
+# key: b
 # --
 <div class="alert alert-${1:warning} alert-dismissible fade show" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
