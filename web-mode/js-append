@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-append
+# key: js
+# --
+
+wc.append(el,html);

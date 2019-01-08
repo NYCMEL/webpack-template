@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-removeClass
+# key: js
+# --
+
+wc.removeClass(sel,name);

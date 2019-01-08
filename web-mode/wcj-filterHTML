@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-filterHTML
-# key: wcj
-# --
-
-wc.filterHTML(id,sel,filter);

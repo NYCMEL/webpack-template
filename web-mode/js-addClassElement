@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-addClassElement
+# key: js
+# --
+
+wc.addClassElement(element,name);

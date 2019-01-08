@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-hasClass
+# key: js
+# --
+
+wc.hasClass(el,className);

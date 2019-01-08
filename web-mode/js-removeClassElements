@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-removeClassElements
+# key: js
+# --
+
+wc.removeClassElements(elements,name);

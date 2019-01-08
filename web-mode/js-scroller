@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-scroller
+# key: js
+# --
+
+wc.scroller();

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-children
+# key: js
+# --
+
+wc.children(el);

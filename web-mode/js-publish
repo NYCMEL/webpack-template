@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-publish
+# key: js
+# --
+
+wc.publish(ele,name,values);

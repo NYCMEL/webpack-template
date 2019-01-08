@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-dialogTest
+# key: js
+# --
+
+wc.dialogTest();

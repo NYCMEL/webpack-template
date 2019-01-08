@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-check4chrome
+# key: js
+# --
+
+wc.check4chrome();

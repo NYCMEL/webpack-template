@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-styleElement
+# key: js
+# --
+
+wc.styleElement(element,prop,val);

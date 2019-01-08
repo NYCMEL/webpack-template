@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-forEach
+# key: js
+# --
+
+wc.forEach( collection,callback,scope );

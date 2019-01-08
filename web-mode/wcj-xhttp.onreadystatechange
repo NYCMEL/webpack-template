@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-xhttp.onreadystatechange
-# key: wcj
-# --
-
-wc.xhttp.onreadystatechange();

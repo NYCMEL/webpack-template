@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-ss.next
+# key: js
+# --
+
+wc.ss.next();

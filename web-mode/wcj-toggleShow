@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-toggleShow
-# key: wcj
-# --
-
-wc.toggleShow(sel);

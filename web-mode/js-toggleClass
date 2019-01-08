@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-toggleClass
+# key: js
+# --
+
+wc.toggleClass(sel,c1,c2);

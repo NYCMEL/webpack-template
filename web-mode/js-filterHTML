@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-filterHTML
+# key: js
+# --
+
+wc.filterHTML(id,sel,filter);

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-clone
+# key: js
+# --
+
+wc.clone(el);

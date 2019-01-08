@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-rounded
+# key: js
+# --
+
+wc.rounded();

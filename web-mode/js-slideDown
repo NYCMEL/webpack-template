@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-slideDown
+# key: js
+# --
+
+wc.slideDown(element,duration,finalheight,callback);

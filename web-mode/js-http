@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-http
+# key: js
+# --
+
+wc.http(target,readyfunc,xml,method);

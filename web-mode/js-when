@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-when
+# key: js
+# --
+
+wc.when(condition,wait,times,deferred);

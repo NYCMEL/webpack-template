@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-setStats
+# key: js
+# --
+
+wc.setStats(obj,cname,version);

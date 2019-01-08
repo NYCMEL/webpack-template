@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-workingTest
-# key: wcj
-# --
-
-wc.workingTest();

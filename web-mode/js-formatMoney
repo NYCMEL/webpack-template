@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-formatMoney
+# key: js
+# --
+
+wc.formatMoney(n,c,d,t);

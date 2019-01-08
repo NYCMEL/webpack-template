@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-setStats
-# key: wcj
-# --
-
-wc.setStats(obj,cname,version);

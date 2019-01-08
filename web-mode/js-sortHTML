@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-sortHTML
+# key: js
+# --
+
+wc.sortHTML(id,sel,sortvalue);

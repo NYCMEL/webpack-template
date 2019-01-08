@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: js-slideshow
+# key: js
+# --
+
+wc.slideshow(sel,ms,func);
