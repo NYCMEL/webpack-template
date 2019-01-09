@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-textarea
-# key: wc
+# name: w-textarea
+# key: w
 # --
     	<div class="clearfix">
 	    <div class="col-md-6">

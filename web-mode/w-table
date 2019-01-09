@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-table
-# key: wc
+# name: w-table
+# key: w
 # --
     	    <wc-table id="${1:my-table}" datatable='{"pagination":false, "search":false, "info":false, "height":"300px", "sort":{"column":2, "direction":"asc"}}'>
 		<table class="table table-striped table-hover" id="${1}-table" style={{ border: '1px #CECECE solid' }}>

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-center
-# key: wc
+# name: w-center
+# key: w
 # --
 		<wc-center id="${1:my-center-1}">
 		    <div style="background:lime;text-align:center">

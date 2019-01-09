@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-dropper
-# key: wc
+# name: w-dropper
+# key: w
 # --
     	<div class="text-center" style="padding:50px">
 	    <a id="${1:a-driver}" style="font-size:20px">DROP ANYTHING</a>

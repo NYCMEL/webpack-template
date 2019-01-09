@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-flip
-# key: wc
+# name: w-flip
+# key: w
 # --
     	<div style="width:400px;height:200px;margin:100px">
 	    <wc-flip id="${1:my-flip}">

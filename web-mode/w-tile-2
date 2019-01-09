@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-tile-2
-# key: wc
+# name: w-tile-2
+# key: w
 # --
     	<wc-tile-2 id="${1:my-tile-1}" style="width:300px;height:300px;border:2px #0277BD solid" class="m-5">
 	    <wc-tile-2-front class="text-light" style="background:#1962A7">

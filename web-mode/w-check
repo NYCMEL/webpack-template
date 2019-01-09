@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: wc-check
-# key: wc
+# name: w-check
+# key: w
 # --
   	<wc-check id="${1:my-check-1}" name="v(agree)" label="I Agree with Terms" checked required></wc-check>
 
