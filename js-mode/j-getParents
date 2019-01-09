@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getParents
-# key: js
+# name: j-getParents
+# key: j
 # --
 
 wc.getParents( elem,selector );

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-addClassElement
-# key: js
+# name: j-addClassElement
+# key: j
 # --
 
 wc.addClassElement(element,name);

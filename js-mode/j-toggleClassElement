@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-toggleClassElement
-# key: js
+# name: j-toggleClassElement
+# key: j
 # --
 
 wc.toggleClassElement(element,c1,c2);

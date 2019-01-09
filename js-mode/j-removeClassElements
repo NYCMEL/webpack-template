@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-removeClassElements
-# key: js
+# name: j-removeClassElements
+# key: j
 # --
 
 wc.removeClassElements(elements,name);

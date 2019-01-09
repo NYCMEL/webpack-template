@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getHeight
-# key: js
+# name: j-getHeight
+# key: j
 # --
 
 wc.getHeight( elem );

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-show
-# key: js
+# name: j-show
+# key: j
 # --
 
 wc.show(sel,a);

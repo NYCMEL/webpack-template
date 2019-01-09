@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-children
-# key: js
+# name: j-children
+# key: j
 # --
 
 wc.children(el);

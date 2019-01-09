@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-errorTest
-# key: js
+# name: j-errorTest
+# key: j
 # --
 
 wc.errorTest();

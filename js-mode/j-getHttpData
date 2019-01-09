@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getHttpData
-# key: js
+# name: j-getHttpData
+# key: j
 # --
 
 wc.getHttpData(file,func);

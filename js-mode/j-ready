@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-ready
-# key: js
+# name: j-ready
+# key: j
 # --
 
 wc.ready( fn );

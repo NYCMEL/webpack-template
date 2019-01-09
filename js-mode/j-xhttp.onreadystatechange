@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-xhttp.onreadystatechange
-# key: js
+# name: j-xhttp.onreadystatechange
+# key: j
 # --
 
 wc.xhttp.onreadystatechange();

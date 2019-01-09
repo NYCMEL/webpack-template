@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getElementsByAttribute
-# key: js
+# name: j-getElementsByAttribute
+# key: j
 # --
 
 wc.getElementsByAttribute(x,att);

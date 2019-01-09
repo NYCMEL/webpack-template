@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-fadeIn
-# key: js
+# name: j-fadeIn
+# key: j
 # --
 
 wc.fadeIn(elem,ms);

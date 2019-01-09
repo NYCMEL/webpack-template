@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getAttributes
-# key: js
+# name: j-getAttributes
+# key: j
 # --
 
 wc.getAttributes(node);

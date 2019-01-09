@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: js-seconds
-# key: js
+# name: j-seconds
+# key: j
 # --
 t = new Date().getTime;

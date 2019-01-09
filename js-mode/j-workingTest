@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-workingTest
-# key: js
+# name: j-workingTest
+# key: j
 # --
 
 wc.workingTest();

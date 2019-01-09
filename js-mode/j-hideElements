@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-hideElements
-# key: js
+# name: j-hideElements
+# key: j
 # --
 
 wc.hideElements(elements);

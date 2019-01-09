@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getHttpObject
-# key: js
+# name: j-getHttpObject
+# key: j
 # --
 
 wc.getHttpObject(file,func);

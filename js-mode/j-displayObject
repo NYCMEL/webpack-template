@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-displayObject
-# key: js
+# name: j-displayObject
+# key: j
 # --
 
 wc.displayObject(id,data);

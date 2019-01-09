@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-hasClass
-# key: js
+# name: j-hasClass
+# key: j
 # --
 
 wc.hasClass(el,className);

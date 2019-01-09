@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-ss.previous
-# key: js
+# name: j-ss.previous
+# key: j
 # --
 
 wc.ss.previous();

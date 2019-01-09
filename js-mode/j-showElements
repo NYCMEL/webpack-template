@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-showElements
-# key: js
+# name: j-showElements
+# key: j
 # --
 
 wc.showElements(elements);

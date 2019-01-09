@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getOffsetTop
-# key: js
+# name: j-getOffsetTop
+# key: j
 # --
 
 wc.getOffsetTop( elem );

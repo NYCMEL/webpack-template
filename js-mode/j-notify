@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-notify
-# key: js
+# name: j-notify
+# key: j
 # --
 
 wc.notify(options);

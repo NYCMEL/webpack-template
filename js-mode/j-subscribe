@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-subscribe
-# key: js
+# name: j-subscribe
+# key: j
 # --
 
 wc.subscribe(name,callback);

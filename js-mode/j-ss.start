@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-ss.start
-# key: js
+# name: j-ss.start
+# key: j
 # --
 
 wc.ss.start();

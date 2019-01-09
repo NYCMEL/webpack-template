@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-addStyle
-# key: js
+# name: j-addStyle
+# key: j
 # --
 
 wc.addStyle(sel,prop,val);

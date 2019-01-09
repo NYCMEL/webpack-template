@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-styleElement
-# key: js
+# name: j-styleElement
+# key: j
 # --
 
 wc.styleElement(element,prop,val);

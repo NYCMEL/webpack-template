@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-plugin
-# key: js
+# name: j-plugin
+# key: j
 # --
 (function($, window ) {
     ////////////////////////////////////////////////////////////

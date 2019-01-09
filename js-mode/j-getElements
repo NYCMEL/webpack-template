@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-getElements
-# key: js
+# name: j-getElements
+# key: j
 # --
 
 wc.getElements(id);

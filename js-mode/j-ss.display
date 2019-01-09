@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-ss.display
-# key: js
+# name: j-ss.display
+# key: j
 # --
 
 wc.ss.display(n);

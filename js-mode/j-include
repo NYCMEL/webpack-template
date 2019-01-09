@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-include
-# key: js
+# name: j-include
+# key: j
 # --
 
 wc.include(cb);

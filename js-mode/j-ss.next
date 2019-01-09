@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-ss.next
-# key: js
+# name: j-ss.next
+# key: j
 # --
 
 wc.ss.next();

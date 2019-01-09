@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-when
-# key: js
+# name: j-when
+# key: j
 # --
 
 wc.when(condition,wait,times,deferred);

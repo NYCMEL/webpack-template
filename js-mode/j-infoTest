@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-infoTest
-# key: js
+# name: j-infoTest
+# key: j
 # --
 
 wc.infoTest();

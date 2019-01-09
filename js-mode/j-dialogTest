@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-dialogTest
-# key: js
+# name: j-dialogTest
+# key: j
 # --
 
 wc.dialogTest();

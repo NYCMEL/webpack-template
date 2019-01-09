@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: js-type
-# key: js
+# name: j-type
+# key: j
 # --
 
 wc.type(obj);
