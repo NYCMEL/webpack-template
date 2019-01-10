@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: b-progress
+# key: b
+# --
+<div class="progress" id="${1:my-progress}">
+  <div class="progress-bar" role="progressbar" style="width: ${2:30}%" aria-valuenow="$2" aria-valuemin="${3:0}" aria-valuemax="${4:100}"></div>
+</div>
