@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: d-mdb
 # key: d
+# type: command  
 # --
-
-cd /Melify/mtk/dev/app/_mdb/app.vfs/lib/app/$0
+(fset 'd-mdb (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd  /Melify/mtk/dev/app/_mdb/app.vfs/lib/app/")) arg)))
+(execute-kbd-macro "cd  /Melify/mtk/dev/app/_mdb/app.vfs/lib/app/")

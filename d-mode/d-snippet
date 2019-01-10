@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: d-snippet
 # key: d
+# type: command  
 # --
-
-cd /Melify/private/emacs/common/snippet/$0
+(fset 'd-snippet (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd  /Melify/private/emacs/common/snippet/")) arg)))
+(execute-kbd-macro "cd  /Melify/private/emacs/common/snippet/")

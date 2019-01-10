@@ -1,6 +1,8 @@
 # -*- mode: snippet -*-
 # name: d-angular
 # key: d
+# type: command  
 # --
 
-cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/$0
+(fset 'd-angular (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/")

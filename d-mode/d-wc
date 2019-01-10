@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: d-wc
 # key: d
+# type: command  
 # --
-
-cd /Melify/mtk/dev/tk/lib/components/wc/$0
+(fset 'd-wc (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd  /Melify/mtk/dev/tk/lib/components/wc/")) arg)))
+(execute-kbd-macro "cd  /Melify/mtk/dev/tk/lib/components/wc/")
