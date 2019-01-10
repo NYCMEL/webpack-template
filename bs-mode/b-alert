@@ -2,7 +2,7 @@
 # name: b-alert
 # key: b
 # --
-<div class="alert alert-${1:warning} alert-dismissible fade show" role="alert">
+<div class="alert alert-${1:$$(yas-choose-value '(warning info danger succcess))} {2:alert-dismissible} fade show" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
