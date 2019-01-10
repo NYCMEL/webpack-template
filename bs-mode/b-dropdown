@@ -3,7 +3,7 @@
 # key: b
 # --
 <div id="${1:my-dropdown}" class="dropdown open">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="$1-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-${2:$$(yas-choose-value '(warning info danger succcess secondary))} dropdown-toggle" type="button" id="$1-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown
   </button>
   <div class="dropdown-menu">
