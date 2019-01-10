@@ -10,8 +10,8 @@ foreach i $comps {
     set t [file rootname [file tail $i]]
 
     set html [subst {# -*- mode: snippet -*-
-# name: wc-$t
-# key: wc-$t
+# name: w-$t
+# key: w-$t
 # --
     }]
 

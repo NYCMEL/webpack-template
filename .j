@@ -1,8 +1,8 @@
 #!/Melify/bin/mac/tclkit
 
 set tmp {# -*- mode: snippet -*-
-# name: wcj-$i
-# key: wcj
+# name: j-$i
+# key: j
 # --
 }
 
