@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-nycmel
+# key: d
+# type: command  
+# --
+(fset 'd-nycmel (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/app/NYCMel.github.io/")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/app/NYCMel.github.io/")

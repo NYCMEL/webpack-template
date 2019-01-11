@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d-margo
+# key: d
+# type: command  
+# --
+(fset 'd-margo (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/app/margo/app.vfs/lib/app/
+")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/app/margo/app.vfs/lib/app/
+")
