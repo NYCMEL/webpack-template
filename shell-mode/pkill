@@ -1,7 +1,5 @@
 # -*- mode: snippet -*-
 # name: s-kill-port
 # key: s
-#type: command
 # --
-(fset 'kill-port (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("kill \$(lsof -t -i:8080)")) arg)))
-(execute-kbd-macro "kill \$(lsof -t -i:8080)")
+kill \$(lsof -t -i:${1:8080})
