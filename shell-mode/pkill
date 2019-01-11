@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: s-pkill
+# key: s
+#type: command
+# --
+(fset 'pkill (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("kill \$(lsof -t -i:3000)")) arg)))
+(execute-kbd-macro "kill \$(lsof -t -i:3000)")
