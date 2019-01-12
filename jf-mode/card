@@ -1,0 +1,38 @@
+# -*- mode: snippet -*-
+# name: jf-card
+# key: jf
+# --
+"schema": {
+    "header": {
+	"title": "Card Header",
+	"type": "string"
+    },
+    "footer": {
+	"title": "Card Footer",
+	"type": "string"
+    },
+
+    "body": {
+	"title": "Card Body",
+	"type": "textarea"
+    },
+
+    "image": {
+	"title": "Image URL",
+	"type": "string"
+    },
+
+    "position": {
+	"title": "Image Position",
+	"type": "string",
+	"enum": [
+	    "Top",
+	    "Bottom",
+	    "Cover",
+	    "Contain"
+	]
+    }
+},
+onSubmit: function (errors, values) {
+    $("#res").html(JSON.stringify(values));
+}
