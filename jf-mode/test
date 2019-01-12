@@ -26,11 +26,16 @@
 	    <div class="row">
 		<div class="col-4">
 		    <form></form>
+		</div>
+	    </div>
+
+	    <div class="row">
+		<div class="col-12">
 		    <div id="res" class="alert alert-info mt-2"></div>
 		</div>
 	    </div>
 	</div>
-	
+		    
 	<script type="text/javascript" src="/Melify/mtk/dev/tk/lib/components/misc/webpack/prod/all/wc.bundle.gz.js"></script>
 
 	<script type="text/javascript" src="/GitHub/jsonform/deps/underscore.js"></script>
@@ -39,7 +44,7 @@
 
 	<script type="text/javascript">
 	 $('form').jsonForm({
-	   $0
+	     $0
 	 });
 	</script>
     </body>

@@ -14,7 +14,8 @@
 
     "body": {
 	"title": "Card Body",
-	"type": "textarea"
+	"type": "textarea",
+	"required": true
     },
 
     "image": {
