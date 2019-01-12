@@ -2,39 +2,38 @@
 # name: jf-card
 # key: jf
 # --
-"schema": {
-    "header": {
-	"title": "Card Header",
-	"type": "string"
-    },
-    "footer": {
-	"title": "Card Footer",
-	"type": "string"
-    },
-
-    "body": {
-	"title": "Card Body",
-	"type": "textarea",
-	"required": true
-    },
-
-    "image": {
-	"title": "Image URL",
-	"type": "string"
-    },
-
-    "position": {
-	"title": "Image Position",
-	"type": "string",
-	"enum": [
-	    "",
-	    "Top",
-	    "Bottom",
-	    "Cover",
-	    "Contain"
-	]
-    }
+"wcsave": {
+    "title": "SAVE TO FILE",
+    "type": "string"
 },
-onSubmit: function (errors, values) {
-    $("#res").html(JSON.stringify(values));
+"header": {
+    "title": "Card Header",
+    "type": "string"
+},
+"footer": {
+    "title": "Card Footer",
+    "type": "string"
+},
+
+"body": {
+    "title": "Card Body",
+    "type": "textarea",
+    "required": true
+},
+
+"image": {
+    "title": "Image URL",
+    "type": "string"
+},
+
+"position": {
+    "title": "Image Position",
+    "type": "string",
+    "enum": [
+	"",
+	"Top",
+	"Bottom",
+	"Cover",
+	"Contain"
+    ]
 }
