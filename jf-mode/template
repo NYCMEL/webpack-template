@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: jf-template
+# key: jf
+# --
+"schema": {
+  $0	  
+},
+onSubmit: function (errors, values) {
+    console.log(">>>>>>>", values);
+}
