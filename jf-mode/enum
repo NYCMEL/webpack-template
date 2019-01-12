@@ -5,7 +5,7 @@
 "${1:position}": {
     "title": "${2:Position}",
     "type": "string",
-    "required": ${3:true}
+    "required": ${3:true},
     "enum": [
 	"",
 	$0
