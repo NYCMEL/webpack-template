@@ -2,5 +2,4 @@
 # name: s-find-grep
 # key: s
 # --
-
-find ${1:.} -name "${2:*.tcl}" | xargs grep -i "${3:Melify}"
+find . -name "${1:*tcl}" | xargs grep -i "${2:file-name}"
