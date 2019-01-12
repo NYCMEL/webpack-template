@@ -24,7 +24,7 @@
     <body id="wc">
         <div class="container mt-5">
 	    <div class="row">
-		<div class="col-4">
+		<div class="col-6">
 		    <form></form>
 		</div>
 	    </div>
