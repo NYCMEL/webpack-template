@@ -3,6 +3,6 @@
 # key: jf
 # --
 "${1:flag]": {
-  "title": "${2:Adult}",
+  "title": "${2:Are you an adult?}",
   "type": "boolean"
 }

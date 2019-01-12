@@ -3,6 +3,6 @@
 # key: jf
 # --
 {
-    "key": "flag",
-    "inlinetitle": "Adault Over 18"
-}
+    "key": "${1:flag}",
+    "inlinetitle": "${2:Please check this box}"
+},

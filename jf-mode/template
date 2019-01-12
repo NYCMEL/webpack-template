@@ -6,7 +6,12 @@
   $0	  
 },
 onSubmit: function (errors, values) {
-    console.log(">>>>>>>", values);
+    if (errors) {
+      $('#res').html('<p>I beg your pardon?</p>');
+    }
+    else {
+        console.log(">>>>>>>", values);
+    }
 },
 form: [
 ]
