@@ -4,7 +4,8 @@
 # --
 "wcsave": {
     "title": "SAVE TO FILE",
-    "type": "string"
+    "type": "string",
+    "required": true
 },
 "header": {
     "title": "Card Header",
