@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: jf-form-boolean
+# key: jf
+# --
+form: [
+ {
+     "key": "flag",
+     "inlinetitle": "Adault Over 18"
+ }
+]
