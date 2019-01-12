@@ -36,7 +36,8 @@
 	<script type="text/javascript" src="/GitHub/jsonform/deps/underscore.js"></script>
 	<script type="text/javascript" src="/GitHub/jsonform/deps/opt/jsv.js"></script>
 	<script type="text/javascript" src="/GitHub/jsonform/lib/jsonform.js"></script>
-
+	<script type="text/javascript" src="/GitHub/jsonform/playground/playground.js"></script>
+	
 	<script type="text/javascript">
 	 $('form').jsonForm({
 	     $0

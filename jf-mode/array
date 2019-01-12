@@ -11,19 +11,33 @@
         "properties": {
           "nick": {
             "type": "string",
-            "title": "Nickname",
-            "required": true
+            "title": "Nickname"
           },
-          "gender": {
-            "type": "string",
-            "title": "Gender",
-            "enum": [ "male", "female", "alien" ]
-          },
-          "age": {
-            "type": "integer",
-            "title": "Age"
+          "animals": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Animal name"
+            }
           }
         }
       }
     }
-  }
+  },
+  "form": [
+    {
+      "type": "array",
+      "items": {
+        "type": "section",
+        "items": [
+          "friends[].nick",
+          {
+            "type": "array",
+            "items": [
+              "friends[].animals[]"
+            ]
+          }
+        ]
+      }
+    }
+  ]
