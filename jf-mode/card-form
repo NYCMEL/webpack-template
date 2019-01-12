@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: jf-card-form
+# key: jf
+# --
+"form": [
+    {
+	"key": "wcsave",
+	"placeholder":"fdafdfs",
+	"value": "Junk.json"
+    },
+    {
+	"key": "footer",
+	"placeholder":"footer goes here..."
+    },
+    {
+	"key": "header",
+	"placeholder":"header goes here..."
+    },
+    {
+	"key": "body",
+	"placeholder":"body goes here..."
+    },
+    {
+	"key": "position",
+	"value": "Bottom"
+    },
+]
