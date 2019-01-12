@@ -26,6 +26,7 @@
 	"title": "Image Position",
 	"type": "string",
 	"enum": [
+	    "",
 	    "Top",
 	    "Bottom",
 	    "Cover",
