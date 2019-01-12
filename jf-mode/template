@@ -7,4 +7,6 @@
 },
 onSubmit: function (errors, values) {
     console.log(">>>>>>>", values);
-}
+},
+form: [
+]
