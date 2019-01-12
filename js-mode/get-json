@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: j-get-jon
-# key: js
+# name: j-get-json
+# key: j
 # --
 
 $.getJSON(${1:fileurl}, function(data) {
