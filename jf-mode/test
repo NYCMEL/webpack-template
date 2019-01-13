@@ -53,7 +53,7 @@
 		 "*",
 		 {
 		     "type": "submit",
-		     "title": "Push me when done!"
+		     "title": "PUSH ME WHEN DONE!"
 		 }
 	     ]
 	 });
