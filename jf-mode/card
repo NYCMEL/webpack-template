@@ -10,27 +10,32 @@
 },
 "header": {
     "title": "Card Header",
+    "default": "Header",
     "type": "string"
 },
 "footer": {
     "title": "Card Footer",
+    "default": "Footer",
     "type": "string"
 },
 
 "body": {
     "title": "Card Body",
     "type": "textarea",
+    "default": "Body",
     "required": true
 },
 
 "image": {
     "title": "Image URL",
+    "default": "/tk/img/common/placeholder.png",
     "type": "string"
 },
 
 "position": {
     "title": "Image Position",
     "type": "string",
+    "default": "Top",
     "enum": [
 	"",
 	"Top",

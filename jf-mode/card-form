@@ -2,7 +2,7 @@
 # name: jf-card-form
 # key: jf
 # --
-	     form: [
+     form: [
 		 {
 		     key: "wcsave",
 		     placeholder: "save your changes"
