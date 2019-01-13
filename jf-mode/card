@@ -5,7 +5,7 @@
 "wcsave": {
     "title": "SAVE TO FILE",
     "type": "string",
-    "default": "test.json"
+    "default": "test.json",
     "required": true
 },
 "header": {
