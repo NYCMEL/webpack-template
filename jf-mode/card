@@ -10,29 +10,31 @@
 },
 "header": {
     "title": "Card Header",
+    "type": "string",
     "default": "Header",
-    "type": "string"
+    "value": "Header"
 },
 "footer": {
     "title": "Card Footer",
+    "type": "string",
     "default": "Footer",
-    "type": "string"
+    "value": "Footer",
 },
 
 "body": {
     "title": "Card Body",
     "type": "textarea",
-    "default": "Body",
-    "required": true
+    "required": true,
+    "default": "Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. "
 },
 
 "image": {
     "title": "Image URL",
-    "default": "/tk/img/common/placeholder.png",
-    "type": "string"
+    "type": "string",
+    "default": "/tk/img/common/placeholder.png"
 },
 
-"position": {
+"imageposition": {
     "title": "Image Position",
     "type": "string",
     "default": "Top",
@@ -40,7 +42,6 @@
 	"",
 	"Top",
 	"Bottom",
-	"Cover",
-	"Contain"
+	"Cover"
     ]
 }
