@@ -50,7 +50,11 @@
 		 }
 	     },
 	     form: [
-		 "*"
+		 "*",
+		 {
+		     "type": "submit",
+		     "title": "Push me when done!"
+		 }
 	     ]
 	 });
 	</script>
