@@ -38,7 +38,7 @@
 
 	<script type="text/javascript">
 	 $('form').jsonForm({
-	     "schema": {
+	     schema: {
 		 $0	  
 	     },
 	     onSubmit: function (errors, values) {
@@ -48,7 +48,10 @@
 		 else {
 		     console.log(">>>>>>>", JSON.stringify(values));
 		 }
-	     }
+	     },
+	     form: [
+		 "*"
+	     ]
 	 });
 	</script>
     </body>
