@@ -25,7 +25,7 @@
     "title": "Card Body",
     "type": "textarea",
     "required": true,
-    "default": "Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. Mel was here. "
+    "default": "Body"
 },
 
 "image": {
