@@ -2,5 +2,4 @@
 # name: w-stocks
 # key: w
 # --
-    <wc-stocks id="${1:my-stocks}" symbols="HOV,C,AAPL"></wc-stocks>
-
+<wc-stocks id="${1:my-stocks}" symbols="HOV,C,AAPL"></wc-stocks>
