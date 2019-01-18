@@ -2,10 +2,9 @@
 # name: w-center
 # key: w
 # --
-		<wc-center id="${1:my-center-1}">
-		    <div style="background:lime;text-align:center">
-			<h1>HELLO MEL</h1>
-			<p>DEVELOPER CONSOLE HAS A LOT OF GOODIES :)</p>
-		    </div>
-		</wc-center>
-
+<wc-center id="${1:my-center-1}">
+    <div style="background:lime;text-align:center">
+	<h1>HELLO MEL</h1>
+	<p>DEVELOPER CONSOLE HAS A LOT OF GOODIES :)</p>
+    </div>
+</wc-center>

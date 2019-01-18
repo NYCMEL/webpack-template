@@ -2,11 +2,10 @@
 # name: w-breadcrumb
 # key: w
 # --
-    	    <wc-breadcrumb id="${1:my-breadcrumb}">
- 		<ol class='breadcrumb'>
-		    <li class="breadcrumb-item"><a href="#">Home</a></li>
-		    <li class="breadcrumb-item"><a href="#">Products</a></li>
-		    <li class="breadcrumb-item active">Audios</li>
-		</ol>
-	    </wc-breadcrumb>
-
+<wc-breadcrumb id="${1:my-breadcrumb}">
+    <ol class='breadcrumb'>
+	<li class="breadcrumb-item"><a href="#">Home</a></li>
+	<li class="breadcrumb-item"><a href="#">Products</a></li>
+	<li class="breadcrumb-item active">Audios</li>
+    </ol>
+</wc-breadcrumb>
