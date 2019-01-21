@@ -11,6 +11,6 @@
     </head>
 
     <body id="wc">
-        <h1>MEL WAS HERE</h1>
+        ${1:<h1>MEL WAS HERE</h1>}
     </body>
 </html>
