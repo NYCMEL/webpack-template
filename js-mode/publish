@@ -2,5 +2,8 @@
 # name: j-publish
 # key: j
 # --
-
-wc.publish(ele,name,values);
+wc.publish(this, "wc-blank", {
+    time: new Date().getTime(),
+    action: "click",
+    id: this.id
+});

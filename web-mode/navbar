@@ -11,7 +11,7 @@
   <div class="collapse navbar-collapse" id="$1">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a id="link-1" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -20,3 +20,15 @@
     </form>
   </div>
 </nav>
+
+<script>	
+ setTimeout(function(){
+     jQuery(".navbar-nav a").on("click", function() {
+	 wc.publish(this, "wc-navbar", {
+	     time: new Date().getTime(),
+	     action: "click",
+	     id: this.id
+	 });
+     });
+ }, 500);
+</script>
