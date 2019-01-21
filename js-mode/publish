@@ -2,7 +2,7 @@
 # name: j-publish
 # key: j
 # --
-wc.publish(this, "wc-blank", {
+wc.publish(this, "${1:wc-blank}", {
     time: new Date().getTime(),
     action: "click",
     id: this.id

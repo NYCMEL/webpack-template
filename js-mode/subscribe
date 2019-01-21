@@ -2,5 +2,7 @@
 # name: j-subscribe
 # key: j
 # --
-
-wc.subscribe(name,callback);
+wc.subscribe("${1:wc-blank}", function(e) {
+    console.info("'wc-blank' subscription was triggered:", JSON.stringify(e.detail));
+    $("body").append("<hr />" + JSON.stringify(e.detail));
+});
