@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name : h-link-script
+# key: h
+# --
+<script src="${1:my-script.js}"></script>
