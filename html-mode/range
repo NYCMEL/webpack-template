@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-range
+# key: h
+# --
+<input id="${1:my-select}" type="range" value="${2:50}"> 100
