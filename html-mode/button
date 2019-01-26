@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name : h-button
+# key: h
+# --
+<button id="${1:my-button}" class="btn btn-${2:primary}" type="button">${3:HELLO MEL}</button>
