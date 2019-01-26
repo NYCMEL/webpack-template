@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name : h-mailto
+# name : h-link-mailto
 # key: h
 # --
 <a href="mailto:$1@$2">$0</a>
