@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-var
+# key: h
+# --
+<var>${1:variable}</var>
