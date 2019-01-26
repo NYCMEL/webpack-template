@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: h-datalist
+# key: h
+# --
+<input list="${1:browsers}">
+
+<datalist id="$1">
+    <option value="Internet Explorer" />
+    <option value="Firefox" />
+    <option value="Chrome" />
+    <option value="Opera" />
+    <option value="Safari" />
+</datalist>
