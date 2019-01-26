@@ -3,7 +3,7 @@
 # key: h
 # --
 <template>
-  <!-- CONTENT OF TEMPLATE IS NOT DISPLAYED -->	
+    <!-- CONTENT OF TEMPLATE IS NOT DISPLAYED -->	
     <h1>THIS CONTENT IS HIDDEN</h2>
     <h2>Flower</h2>
 </template>
