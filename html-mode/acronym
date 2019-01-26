@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-acronym
+# key: h
+# --
+<acronym title="${1:AS SOON AS POSSIBLE}">${2:Find Mel}</acronym>
