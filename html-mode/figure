@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: h-figure
+# key: h
+# --
+<figure id="${1:figure-id}">
+  <img src="${2:/tk/img/common/placeholder.png}" alt="${3:placeholder}" width="${4:400}">
+  <figcaption>${5:FIGURE CAPTION GOES HERE}</figcaption>
+</figure>
