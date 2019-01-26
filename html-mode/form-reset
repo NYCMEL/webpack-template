@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-form-reset
+# key: h
+# --
+<input type="reset">

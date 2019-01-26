@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: h-text
+# name: h-form-text
 # key: h
 # --
 <input type="text" class="form-control" id="${1:my-text}" placeholder="${2:ready}">
