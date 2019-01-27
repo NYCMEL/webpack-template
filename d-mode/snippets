@@ -3,5 +3,5 @@
 # key: d
 # type: command  
 # --
-(fset 'd-snippets (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/private/emacs/common/snippet/")) arg)))
-(execute-kbd-macro "cd /Melify/private/emacs/common/snippet/")
+(fset 'd-snippets (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/private/emacs/common/snippets/")) arg)))
+(execute-kbd-macro "cd /Melify/private/emacs/common/snippets/")
