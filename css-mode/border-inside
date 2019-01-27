@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: c-border-outside
+# name: c-border-insude
 # key: c
 # --
 box-sizing: border-box;
