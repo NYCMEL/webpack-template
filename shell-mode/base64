@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-base64
+# key: s
+# --
+openssl base64 -in ${1:infile} -out ${2:outfile}
