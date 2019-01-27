@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: h-placeholder-color
+# key: h
+# --
+::placeholder {color: ${1:#CCC}!important;}
+:-ms-input-placeholder {color: $1!important;}
+::-ms-input-placeholder {color: $1!important;}
+
