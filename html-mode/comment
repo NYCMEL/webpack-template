@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-comment
+# key: h
+# --
+<!-- $0 -->
