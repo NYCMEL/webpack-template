@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: j-random-time
+# key: j
+# --
+function randomTime(start, end) {
+    var diff =  end.getTime() - start.getTime();
+    var new_diff = diff * Math.random();
+    var date = new Date(start.getTime() + new_diff);
+    return date;
+}
+
+// var new_time = randomTime(new Date("10-10-2015 10:30"), new Date("12-10-2015 02:10"))
