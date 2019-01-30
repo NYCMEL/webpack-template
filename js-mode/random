@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-random
-# key: j
-# --
-${1:myrand} = Math.floor( Math.random() * 100 );
