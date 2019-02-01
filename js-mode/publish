@@ -4,6 +4,6 @@
 # --
 wc.publish(this, "${1:wc-blank}", {
     time: new Date().getTime(),
-    action: "click",
+    action: "${2:click}",
     id: this.id
 });
