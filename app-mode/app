@@ -110,17 +110,15 @@
 
 	<script>
 	 setTimeout(function(){
-	     function wcShowPage(pid) {
-		 $("wc-app .navbar li").removeClass("active")
-		 $(pid).parent().addClass("active");
+	     $("wc-app .nav-link").on("click", function() {
+		 $("wc-app .nav-link").parent().removeClass("active")
+		 $(this).parent().addClass("active");
 
 		 $("wc-app wc-app-page").hide(0, () => {
+		     let pid = $(this).attr("pid");
+		     
 		     $(pid).css("display","block");
 		 });
-	     }
-
-	     $("wc-app .nav-link").on("click", function() {
-		 wcShowPage($(this).attr("pid"));
 	     });
 	 }, 1000);
 	</script>
