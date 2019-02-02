@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: app-body
-# key: app
-# --
-<section class="app-body mt-3 mb-3">
-    $0
-</section>
