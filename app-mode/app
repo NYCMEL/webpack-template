@@ -43,9 +43,9 @@
 					    </li>
 					</ul>
 
-					<ul class="my-2">
+					<ul class="navbar-nav mt-2 my-2">
 					    <li class="nav-item">
-						<a class="nav-link text-light" pid="#page-3" href="#!">Page-3</a>
+						<a class="nav-link" pid="#page-3" href="#!">Page-3</a>
 					    </li>
 					</ul>
 				    </div>
