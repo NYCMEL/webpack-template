@@ -16,6 +16,7 @@
 	<style>
 	 wc-app, wc-app-header wc-app-body wc-app-page {display:block!important}
 	 wc-app wc-app-page {margin-top:20px;margin-bottom:20px;min-height:300px;}
+	 wc-app .navbar a {text-transform:uppercase}
 	</style>
     </head>
 
@@ -30,7 +31,7 @@
 				    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				    </button>
-				    <a class="navbar-brand" href="#!">${2:BRAND}</a>
+				    <a class="navbar-brand wc-fam" href="#!">${2:BRAND}</a>
 				    
 				    <div class="collapse navbar-collapse" id="navbar-toggle">
 					<ul class="navbar-nav mr-auto mt-2 mt-md-0">
