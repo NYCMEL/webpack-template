@@ -111,13 +111,11 @@
 	<script>
 	 setTimeout(function(){
 	     $("wc-app .nav-link").on("click", function() {
-		 $("wc-app .nav-link").parent().removeClass("active")
+		 $("wc-app .navbar li").removeClass("active")
 		 $(this).parent().addClass("active");
 
 		 $("wc-app wc-app-page").hide(0, () => {
-		     let pid = $(this).attr("pid");
-		     
-		     $(pid).css("display","block");
+		     $($(this).attr("pid")).css("display","block");
 		 });
 	     });
 
