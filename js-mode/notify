@@ -2,5 +2,4 @@
 # name: j-notify
 # key: j
 # --
-
 wc.notify(options);

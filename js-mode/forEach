@@ -2,5 +2,6 @@
 # name: j-forEach
 # key: j
 # --
-
-wc.forEach( collection,callback,scope );
+${1:my-array}.forEach(function(element) {
+    console.log(element);
+});
