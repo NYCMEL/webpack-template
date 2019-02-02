@@ -1,0 +1,106 @@
+# -*- mode: snippet -*-
+# name: app
+# key: app
+# --
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXT</title>
+
+	<script>
+	    wcENV = "dev";
+	</script>
+
+	<style>
+	 wc-app, wc-app-header wc-app-body wc-app-page {display:block!important}
+	 wc-app wc-app-page {margin-top:20px;margin-bottom:20px;min-height:300px;}
+	</style>
+    </head>
+
+    <body id="wc" style="padding:0;margin:0">
+	<wc-app>
+	    <wc-app-header>
+		<div class="bg-dark">
+		    <div class="container${1:-fluid}">
+			<div class="row">
+			    <div class="col-12">
+				<nav class="navbar navbar-dark bg-dark navbar-expand-lg pt-3 pb-3" style="padding:0;margin:0">
+				    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				    </button>
+				    <a class="navbar-brand" href="#!">BRAND</a>
+				    
+				    <div class="collapse navbar-collapse" id="navbar-toggle">
+					<ul class="navbar-nav mr-auto mt-2 mt-md-0">
+					    <li class="nav-item active">
+						<a class="nav-link" pid="#page-1" href="#!">Page-1</span></a>
+					    </li>
+					    <li class="nav-item">
+						<a class="nav-link" pid="#page-2" href="#!">Page-2</span></a>
+					    </li>
+					</ul>
+				    </div>
+				</nav>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </wc-app-header>
+
+	    <wc-app-body class="mt-3 mb-3">
+		<wc-app-page id="page-1" style="display:block">
+		    <div class="container$1">
+			<div class="row">
+			    <div class="col-12">
+				<h1>PAGE 1</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+
+		<wc-app-page id="page-2" style="display:none">
+		    <div class="container$1">
+			<div class="row">
+			    <div class="col-12">
+				<h1>PAGE 2</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+	    </wc-app-body>
+
+	    <wc-app-footer>
+		<div class="container$1">
+		    <div class="row">
+			<div class="col-12">
+			    FOOTER
+			</div>
+		    </div>
+		</div>
+	    </wc-app-footer>
+	</wc-app>
+
+	<script>
+	 setTimeout(function(){
+	     $("wc-app .nav-link").on("click", function() {
+		 $("wc-app .nav-link").parent().removeClass("active")
+		 $(this).parent().addClass("active");
+
+		 $("wc-app wc-app-page").hide(0, () => {
+		     let pid = $(this).attr("pid");
+		     
+		     $(pid).css("display","block");
+		 });
+	     });
+	 }, 1000);
+	</script>
+    </body>
+</html>
