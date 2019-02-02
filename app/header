@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: app-header
+# key: app
+# --
+<section class="app-header">
+    <div class="bg-dark">
+	<div class="container${1:-fluid}">
+	    <div class="row">
+		<div class="col-12">
+		    <nav class="navbar navbar-dark bg-dark navbar-expand-lg pt-3 pb-3" style="padding:0;margin:0">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#!">BRAND</a>
+			
+			<div class="collapse navbar-collapse" id="navbar-toggle">
+			    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+				<li class="nav-item active">
+				    <a class="nav-link" pid="#page-1" href="#!">Page-1</span></a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" pid="#page-2" href="#!">Page-2</span></a>
+				</li>
+			    </ul>
+			</div>
+		    </nav>
+		</div>
+	    </div>
+	</div>
+    </div>
+</section>

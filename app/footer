@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: app-footer
+# key: app
+# --
+<section class="app-footer">
+    <div class="container${1:-fluid}">
+	<div class="row">
+	    <div class="col-12">
+		FOOTER
+	    </div>
+	</div>
+    </div>
+</section>
