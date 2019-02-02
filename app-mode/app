@@ -41,6 +41,12 @@
 						<a class="nav-link" pid="#page-2" href="#!">Page-2</span></a>
 					    </li>
 					</ul>
+
+					<ul class="my-2">
+					    <li class="nav-item">
+						<a class="nav-link text-light" pid="#page-3" href="#!">Page-3</span></a>
+					    </li>
+					</ul>
 				    </div>
 				</nav>
 			    </div>
@@ -68,6 +74,19 @@
 			<div class="row">
 			    <div class="col-12">
 				<h1>PAGE 2</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+
+		<wc-app-page id="page-3" style="display:none">
+		    <div class="container$1">
+			<div class="row">
+			    <div class="col-12">
+				<h1>PAGE 3</h1>
 				<div>
 				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
 				</div>
