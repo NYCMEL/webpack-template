@@ -118,6 +118,9 @@
 	<script>
 	 setTimeout(function(){
 	     $("wc-app .nav-link").on("click", function() {
+		 // CLOSE MENUS 
+	         //$(".navbar-toggler-icon").click();
+
 		 $("wc-app .navbar li").removeClass("active")
 		 $(this).parent().addClass("active");
 
