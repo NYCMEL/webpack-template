@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: app
-# key: app
+# name: h-app
+# key: h
 # --
 <!doctype html>
 <html lang="en">
