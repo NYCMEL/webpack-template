@@ -68,7 +68,7 @@
 		    <div class="container">
 			<div class="row">
 			    <div class="col-lg-12">
-				<h1>PAGE 1</h1>
+				<h1 class="wc-frm">PAGE 1</h1>
 				<div>
 				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
 				</div>
@@ -81,7 +81,7 @@
 		    <div class="container">
 			<div class="row">
 			    <div class="col-lg-12">
-				<h1>PAGE 2</h1>
+				<h1 class="wc-frm">PAGE 2</h1>
 				<div>
 				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
 				</div>
@@ -94,7 +94,7 @@
 		    <div class="container">
 			<div class="row">
 			    <div class="col-lg-12">
-				<h1>PAGE 3</h1>
+				<h1 class="wc-frm">PAGE 3</h1>
 				<div>
 				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
 				</div>
