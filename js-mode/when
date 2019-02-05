@@ -7,8 +7,8 @@
      return ${1:\$("#ele").length;}
  }, 100)
    .then(function(args) {
-       ${2:// DO STUFF HERE}
+       ${3:// DO STUFF HERE}
    }).fail(function(args) {
-       console.error("Header2 failed: $args");
+       console.error("wc.when failed in(${2:app-name}): $args");
    });
 </script>
