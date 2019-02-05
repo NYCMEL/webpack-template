@@ -2,4 +2,4 @@
 # name: s-base64
 # key: s
 # --
-openssl base64 -in ${1:infile} -out ${2:outfile}
+/Melify/bin/make/make.base64 $0
