@@ -2,5 +2,13 @@
 # name: j-when
 # key: j
 # --
-
-wc.when(condition,wait,times,deferred);
+<script>
+ wc.when(function() {
+     return ${1:\$("#ele").length;}
+ }, 100)
+   .then(function(args) {
+       ${2:// DO STUFF HERE}
+   }).fail(function(args) {
+       console.error("Header2 failed: $args");
+   });
+</script>
