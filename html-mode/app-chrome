@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: h-app
+# name: h-app-chrome
 # key: h
 # --
 <!doctype html>
@@ -12,8 +12,8 @@
 	<!-- REQUIRED BY W3C STATS -->
 	<script>
 	 wcENV="dev";
-	 wcAPP="YOUR APPLICATION NAME GOES HERE";
-	 wcURL="http://www.melify.com/tk/lib/components/w";
+	 wcAPP="$1";
+	 wcURL="";
 	</script>
 	
 	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
@@ -108,11 +108,12 @@
 		<div class="container$2">
 		    <div class="row">
 			<div class="col-lg-12">
-			    $1 @ 2019
+			    mel @ 2019
 			</div>
 		    </div>
 		</div>
 	    </wc-app-footer>
 	</wc-app>
+	
     </body>
 </html>
