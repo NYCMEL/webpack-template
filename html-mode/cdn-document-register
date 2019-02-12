@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-cdn-document-register
+# key: h
+# --
+<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.13.1/document-register-element.max.js"></script>
