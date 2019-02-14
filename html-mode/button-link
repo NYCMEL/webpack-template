@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name : h-link-button
+# name : h-button-link
 # key: h
 # --
-<a id="${1:my-link-button}" href="${2:#}" class="btn ${3:btn-primary}">$0</a>
+<a id="${1:my-button-link}" href="${2:#}" class="btn ${3:btn-primary}">${4:Link Text}</a>
