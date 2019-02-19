@@ -3,5 +3,3 @@
 # key: s
 # --
 GHUSER=NYCMEL;curl "https://api.github.com/users/$GHUSER/repos?per_page=100" | grep -o 'git@[^"]*'
-
-
