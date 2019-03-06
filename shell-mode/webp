@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: s-webp
+# key: s
+# --
+cwebp -q 80 ${1:logo.png} -o ${2:logo.webp}
+
