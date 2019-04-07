@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: h-rounded
+# key: h
+# --
+<div class="rounded-circle text-warning d-flex align-items-center justify-content-center" style="width:200px;height:200px;background:brown;">
+    MEL
+</div>
