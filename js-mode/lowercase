@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-lowercase
+# key: j
+# --
+
+toLowerCase();
