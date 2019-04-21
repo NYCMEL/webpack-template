@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: b-card-image-top
+# key: b
+# --
+<div class="card mb-3">
+    <img class="card-img-top" src="${1:/tk/lib/components/w/img/tmp/pi.jpg}" height="170" />
+
+    <div class="card-body">
+	<h5 class="card-title">${2:Card title}</h5>
+
+	<div>
+	    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+	    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	</div>
+    </div>
+</div>
