@@ -2,7 +2,6 @@
 # name: j-when
 # key: j
 # --
-<script>
  wc.when(function() {
      return ${1:\$("#ele").length;}
  }, 100)
@@ -11,4 +10,3 @@
    }).fail(function(args) {
        console.error("wc.when failed in(${2:app-name}): $args");
    });
-</script>
