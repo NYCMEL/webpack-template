@@ -26,5 +26,6 @@ class Products {
 ////////////////////////////////////////////////////////
 //// USAGE
 ////////////////////////////////////////////////////////
-var p = new Products();
-p.init(\"my-product\");
+window.mtk = window.mtk || [];
+mtk.product = new Products();
+mtk.product.init(\"my-product\");
