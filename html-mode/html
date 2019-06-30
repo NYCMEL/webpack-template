@@ -21,7 +21,7 @@
 	<link href="/tk/lib/components/w/dist/fonts-all.css" rel="stylesheet">
     </head>
 
-    <body id="wc" style="margin:0;padding:0;background:#FFF">
+    <body id="wc">
         ${4:<div class="container">
 	    <div class="row">
 		<div class="col-12">
