@@ -7,9 +7,9 @@
 ////////////////////////////////////////////////////////////
 class wc$1 {
     constructor(...data) {
-	this.$1 = class {
+	this.$2 = class {
 	    constructor(...data) {
-		console.log("wc$1.constructor:", ...data);
+		console.log("wc.$2.constructor:", ...data);
 	    }
 	    
 	    junk(name) {
@@ -18,13 +18,9 @@ class wc$1 {
 	    }
 	}
 
-	this._init(...data);
-    }
-    
-    _init(...data) {
-    	this.${1:$(downcase yas/text)} = new this.$1(...data);
+    	this.${2:$(downcase yas/text)} = new this.$2(...data);
     }
 }
 
 wc = new wc$1(123, "HELLO MEL");
-wc.mel.junk("MEL WAS HERE");
+wc.${2:$(downcase yas/text)}.junk("MEL WAS HERE");
