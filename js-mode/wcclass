@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: j-wcclass
+# key: j	
+# --
+////////////////////////////////////////////////////////////
+//// 
+////////////////////////////////////////////////////////////
+class wc$1 {
+    constructor(...data) {
+	this.$1 = class {
+	    constructor(...data) {
+		console.log("wc$1.constructor:", ...data);
+	    }
+	    
+	    junk(name) {
+		console.log(">>>>>>>>>>", name);
+		return true;
+	    }
+	}
+
+	this._init(...data);
+    }
+    
+    _init(...data) {
+    	this.${1:$(downcase yas/text)} = new this.$1(...data);
+    }
+}
+
+wc = new wc$1(123, "HELLO MEL");
+wc.mel.junk("MEL WAS HERE");
