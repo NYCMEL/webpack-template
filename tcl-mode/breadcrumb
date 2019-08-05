@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: t-breadcrumb
+# key: t
+# --
+tag nav aria-label="breadcrumb" {
+    number_list class="breadcrumb" {
+	li class="breadcrumb-item" {
+	    <li class="breadcrumb-item"><a href="#">Home</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Library</li>
+	}
+    }
+}
