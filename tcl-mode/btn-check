@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: t-btn-check
+# key: t
+# --
+division class="btn-group btn-group-toggle" data-toggle="buttons" {
+    label class="btn btn-secondary ${1:active}" {
+	<input type="checkbox" checked autocomplete="off"> ${2:ACTIVE}
+    }
+}
