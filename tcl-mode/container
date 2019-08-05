@@ -5,6 +5,7 @@
 division class="container${1:-fluid}" {
     division class="row" {
         division class="col-12" {
+	    $2		
 	}
     }
 }

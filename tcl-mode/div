@@ -3,4 +3,5 @@
 # key: t
 # --
 division {
+    $1	
 }
