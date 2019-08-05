@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: t-badge
+# key: t
+# --
+put "<span class='badge badge-${1:secondary}'>${2:New}</span>"
