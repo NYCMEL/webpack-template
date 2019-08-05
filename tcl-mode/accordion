@@ -9,7 +9,7 @@ division role="tablist" id="${1:my-accordion}" class="accordion" {
 	}
     }
 
-    division id="${3:card-1}" class="collapse show" role="tabpanel" aria-labelledby="heading-1" {
+    division id="${3:card-1}" class="collapse ${4:show}" role="tabpanel" aria-labelledby="${2:heading-1}" {
 	division class="card-body" {
 	    tk::dummy::3
 	}
