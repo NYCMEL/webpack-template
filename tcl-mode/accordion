@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: t-accordion
+# key: t
+# --
+division id="accordion" role="tablist" id="${1:my-accordion}" {
+    division class="card" {
+	division class="card-header" role="tab" id="${2:heading-1}" {
+	    h5 [url "Collapsible Group Item #1" "#card-1" data-toggle="collapse" aria-expanded="true" aria-controls="${3:card-1}" class="mb-0"]
+	}
+    }
+
+    division id="${3:card-1}" class="collapse show" role="tabpanel" aria-labelledby="${2:heading-1}" {
+	division class="card-body" {
+	    tk::dummy::3
+	}
+    }
+}
