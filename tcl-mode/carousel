@@ -10,7 +10,7 @@ division id="${1:my-carousel}" class="carousel slide" data-ride="carousel" {
 
     division class="carousel-inner" role="listbox" {
 	division class="carousel-item active" {
-	    put {<img class="d-block w-100" src="/tk/img/common/placeholder.png" data-holder-rendered="true" height="400">}
+	    put [img "/tk/img/common/placeholder.png" class="d-block w-100" data-holder-rendered="true" height="400"]
 	    division class="carousel-caption d-none d-md-block" {
 		h3 "First slide label"
 		p "Nulla vitae elit libero, a pharetra augue mollis interdum."
@@ -18,7 +18,7 @@ division id="${1:my-carousel}" class="carousel slide" data-ride="carousel" {
 	}
 
 	division class="carousel-item" {
-	    put {<img class="d-block w-100" src="/tk/img/common/placeholder.png" data-holder-rendered="true" height="400">}
+	    put [img "/tk/img/common/placeholder.png" class="d-block w-100" data-holder-rendered="true" height="400"]
 
 	    division class="carousel-caption d-none d-md-block" {
 		h3 "Second slide label"
