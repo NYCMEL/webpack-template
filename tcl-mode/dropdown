@@ -9,6 +9,8 @@ division class="dropdown" id="${1:my-dropdown}" {
 
     division class="dropdown-menu" aria-labelledby="$1-menu" {
 	put [url "MEL" "#" class="dropdown-item"]
+	division class="dropdown-divider" {}
 	put [url "HERAVI" "#" class="dropdown-item"]
+	put [url "WAS HERE" "#" class="dropdown-item"]
     }
 }
