@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: t-input-group
+# key: t
+# --
+division class="input-group" id="${1:my-input-group}" {
+    division class="input-group-prepend" {
+	button "${2:GO4IT}" class="btn btn-success"
+    }
+
+    text ${3:ta}= class="form-control" placeholder="${4:I am searching for...}"
+}
