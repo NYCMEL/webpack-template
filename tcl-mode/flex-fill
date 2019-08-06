@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: t-flex-fill
+# key: t
+# --
+division class="d-flex flex-row bg-light" {
+    division class="m-2 p-2 bg-success text-light flex-fill" {
+	put "Flex item 1"
+    }
+
+    division class="m-2 p-2 bg-success text-light flex-fill" {
+	put "Flex item 2"
+    }
+
+    division class="m-2 p-2 bg-success text-light flex-fill" {
+	put "Flex item 3"
+    }
+}
