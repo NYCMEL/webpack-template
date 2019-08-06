@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: t-table
+# key: t
+# --
+set cols 6
+set rows 4
+
+division class="table-responsive" {
+    table id="Mel" class="table table-hover table-striped table-bordered" {
+	table_head {
+	    table_row {
+		for {set c 0} {$c < $cols} {incr c} {
+		    table_th class="h c-$c" {
+			put [string toupper [lorem 2]]
+		    }
+		}
+	    }
+	}
+
+	table_body {
+	    for {set r 0} {$r < $rows} {incr r} {
+		table_row {
+		    for {set c 0} {$c < $cols} {incr c} {
+			table_data class="row-$r c-$c" {
+			    put [lorem 3]
+			}
+		    }
+		}
+	    }
+	}
+    }
+}
