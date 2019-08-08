@@ -16,8 +16,12 @@ division role="tablist" id="${1:my-accordion}" class="accordion" {
     }
 }
 
-$("#$1 .card-header").on("click", function() {
-    let accordion = $(this).parents(".accordion");
-    accordion.find(".collapse").removeClass("show");
-    $(this).parent().next(".collapse").addClass("show");
-});
+javascript {
+    put {
+	$("#$1 .card-header").on("click", function() {
+	    let accordion = $(this).parents(".accordion");
+	    accordion.find(".collapse").removeClass("show");
+	    $(this).parent().next(".collapse").addClass("show");
+	});
+    }
+}
