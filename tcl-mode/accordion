@@ -22,6 +22,8 @@ javascript {
 	    let accordion = $(this).parents(".accordion");
 	    accordion.find(".collapse").removeClass("show");
 	    $(this).parent().next(".collapse").addClass("show");
+
+	    wc.configure.accotrion();
 	});
     }
 }
