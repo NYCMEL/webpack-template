@@ -3,5 +3,5 @@
 # key: j
 # --
 wc.timeout(function(){
-     alert(p)
+     alert("HELLO")
 }, 2000, 1);
