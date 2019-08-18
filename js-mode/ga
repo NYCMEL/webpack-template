@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-ga
+# key: j
+# --
+ga("send","event",['_trackEvent', 'button','click-released', 'contact us'])
