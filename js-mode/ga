@@ -2,4 +2,5 @@
 # name: j-ga
 # key: j
 # --
-ga("send","event",['_trackEvent', 'button','click-released', 'contact us'])
+ga('send', {'hitType': 'event','eventCategory': 'subscribe','eventAction': 'click','eventLabel': 'wc-blank'});
+
