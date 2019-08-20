@@ -2,5 +2,5 @@
 # name: j-ga
 # key: j
 # --
-ga('send', {'hitType': 'event','eventCategory': 'subscribe','eventAction': 'click','eventLabel': 'wc-blank'});
+ga('send', {'hitType': 'event','eventCategory': 'wc-subscribe','eventAction': 'click','eventLabel': 'wc-blank'});
 
