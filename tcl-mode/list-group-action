@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: t-list-group-action
+# key: t
+# --
+division class="list-group" {
+    put [url "Cras justo odio" "#!" class="list-group-item active"]
+    put [url "Dapibus ac facilisis in" "#" class="list-group-item list-group-item-action"]
+    put [url "Morbi leo risus" "#" class="list-group-item list-group-item-action"]
+}
