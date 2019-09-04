@@ -3,7 +3,7 @@
 # key: t
 # --
 division class="progress" {
-    division class="progress-bar" role="progressbar" style="width:${1:50}%" aria-valuenow="$1" aria-valuemin="0" aria-valuemax="100" {
-	put "$1%"
+    division class="progress-bar bg-${1:$$(yas-choose-value '(warning info danger succcess secondary))}" role="progressbar" style="width:${2:50}%" aria-valuenow="$1" aria-valuemin="0" aria-valuemax="100" {
+	put "$2%"
     }
 }
