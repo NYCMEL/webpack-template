@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: t-form-progressbar
+# key: t
+# --
+division class="progress" {
+    division class="progress-bar" role="progressbar" style="width:${1:50}%" aria-valuenow="$1" aria-valuemin="0" aria-valuemax="100" {
+	put "$1%"
+    }
+}
