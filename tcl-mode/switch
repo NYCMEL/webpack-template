@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# name: t-form-checkbox
+# name: t-switch
 # key: t
 # --
-division class="custom-control custom-checkbox" {
+division class="custom-control custom-switch" {
     checkbox cb= class="custom-control-input" id="${1:my-checkbox}"
     label class="custom-control-label" for="$1" "Check this box"
 }

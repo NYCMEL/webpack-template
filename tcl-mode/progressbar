@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: t-form-progressbar
+# name: t-progressbar
 # key: t
 # --
 division class="progress" {

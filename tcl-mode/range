@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: t-form-range
+# name: t-range
 # key: t
 # --
 tag input type="range" class="custom-range" min="0" max="10" step="1.0" id="${1:my-range}" value=2 {}

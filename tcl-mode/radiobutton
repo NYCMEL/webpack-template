@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: t-form-radiobutton
+# name: t-radiobutton
 # key: t
 # --
 division class="custom-control custom-radio" {

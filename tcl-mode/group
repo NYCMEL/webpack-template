@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: t-form-group
+# name: t-group
 # key: t
 # --
 tag form id="${1:my-form}" {
