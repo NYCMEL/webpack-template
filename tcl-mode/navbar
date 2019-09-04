@@ -2,24 +2,22 @@
 # name: t-navbar
 # key: t
 # --
-put {
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-	<a class="navbar-brand site-title" href="#">MELIFY</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHelloWorld" aria-controls="navbarHelloWorld" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
+tag nav class="navbar navbar-expand-lg navbar-light" style="background-color:#f0f0f0" id="$0" {
+    put {
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#${1}-items" aria-controls="$1-items" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="navbarHelloWorld">
-	    <ul id="menu-top-menu" class="navbar-nav mr-auto">
-		<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-		<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-		<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-	    </ul>
+	<a class="navbar-brand" href="#!">Navbar</a>
+    }
 
-	    <ul class="navbar-nav ml-auto">
-		<li class="nav-item"><a href="#" class="nav-link">CART</a></li>
-	    </ul>
-	</div>
-    </div>
-</nav>
+    division class="collapse navbar-collapse" id="$1-items" {
+	bullet_list class="navbar-nav mr-auto" {
+	    li class="nav-item active" [url "Home" "#" class="nav-link"]
+	    li class="nav-item" [url "Features" "#" class="nav-link"]
+	}
+
+	bullet_list class="navbar-nav ml-auto" {
+	    li class="nav-item" [url "Cart" "#" class="nav-link"]
+	}
+    }
 }
