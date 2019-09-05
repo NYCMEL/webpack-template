@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: h-card-image-overlay
+# key: h
+# --
+<div class="card">
+  <img class="card-img" src="/tk/img/common/placeholder.png" alt="Card image">
+  <div class="card-img-overlay">
+    <p class="card-text text-light">I'm text that has a background image!</p>
+  </div>
+</div>
