@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-bars
+# key: h
+# --
+<span style="font-size:32px">&#9776;</span>
