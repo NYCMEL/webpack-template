@@ -2,4 +2,4 @@
 # name: h-bar
 # key: h
 # --
-<span style="font-size:48px">&#124;</span>
+<span class="hex-bar" style="font-size:48px">&#124;</span>

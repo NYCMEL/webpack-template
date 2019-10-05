@@ -2,4 +2,4 @@
 # name: h-times
 # key: h
 # --
-<span style="font-size:48px">&times;</span>
+<span class="hex-times" style="font-size:48px">&times;</span>
