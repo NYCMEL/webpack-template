@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-designer
+# key: d
+# type: command  
+# --
+(fset 'd-designer (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/app/_designer/app.vfs/lib/app/")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/app/_designer/app.vfs/lib/app/")
