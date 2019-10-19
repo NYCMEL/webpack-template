@@ -2,4 +2,4 @@
 # name: s-find-grep-exec
 # key: s
 # --
-find ./ -name config -exec $1 {} \; | grep -i $2
+find ./ -name config -exec ${1:cat} {} \; | grep -i ${2:nycmel}
