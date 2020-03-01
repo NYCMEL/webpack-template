@@ -17,8 +17,7 @@
 	</script>
 	
 	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/tk/lib/components/w/dist/fonts-all.css" rel="stylesheet">
+	<link href="/Melify/fonts/fonts.css" rel="stylesheet">
     </head>
 
     <body id="wc">
