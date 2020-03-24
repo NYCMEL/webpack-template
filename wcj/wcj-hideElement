@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-hideElement
+# key: wcj
+# --
+
+wc.hideElement(element);

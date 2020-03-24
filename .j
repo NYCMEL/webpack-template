@@ -1,40 +1,40 @@
 #!/Melify/bin/mac/tclkit
 
 set tmp {# -*- mode: snippet -*-
-# name: j-$i
-# key: j
+# name: wcj-$i
+# key: wcj
 # --
 }
 
 set funcs {
-    "hide"	"(sel)"
+    "hide"		"(sel)"
     "hideElements"	"(elements)"
     "hideElement"	"(element)"
-    "show"	"(sel,a)"
+    "show"		"(sel,a)"
     "showElements"	"(elements)"
     "showElement"	"(element)"
-    "addStyle"	"(sel,prop,val)"
+    "addStyle"		"(sel,prop,val)"
     "styleElements"	"(elements,prop,val)"
     "styleElement"	"(element,prop,val)"
     "toggleShow"	"(sel)"
-    "addClass"	"(sel,name)"
+    "addClass"		"(sel,name)"
     "addClassElements"	"(elements,name)"
     "addClassElement"	"(element,name)"
-    "removeClass"	"(sel,name)"
+    "removeClass"		"(sel,name)"
     "removeClassElements"	"(elements,name)"
     "removeClassElement"	"(element,name)"
-    "toggleClass"	"(sel,c1,c2)"
+    "toggleClass"		"(sel,c1,c2)"
     "toggleClassElements"	"(elements,c1,c2)"
     "toggleClassElement"	"(element,c1,c2)"
-    "getElements"	"(id)"
-    "filterHTML"	"(id,sel,filter)"
-    "sortHTML"	"(id,sel,sortvalue)"
-    "slideshow"	"(sel,ms,func)"
-    "ss.start"	"()"
-    "ss.next"	"()"
+    "getElements"		"(id)"
+    "filterHTML"		"(id,sel,filter)"
+    "sortHTML"		"(id,sel,sortvalue)"
+    "slideshow"		"(sel,ms,func)"
+    "ss.start"		"()"
+    "ss.next"		"()"
     "ss.previous"	"()"
     "ss.display"	"(n)"
-    "include"	"(cb)"
+    "include"		"(cb)"
     "xhttp.onreadystatechange"	"()"
     "getHttpData"	"(file,func)"
     "getHttpObject"	"(file,func)"

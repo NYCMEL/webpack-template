@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-getOffsetTop
+# key: wcj
+# --
+
+wc.getOffsetTop( elem );

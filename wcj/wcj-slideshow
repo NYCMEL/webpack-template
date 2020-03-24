@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-slideshow
+# key: wcj
+# --
+
+wc.slideshow(sel,ms,func);

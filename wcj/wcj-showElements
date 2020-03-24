@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-showElements
+# key: wcj
+# --
+
+wc.showElements(elements);

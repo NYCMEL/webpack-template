@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-warningTest
+# key: wcj
+# --
+
+wc.warningTest();

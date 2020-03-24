@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-slideDown
+# key: wcj
+# --
+
+wc.slideDown(element,duration,finalheight,callback);
