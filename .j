@@ -80,7 +80,7 @@ file delete -force /tmp/snippets
 file mkdir /tmp/snippets
 
 foreach {i j} $funcs {
-    set f [open /tmp/snippets/wcj-$i w]
+    set f [open /Melify/private/emacs/common/snippets/wcj/$i w]
     puts $f [subst $tmp]
     puts -nonewline $f "wc.$i$j\;"
     close $f
