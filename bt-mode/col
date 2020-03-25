@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: bt-col
-# key: bt
-# --
-division class="col-${1:12}" {
-    $2
-}

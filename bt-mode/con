@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: bt-con
-# key: bt
-# --
-division class="container${1:-fluid}" {
-$0
-}
