@@ -2,14 +2,12 @@
 # name: bt-card-image-cover
 # key: bt
 # --
-puts {
-<div class="card">
-    <img class="card-img-top" src="${1:/tk/lib/components/w/img/tmp/pi.jpg}" height="170" />
+division class="card" {
+    put [img "${1:/tk/lib/components/w/img/tmp/pi.jpg}" class="card-img-top" height="170"]
 
-    <div class="card-img-overlay">
-    	<h5 class="card-title">${2:Card title}</h5>
-	<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	<p class="card-text">Last updated 3 mins ago</p>
-    </div>
-</div>
+    division class="card-img-overlay" {
+	h5 class="card-title" "Card title"
+	p class="card-text" "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+	p class="card-text" "Last updated 3 mins ago"
+    }
 }
