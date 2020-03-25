@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bt-con
+# key: bt
+# --
+puts {
+<div class="container${1:-fluid}">
+$0
+</div>
+}

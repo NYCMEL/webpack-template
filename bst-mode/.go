@@ -1,8 +1,8 @@
 #!/Melify/bin/mac/tclkit
 
-cd ../
-source .wct
-cd ./bst-mode
+foreach i [glob ../bs-mode/*] {
+    file copy $i .
+}
 
 foreach i [glob *] {
     if {$i == "z"} {

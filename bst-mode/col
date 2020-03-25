@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bt-col
+# key: bt
+# --
+puts {
+<div class="col-${1:12}">
+$0
+</div>
+}

@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: bt-input-group
+# key: bt
+# --
+puts {
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Left addon</span>
+  </div>
+
+  <input type="text" class="form-control">
+
+  <div class="input-group-append">
+    <span class="input-group-text">Right addon</span>
+  </div>
+</div>
+
+
+}

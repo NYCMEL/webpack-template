@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: bt-container
+# key: bt
+# --
+puts {
+<div class="container${1:-fluid}">
+    <div class="row">
+	<div class="col-${2:12}">
+	    $0
+	</div>
+    </div>
+</div>
+}

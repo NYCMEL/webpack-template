@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: bt-justify-content-around
+# key: bt
+# --
+puts {
+<div class="d-flex justify-content-around">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>
+}

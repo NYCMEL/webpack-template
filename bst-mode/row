@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bt-row
+# key: bt
+# --
+puts {
+<div class="row">
+$0
+</div>
+}
