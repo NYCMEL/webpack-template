@@ -2,14 +2,12 @@
 # name: bt-dropdown-split
 # key: bt
 # --
-puts {
-<div id="${1:my-dropdown}" class="btn-group">
-  <button type="button" class="btn btn-${2:$$(yas-choose-value '(warning info danger succcess secondary))}">Dropdown</button>
-  <button type="button" class="btn btn-$2 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+division id="${1:my-dropdown}" class="btn-group" {
+    button "Dropdown" class="btn btn-outline-secondary"
+    button "Toggle Dropdown" class="btn btn-$2 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#!">Action</a>
-    <a class="dropdown-item" href="#!">Another action</a>
-  </div>
-</div>
+    division class="dropdown-menu" {
+	put [url "Action I" "#" class="dropdown-item"]
+	put [url "Action II" "#" class="dropdown-item"]
+    }
 }
