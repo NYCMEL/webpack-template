@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-audio
-# key: wct-audio
+# key: wct
 # --
 
 puts {

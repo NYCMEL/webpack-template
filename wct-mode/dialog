@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-dialog
-# key: wct-dialog
+# key: wct
 # --
 
 puts {

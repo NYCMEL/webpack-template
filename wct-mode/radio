@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-radio
-# key: wct-radio
+# key: wct
 # --
 
 puts {

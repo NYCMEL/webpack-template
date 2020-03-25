@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-markdown
-# key: wct-markdown
+# key: wct
 # --
 
 puts {

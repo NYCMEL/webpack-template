@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-toolbar
-# key: wct-toolbar
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-dragdrop
-# key: wct-dragdrop
+# key: wct
 # --
 
 puts {

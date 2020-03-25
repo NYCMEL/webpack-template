@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-sql
-# key: wct-sql
+# key: wct
 # --
 
 puts {

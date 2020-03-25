@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-msg
-# key: wct-msg
+# key: wct
 # --
 
 puts {

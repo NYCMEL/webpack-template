@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-calendar
-# key: wct-calendar
+# key: wct
 # --
 
 puts {

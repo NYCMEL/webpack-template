@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-sidebar
-# key: wct-sidebar
+# key: wct
 # --
 
 puts {

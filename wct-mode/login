@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-login
-# key: wct-login
+# key: wct
 # --
 
 puts {

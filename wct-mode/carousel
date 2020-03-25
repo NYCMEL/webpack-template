@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-carousel
-# key: wct-carousel
+# key: wct
 # --
 
 puts {

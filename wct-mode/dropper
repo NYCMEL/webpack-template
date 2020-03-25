@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-dropper
-# key: wct-dropper
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-flip
-# key: wct-flip
+# key: wct
 # --
 
 puts {

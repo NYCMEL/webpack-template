@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-dropdown
-# key: wct-dropdown
+# key: wct
 # --
 
 puts {

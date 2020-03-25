@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-band
-# key: wct-band
+# key: wct
 # --
 
 puts {

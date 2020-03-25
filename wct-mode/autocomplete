@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-autocomplete
-# key: wct-autocomplete
+# key: wct
 # --
 
 puts {

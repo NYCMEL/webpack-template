@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-orgchart
-# key: wct-orgchart
+# key: wct
 # --
 
 puts {

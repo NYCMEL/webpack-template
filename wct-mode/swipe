@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-swipe
-# key: wct-swipe
+# key: wct
 # --
 
 puts {

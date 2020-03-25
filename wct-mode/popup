@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-popup
-# key: wct-popup
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-fixth
-# key: wct-fixth
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-blockui
-# key: wct-blockui
+# key: wct
 # --
 
 puts {

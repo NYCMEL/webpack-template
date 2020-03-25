@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-designer
-# key: wct-designer
+# key: wct
 # --
 
 puts {

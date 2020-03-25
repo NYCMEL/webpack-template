@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-search
-# key: wct-search
+# key: wct
 # --
 
 puts {

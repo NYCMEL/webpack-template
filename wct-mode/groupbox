@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-groupbox
-# key: wct-groupbox
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-video
-# key: wct-video
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-mask
-# key: wct-mask
+# key: wct
 # --
 
 puts {

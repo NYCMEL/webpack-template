@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-slide
-# key: wct-slide
+# key: wct
 # --
 
 puts {

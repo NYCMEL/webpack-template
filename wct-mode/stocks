@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-stocks
-# key: wct-stocks
+# key: wct
 # --
 
 puts {

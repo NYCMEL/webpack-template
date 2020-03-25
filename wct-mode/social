@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-social
-# key: wct-social
+# key: wct
 # --
 
 puts {

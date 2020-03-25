@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-rss
-# key: wct-rss
+# key: wct
 # --
 
 puts {

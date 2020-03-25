@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-banner
-# key: wct-banner
+# key: wct
 # --
 
 puts {

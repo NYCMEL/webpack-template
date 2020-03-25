@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-pager
-# key: wct-pager
+# key: wct
 # --
 
 puts {

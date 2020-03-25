@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-typeahead
-# key: wct-typeahead
+# key: wct
 # --
 
 puts {

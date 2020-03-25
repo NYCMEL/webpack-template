@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-select
-# key: wct-select
+# key: wct
 # --
 
 puts {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-gtm
-# key: wct-gtm
+# key: wct
 # --
 
 puts {

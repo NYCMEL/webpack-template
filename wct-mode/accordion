@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: wct-accordion
-# key: wct-accordion
+# key: wct
 # --
 
 puts {
