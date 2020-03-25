@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: wct-table-inline
+# key: wct-table-inline
+# --
+
+puts {
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-md-12">
+		    <a href="#" class="btn-datatable btn btn-outline-primary wc-font-m mb-3">MAKE IT DATATABLE</a>
+
+		    <div>
+			<wc-include href="/tk/lib/components/misc/webpack/src/w/data/table.html"></wc-include>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+}

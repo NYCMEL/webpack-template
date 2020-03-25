@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: wct-rss
+# key: wct-rss
+# --
+
+puts {
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-6">
+		    <wc-rss id="my-rss" cfg="/tk/lib/components/w/html/parts/rss/config.json"></wc-rss>
+		</div>
+	    </div>
+	</div>
+
+}

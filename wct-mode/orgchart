@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: wct-orgchart
+# key: wct-orgchart
+# --
+
+puts {
+    		    <h3>LEFT TO RIGHT</h3>
+		    <hr>
+		    <wc-orgchart id="my-orgchart-1"></wc-orgchart>
+
+}

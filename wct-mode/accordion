@@ -1,0 +1,46 @@
+# -*- mode: snippet -*-
+# name: wct-accordion
+# key: wct-accordion
+# --
+
+puts {
+            <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary" onclick="Accordion.test('open')">Open Panel 1</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="Accordion.test('load')">Load Panel 1 from URL</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="Accordion.test('html')">Load Panel 1 from HTML</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>JSON requests</h5>
+                    <ol>
+                        <li><code style={codeStyle}>&#123;requestor:"my-accordion", request:"open", panel:1&#125;</code></li>
+                        <li><code style={codeStyle}>&#123;requestor:"my-accordion", request:"load", panel:0, url:"/mtk/render?ajax=1&callback=tk::dummy::3&#125;"</code></li>
+                        <li><code style={codeStyle}>&#123;requestor:"my-accordion", request:"load", panel:0, html:"&lt;h1&gt;IT WORKED !&lt;/h1&gt;&#125;"</code></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-md-6">
+		    <h3>Default</h3>
+		    <wc-accordion id="my-accordion-1" cfg="/tk/lib/components/w/cfg/accordion.json" show="0"></wc-accordion>
+		</div>
+
+		<div class="col-md-6">
+		    <h3>wc-accordion-sm</h3>
+		    <wc-accordion id="my-accordion-2" cfg="/tk/lib/components/w/cfg/accordion.json" show="0" class="wc-accordion-sm"></wc-accordion>
+		</div>
+	    </div>
+	</div>
+
+}

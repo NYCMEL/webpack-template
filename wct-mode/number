@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: wct-number
+# key: wct-number
+# --
+
+puts {
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-4">
+		    <wc-number id="my-number" positive="true">0</wc-number>
+		</div>
+	    </div>
+	</div>
+
+}
