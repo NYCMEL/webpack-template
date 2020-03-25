@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: b-tooltip
+# key: b
+# --
+<button id="${1:my-button}" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">TOOLTIP ON BOTTOM</button>
+
+<!--
+NOTE: A CUSTOM SCRIPT IS USED TO ACTIVATE TOOLTIPS
+$(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+-->
+
