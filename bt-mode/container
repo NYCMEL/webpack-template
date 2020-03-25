@@ -2,10 +2,10 @@
 # name: bt-container
 # key: bt
 # --
-division class="container${1:-fluid}" {
+division class="container${1:\-fluid}" {
     division class="row" {
 	division class="col-${1:$$(yas-choose-value '(xs sm md lg xl))}-12" {
-	    ${2}
+	    ${3:put [lorem]}
 	}
     }
 }
