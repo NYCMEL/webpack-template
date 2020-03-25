@@ -2,8 +2,6 @@
 # name: bt-col
 # key: bt
 # --
-puts {
-<div class="col-${1:12}">
-$0
-</div>
+division class="col-${1:12}" {
+    $2
 }
