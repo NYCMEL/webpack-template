@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-col
-# key: b
+# name: bh-col
+# key: bh
 # --
 <div class="col-${1:12}">
 $0

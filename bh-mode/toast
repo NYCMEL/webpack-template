@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-toast
-# key: b
+# name: bh-toast
+# key: bh
 # --
 <!-- Note a custom script is used to activate toasts:
 $('.toast').toast();

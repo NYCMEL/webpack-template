@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-dialog
-# key: b
+# name: bh-dialog
+# key: bh
 # --
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${1:my-dialog}">

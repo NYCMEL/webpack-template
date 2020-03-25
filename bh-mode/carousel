@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-carousel
-# key: b
+# name: bh-carousel
+# key: bh
 # --
 <div id="${1:carousel-captions}" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">

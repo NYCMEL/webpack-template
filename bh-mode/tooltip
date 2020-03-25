@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-tooltip
-# key: b
+# name: bh-tooltip
+# key: bh
 # --
 <button id="${1:my-button}" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">TOOLTIP ON BOTTOM</button>
 

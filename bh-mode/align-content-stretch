@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-align-content-stretch
-# key: b
+# name: bh-align-content-stretch
+# key: bh
 # --
 <div class="d-flex flex-wrap align-content-stretch">
   <div class="p-2">Flex item</div>

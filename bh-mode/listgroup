@@ -1,6 +1,6 @@
   # -*- mode: snippet -*-
-# name: wc-listgroup
-# key: wc
+# name: wch-listgroup
+# key: wch
 # --
     	    <wc-listbox id="${1:my-listbox}" width="400px">
 		<ul class="list-group">

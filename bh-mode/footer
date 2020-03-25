@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-footer
-# key: b
+# name: bh-footer
+# key: bh
 # --
 <div class="container">
     <div class="row">

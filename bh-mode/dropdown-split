@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-dropdown-split
-# key: b
+# name: bh-dropdown-split
+# key: bh
 # --
 <div id="${1:my-dropdown}" class="btn-group">
   <button type="button" class="btn btn-${2:$$(yas-choose-value '(warning info danger succcess secondary))}">Dropdown</button>

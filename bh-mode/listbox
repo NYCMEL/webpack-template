@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-listgroup
-# key: b
+# name: bh-listgroup
+# key: bh
 # --
 <div class="card">
   <ul class="list-group list-group-flush">

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: b-card-image-bottom
-# key: b
+# name: bh-card-image-bottom
+# key: bh
 # --
 <div class="card">
     <div class="card-body">
