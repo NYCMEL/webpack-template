@@ -5,10 +5,6 @@ foreach i [glob ../bs-mode/*] {
 }
 
 foreach i [glob *] {
-    if {$i == "z"} {
-	continue
-    }
-
     puts $i
     set f [open $i r]
     set r [read $f]
