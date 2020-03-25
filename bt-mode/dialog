@@ -2,31 +2,26 @@
 # name: bt-dialog
 # key: bt
 # --
-puts {
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${1:my-dialog}">
-  LAUNCH CENTERED DEMO MODAL
-</button>
 
-<!-- Modal -->
-<div class="modal" id="$1" tabindex="-1" role="dialog" aria-labelledby="$1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="$1Label">${2:Modal title}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h1>HELLO MEL</h1>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+# Button trigger modal
+button "LAUNCH CENTERED DEMO MODAL" class="btn btn-primary" data-toggle="modal" data-target="#${1:my-dialog}" 
 
+# Modal
+division class="modal" id="$1" tabindex="-1" role="dialog" aria-labelledby="$1Label" aria-hidden="true" {
+    division class="modal-dialog modal-dialog-centered" role="document" {
+	division class="modal-content" {
+	    division class="modal-header" {
+		h5 class="modal-title" id="$1Label" "${2:Modal title}"
+
+		button "<span aria-hidden=true>×</span>" "My Button" id="my-button" class="close" data-dismiss="modal" aria-label="Close" 
+	    }
+	    division class="modal-body" {
+		h1 "HELLO MEL"
+	    }
+	    division class="modal-footer" {
+		button "Close" class="btn btn-secondary" data-dismiss="modal"
+		button "Save changes" class="btn btn-secondary"
+	    }
+	}
+    }
 }
