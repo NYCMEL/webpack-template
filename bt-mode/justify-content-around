@@ -2,10 +2,14 @@
 # name: bt-justify-content-around
 # key: bt
 # --
-puts {
-<div class="d-flex justify-content-around">
-  <div class="p-2">Flex item 1</div>
-  <div class="p-2">Flex item 2</div>
-  <div class="p-2">Flex item 3</div>
-</div>
+division class="d-flex justify-content-around bg-warning" {
+    division class="p-2 border" {
+	put "Flex item I"
+    }
+    division class="p-2 border" {
+	put "Flex item II"
+    }
+    division class="p-2 border" {
+	put "Flex item II"
+    }
 }
