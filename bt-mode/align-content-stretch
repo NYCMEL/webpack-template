@@ -2,10 +2,14 @@
 # name: bt-align-content-stretch
 # key: bt
 # --
-puts {
-<div class="d-flex flex-wrap align-content-stretch">
-  <div class="p-2">Flex item</div>
-  <div class="p-2">Flex item</div>
-  <div class="p-2">Flex item</div>
-</div>
+division class="d-flex flex-wrap align-content-stretch" {
+    division class="p-2" {
+	puts "Flex item I"
+    }
+    division class="p-2" {
+	puts "Flex item II"
+    }
+    division class="p-2" {
+	puts "Flex item III"
+    }
 }
