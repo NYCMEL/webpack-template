@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-_actions.0
-# key: wct-_actions.0
-# --
-
-puts {
-    
-}
