@@ -2,18 +2,14 @@
 # name: bt-input-group
 # key: bt
 # --
-puts {
-<div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Left addon</span>
-  </div>
+division class="input-group" {
+    division class="input-group-prepend" {
+	put [span class="input-group-text" "Left addon"]
+    }
 
-  <input type="text" class="form-control">
+    text ts= id="${1:my-text}" class="form-control" placeholder="${2:Search...}"
 
-  <div class="input-group-append">
-    <span class="input-group-text">Right addon</span>
-  </div>
-</div>
-
-
+    division class="input-group-append" {
+	put [span class="input-group-text" "Right addon"]
+    }
 }
