@@ -2,13 +2,8 @@
 # name: bt-alert
 # key: bt
 # --
-puts {
-<div class="alert alert-${1:$$(yas-choose-value '(warning info danger succcess))} alert-dismissible fade show" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-	<span aria-hidden="true">&times;</span>
-    </button>
-
-    <h3>SHARKS!</h3>
-    <a href="#!" class="alert-link">Something went wrong - click for issue</a>, and try submitting again.
-</div>
+division class="alert alert-${1:$$(yas-choose-value '(warning info danger succcess))}" role="alert" {
+    put [url "&times;" "#" class="close" data-dismiss="alert" aria-label="Close" ]
+    h3 "SHARKS!"
+    p [lorem 20]
 }
