@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-jsdoc2md
+# key: s
+# --
+/usr/local/bin/node /Melify/mtk/dev/tk/lib/components/misc/webpack/node_modules/jsdoc-to-markdown/bin/cli.js ${1:center}.js > $1.md

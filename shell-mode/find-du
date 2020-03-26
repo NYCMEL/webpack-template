@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-find-du
+# key: s
+# --
+find ${1:/Melify} -name ${2:wc.bundle.*.js} | du

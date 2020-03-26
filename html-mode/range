@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: h-range
+# key: h
+# --
+<form id="${1:my-form}" oninput="x.value=parseInt(a.value)">
+    0 <input type="range" id="a" value="${2:50}">100 =&nbsp;<output name="x" for="a">$2</output>
+</form>

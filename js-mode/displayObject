@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-displayObject
+# key: j
+# --
+
+wc.displayObject(id,data);

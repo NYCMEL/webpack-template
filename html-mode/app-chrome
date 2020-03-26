@@ -1,0 +1,119 @@
+# -*- mode: snippet -*-
+# name: h-app-chrome
+# key: h
+# --
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>${1:Melify}</title>
+
+	<!-- REQUIRED BY W3C STATS -->
+	<script>
+	 wcENV="dev";
+	 wcAPP="$1";
+	 wcURL="";
+	</script>
+	
+	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/tk/lib/components/w/dist/fonts-all.css" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.8.0/document-register-element.js"></script> 
+	<script type="text/javascript" src="/tk/lib/components/misc/webpack/prod/all/wc.bundle.gz.js"></script>
+
+	<link href="/tk/lib/components/w/data/app/app.css" rel="stylesheet">
+	<script src="/tk/lib/components/w/data/app/app.js"></script>
+    </head>
+
+    <body id="wc" style="margin:0;padding:0;background:#FFF">
+    	<wc-app>
+	    <wc-app-header>
+		<div class="bg-dark">
+		    <div class="container${2:-fluid}">
+			<div class="row" style="display:block">
+			    <div class="col-lg-12">
+				<nav class="navbar navbar-dark bg-dark navbar-expand-lg pt-3 pb-3" style="padding:0;margin:0;margin-right:30px;">
+				    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				    </button>
+				    <a class="navbar-brand wc-fam" href="#!">$1</a>
+				    
+				    <div class="collapse navbar-collapse" id="navbar-toggle">
+					<ul class="navbar-nav mr-auto mt-2 mt-md-0">
+					    <li class="nav-item">
+						<a class="nav-link" wc-pid="#page-1" href="#!">Page-1</a>
+					    </li>
+					    <li class="nav-item">
+						<a class="nav-link" wc-pid="#page-2" href="#!">Page-2</a>
+					    </li>
+					</ul>
+
+					<ul class="navbar-nav mt-2 my-2">
+					    <li class="nav-item">
+						<a class="nav-link" wc-pid="#page-3" href="#!">Page-3</a>
+					    </li>
+					</ul>
+				    </div>
+				</nav>
+			    </div>
+			</div>
+		    </div>
+		</div>
+	    </wc-app-header>
+
+	    <wc-app-body class="mt-3 mb-3">
+		<wc-app-page id="page-1" style="display:block">
+		    <div class="container$2">
+			<div class="row">
+			    <div class="col-lg-12">
+				<h1 class="wc-fam">PAGE 1</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+
+		<wc-app-page id="page-2" style="display:none">
+		    <div class="container$2">
+			<div class="row">
+			    <div class="col-lg-12">
+				<h1 class="wc-fam">PAGE 2</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+
+		<wc-app-page id="page-3" style="display:none">
+		    <div class="container$2">
+			<div class="row">
+			    <div class="col-lg-12">
+				<h1 class="wc-fam">PAGE 3</h1>
+				<div>
+				    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</wc-app-page>
+	    </wc-app-body>
+
+	    <wc-app-footer>
+		<div class="container$2">
+		    <div class="row">
+			<div class="col-lg-12">
+			    mel @ 2019
+			</div>
+		    </div>
+		</div>
+	    </wc-app-footer>
+	</wc-app>
+	
+    </body>
+</html>

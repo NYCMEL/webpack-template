@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-td-quotes
+# key: s
+# --
+curl -X GET --header "Authorization: " "https://api.tdameritrade.com/v1/marketdata/$1/quotes?apikey=N6RSFI69A6DPXUVJM22BB8T7HFUMXOIW"

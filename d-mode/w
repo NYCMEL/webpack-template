@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-w
+# key: d
+# type: command  
+# --
+(fset 'd-w (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/")

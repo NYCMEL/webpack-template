@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-type
+# key: j
+# --
+
+wc.type(obj);

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-warningTest
+# key: j
+# --
+
+wc.warningTest();

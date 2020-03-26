@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: j-for-key-value
+# key: j
+# --
+for (var ${1:key} in ${2:options}) {
+    console.log(">>>>>>>", $1, $2[$1])
+}

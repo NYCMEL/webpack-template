@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-reset
+# key: h
+# --
+<input type="reset" class="btn btn-outline-secondary" value="${1:Reset Form}">

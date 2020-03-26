@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-clone
+# key: j
+# --
+
+wc.clone(el);

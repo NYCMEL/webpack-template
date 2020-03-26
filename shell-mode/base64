@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-base64
+# key: s
+# --
+/Melify/bin/make/make.base64 $0

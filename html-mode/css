@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name : h-link-css
+# key: h
+# --
+<link href="${1:footer.css}" rel="stylesheet">
+

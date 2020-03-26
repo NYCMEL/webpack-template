@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: j-forEach
+# key: j
+# --
+${1:my-array}.forEach(function(element) {
+    console.log(element);
+});

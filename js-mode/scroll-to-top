@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-scroll-to-top
+# key: j
+# --
+$("html, body").animate({ scrollTop: 0 }, "slow");

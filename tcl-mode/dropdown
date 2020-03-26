@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: t-dropdown
+# key: t
+# --
+division class="dropdown" id="${1:my-dropdown}" {
+    put {
+	<button class="btn btn-secondary dropdown-toggle" type="button" id="${1}-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+    }
+
+    division class="dropdown-menu" aria-labelledby="$1-menu" {
+	put [url "MEL" "#" class="dropdown-item"]
+	division class="dropdown-divider" {}
+	put [url "HERAVI" "#" class="dropdown-item"]
+	put [url "WAS HERE" "#" class="dropdown-item"]
+    }
+}

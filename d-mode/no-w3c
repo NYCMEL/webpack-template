@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-no-w3c
+# key: d
+# type: command  
+# --
+(fset 'd-24 (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/tk/lib/components/no-w3c")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/tk/lib/components/no-w3c")

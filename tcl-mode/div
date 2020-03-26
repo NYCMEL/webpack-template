@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: t-div
+# key: t
+# --
+division {
+    $1	
+}

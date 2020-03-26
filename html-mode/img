@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-img
+# key: h
+# --
+<img src="${1:smiley.gif}" alt="${2:Smiley face}" ${3:height="42"} ${4:width="42"}>

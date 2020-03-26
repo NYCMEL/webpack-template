@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: h-div
+# key: h
+# --
+<div>
+    $0
+</div>

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: b-dropdown
+# key: b
+# --
+<div id="${1:my-dropdown}" class="dropdown open">
+  <button class="btn btn-${2:$$(yas-choose-value '(warning info danger succcess secondary))} dropdown-toggle" type="button" id="$1-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#!">Separated link</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#!">Action</a>
+    <a class="dropdown-item" href="#!">Another action</a>
+  </div>
+</div>

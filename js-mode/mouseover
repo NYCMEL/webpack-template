@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: j-mouseover
+# key: j
+# --
+$("${1:#element}").mouseover(function() {
+   console.log(">>>> MOUSEOVER: $1")
+}).mouseout(function() {
+   console.log(">>>> MOUSEOUT: $1")
+});

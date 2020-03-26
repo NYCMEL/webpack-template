@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: j-try
+# key: j
+# --
+try {
+    $0
+}
+catch(e) {
+    console.error(e.name + ' > ' + e.message);
+}

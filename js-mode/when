@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: j-when
+# key: j
+# --
+ wc.when(function() {
+     return ${1:\$("#ele").length;}
+ }, 100)
+   .then(function(args) {
+       ${3:// DO STUFF HERE}
+   }).fail(function(args) {
+       console.error("wc.when failed in(${2:app-name}): $args");
+   });

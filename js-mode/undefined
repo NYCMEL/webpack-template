@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: j-undefined
+# key: j
+# --
+if (typeof $1 === "undefined") {
+$0 
+}

@@ -1,0 +1,3 @@
+PICK A COLOR:
+${1:$$(yas-choose-value '(warning info danger succcess secondary))}
+

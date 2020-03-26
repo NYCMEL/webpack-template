@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-ready
+# key: j
+# --
+
+wc.ready( fn );

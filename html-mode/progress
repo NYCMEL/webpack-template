@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-progress
+# key: h
+# --
+<progress id="${1:my-progress}" value="${2:30}" max="${3:100}"></progress>

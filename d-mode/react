@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-react
+# key: d
+# type: command  
+# --
+(fset 'd-react (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/tk/lib/components/misc/react/src/")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/tk/lib/components/misc/react/src/")

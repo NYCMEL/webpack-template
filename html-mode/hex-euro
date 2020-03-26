@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-euro
+# key: h
+# --
+<span class="hex-euro" style="font-size:48px">&#8364;</span>

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jf-form-boolean
+# key: jf
+# --
+{
+    "key": "${1:flag}",
+    "inlinetitle": "${2:Please check this box}"
+},

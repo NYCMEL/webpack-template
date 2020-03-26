@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name : h-doctype-html
+# key: h
+# --
+<!DOCTYPE html>

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: t-btn-group
+# key: t
+# --
+division class="btn-group${1:-vertical}" role="group" aria-label="Basic example" {
+    button "${2:Button 1}" id="${3:my-button-1}" class="btn btn-${4:secondary}" type="button"
+}

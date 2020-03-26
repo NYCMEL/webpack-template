@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-show
+# key: j
+# --
+
+wc.show(sel,a);

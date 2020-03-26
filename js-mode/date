@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-date
+# key: j
+# --
+dt = new Date();

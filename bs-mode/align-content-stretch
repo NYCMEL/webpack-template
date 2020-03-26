@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: b-align-content-stretch
+# key: b
+# --
+<div class="d-flex flex-wrap align-content-stretch">
+  <div class="p-2">Flex item</div>
+  <div class="p-2">Flex item</div>
+  <div class="p-2">Flex item</div>
+</div>

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-ss.start
+# key: j
+# --
+
+wc.ss.start();

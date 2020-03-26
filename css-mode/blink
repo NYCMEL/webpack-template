@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: c-blink
+# key: c
+# --
+
+.blink{
+     font-size: 36px;
+     color: red;
+   
+     animation: blink 1s ${1:infinite};
+ }
+
+@keyframes blink{
+     0%{opacity: 1;}
+     75%{opacity: 1;}
+     76%{ opacity: 0;}
+     100%{opacity: 0;}
+}

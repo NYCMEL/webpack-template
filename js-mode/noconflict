@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: j-noconflict
+# key: j# --
+var jQuery-my = $.noConflict(true);

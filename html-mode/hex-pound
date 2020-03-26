@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-pund
+# key: h
+# --
+<span class="hex-pund" style="font-size:48px">&pound;</span>

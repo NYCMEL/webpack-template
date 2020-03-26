@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: t-progressbar-stacked
+# key: t
+# --
+division class="progress" {
+    division class="progress-bar bg-info" role="progressbar" style="width:40%" aria-valuenow="info" aria-valuemin="0" aria-valuemax="100" {
+	put "40%"
+    }
+    division class="progress-bar bg-success" role="progressbar" style="width:20%" aria-valuenow="info" aria-valuemin="0" aria-valuemax="100" {
+	put "20%"
+    }
+    division class="progress-bar bg-warning" role="progressbar" style="width:10%" aria-valuenow="info" aria-valuemin="0" aria-valuemax="100" {
+	put "10%"
+    }
+}

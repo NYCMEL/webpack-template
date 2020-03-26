@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-slideshow
+# key: j
+# --
+
+wc.slideshow(sel,ms,func);

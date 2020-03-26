@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: h-select-group
+# key: h
+# --
+<select id="${1:my-select}" class="form-control">
+  <optgroup label="SWEDISH CARS">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+</select>

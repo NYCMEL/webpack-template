@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-td-auth
+# key: s
+# --
+https://auth.tdameritrade.com/auth?response_type=code&redirect_uri=http://links.melify.com/mtk/render?page=td&client_id=490902254@AMER.OAUTHAP

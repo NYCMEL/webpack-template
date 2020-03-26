@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: s-grep
+# key: s
+# --
+
+grep --exclude=$1 -ir $2 ${3:*}

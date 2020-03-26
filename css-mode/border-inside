@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: c-border-insude
+# key: c
+# --
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-textarea
+# key: h
+# --
+<textarea id="${1:my-textarea}" class="form-control" name="message" rows="${2:10}" placeholder="${4:ready}" value="${5:Mel was here}"></textarea>

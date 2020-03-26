@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: t-radiobutton
+# key: t
+# --
+division class="custom-control custom-radio" {
+    radio_button rb=1 id="${1:my-radio}" class="custom-control-input"
+    label class="custom-control-label" for="$1" "Toggle Radio 2"
+}

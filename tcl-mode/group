@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: t-group
+# key: t
+# --
+tag form id="${1:my-form}" {
+    division class="form-group" {
+	label for="$1-input-1" "Example label" 
+
+	text ta= class="form-control" id="$1-input-1" placeholder="please enter something..."
+    }
+}

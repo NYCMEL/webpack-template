@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: h-canvas
+# key: h
+# --
+<canvas id="${1:myCanvas}"></canvas>
+
+<script>
+var canvas = document.getElementById("$1");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+</script>

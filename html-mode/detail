@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: h-detail
+# key: h
+# --
+<details>
+  <summary>${1:Copyright 1999-2018.}</summary>
+  <p> - ${2:by Refsnes Data. All Rights Reserved.}</p>
+  <p>$0</p>
+</details>

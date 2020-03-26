@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: j-json-grep
+# key: j
+# --
+var rval = $.grep(${1:pattern}, function(item) {
+    return item.${2:key} == ${3:value}
+});
+
+console.log(">>>>>>>>>>>", rval);

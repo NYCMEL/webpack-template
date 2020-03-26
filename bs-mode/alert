@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: b-alert
+# key: b
+# --
+<div class="alert alert-${1:$$(yas-choose-value '(warning info danger succcess))} alert-dismissible fade show" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	<span aria-hidden="true">&times;</span>
+    </button>
+
+    <h3>SHARKS!</h3>
+    <a href="#!" class="alert-link">Something went wrong - click for issue</a>, and try submitting again.
+</div>

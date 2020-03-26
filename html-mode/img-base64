@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-img-base64
+# key: h
+# --
+<img src="data:image/gif;base64,${1:...}" />

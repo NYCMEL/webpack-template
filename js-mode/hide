@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-hide
+# key: j
+# --
+
+wc.hide(sel);

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-abbr
+# key: h
+# --
+<abbr title="${1:Mel M. Heravi}">${2:Who is Mel ?}</abbr>

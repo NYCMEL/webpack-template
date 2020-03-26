@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: t-select
+# key: t
+# --
+select class="custom-select" id="my-select" [style width 300px border-radius 0 height 40px] {
+    option "Please Select" value=
+    option "Open 1" value=1 
+    option "Open 2" value=2 selected
+    option "Open 3" value=3 
+}

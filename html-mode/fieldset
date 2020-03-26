@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: h-fieldset
+# key: h
+# --
+<fieldset id="${1:my-fieldset}" class="border p-3">
+    <legend class="w-auto wc-far">${2:Legends of Mel}</legend>
+    <div class="pl-3 pr-3 pb-3">
+       ${3:Lorem ipsum dolor sit amet, consetetur sadipscing elitr<BR>
+       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat}
+    </div>
+</fieldset>

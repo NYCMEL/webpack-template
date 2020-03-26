@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: jf-enum
+# key: jf
+# --
+"${1:position}": {
+    "title": "${2:Position}",
+    "type": "string",
+    "required": ${3:true},
+    "enum": [
+	"",
+	$0
+    ]
+},

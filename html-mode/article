@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: h-article
+# key: h
+# --
+<article id="${1:my-article}">
+  <h1>${2:Google Chrome}</h1>
+  <p>${3:Google Chrome is a free, open-source web browser developed by Google, released in 2008.}</p>
+</article>

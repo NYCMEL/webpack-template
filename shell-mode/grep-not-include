@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: s-grep-not-include
+# key: s
+# FIND FILES THAT DO NOT INCLUDE A STRING
+# --
+grep --exclude="$1" -L -ir ${2:patter} ${3:*}

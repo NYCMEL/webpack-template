@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-random-number
+# key: j
+# --
+let num = Math.floor(Math.random() * 100000); 

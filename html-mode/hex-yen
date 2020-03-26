@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-yen
+# key: h
+# --
+<span class="hex-yen" style="font-size:48px">&yen;</span>

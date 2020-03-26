@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-find-grep
+# key: s
+# --
+find . -name "${1:*tcl}" | xargs grep -i "${2:file-name}"
