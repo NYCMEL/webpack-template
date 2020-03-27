@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-getHeight
+# key: wcj
+# --
+
+wc.getHeight( elem );

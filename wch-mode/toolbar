@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: w-toolbar
+# key: w
+# --
+<wc-toolbar id="${1:my-toolbar}" class="wc-toolbar-vertical" bg="#7CB342" fg="#FFF" isize="18px">
+    <wc-toolbar-item id="tb-6" icon="save"></wc-toolbar-item>
+    <wc-toolbar-item wc-toolbar-sep></wc-toolbar-item>
+    <wc-toolbar-item id="tb-7" icon="cut"></wc-toolbar-item>
+    <wc-toolbar-item id="tb-8" icon="copy"></wc-toolbar-item>
+    <wc-toolbar-item id="tb-9" icon="paste"></wc-toolbar-item>
+    <wc-toolbar-item wc-toolbar-sep></wc-toolbar-item>
+    <wc-toolbar-item id="tb-0" icon="times"></wc-toolbar-item>
+</wc-toolbar>

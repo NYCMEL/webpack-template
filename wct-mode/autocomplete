@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wct-autocomplete
+# key: wct
+# --
+
+puts {
+    	<wc-autocomplete id="my-autocomplete" class="col-6 m-5" url="/tk/lib/components/w/cfg/states.json"></wc-autocomplete>
+
+}

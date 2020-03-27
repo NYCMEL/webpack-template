@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: w-band
+# key: w
+# --
+<wc-band id="${1:my-band}" class="col-md-8"></wc-band>
+
+<script src="/tk/lib/components/w/js/ext/highcharts.js"></script>
+
+<script src="/Melify/mtk/dev/tk/lib/components/w/cfg/band.json"></script> 
+
+<script>
+ // NEED THIS IN DEV ENVIRONMENT DUE TO DELAYS
+ setTimeout(function(){
+     let b1 = document.querySelector("#my-band");
+     b1.configure(bdata);
+ }, 500);
+</script>

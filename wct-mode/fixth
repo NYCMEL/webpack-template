@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: wct-fixth
+# key: wct
+# --
+
+puts {
+    
+}

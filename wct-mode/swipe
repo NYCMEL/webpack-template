@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: wct-swipe
+# key: wct
+# --
+
+puts {
+    	<wc-swipe id="my-swipe" pagination="false" navigation="false" autoheight="true" space="0" start="1">
+	    <div><span class="wc-loading-img"></span></div>
+	    <div><span class="wc-loading-img"></span></div>
+	    <div><span class="wc-loading-img"></span></div>
+	    <div><span class="wc-loading-img"></span></div>
+	    <div><span class="wc-loading-img"></span></div>
+	</wc-swipe>
+
+}

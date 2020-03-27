@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: wct-table2csv
+# key: wct
+# --
+
+puts {
+    
+}

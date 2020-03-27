@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-toggleClass
+# key: wcj
+# --
+
+wc.toggleClass(sel,c1,c2);

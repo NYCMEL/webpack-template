@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wct-ticker
+# key: wct
+# --
+
+puts {
+    		    <wc-ticker id="my-ticker-1" symbols="AAPL,JPM,C,BA" interval="5"></wc-ticker>
+
+}

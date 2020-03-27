@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: wct-headline
+# key: wct
+# --
+
+puts {
+    		    <div class="row mt-3">
+			<div class="col-12">
+
+}

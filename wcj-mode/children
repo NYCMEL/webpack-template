@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-children
+# key: wcj
+# --
+
+wc.children(el);

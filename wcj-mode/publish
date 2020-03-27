@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wcj-publish
+# key: wcj
+# --
+
+wc.publish(ele,name,values);

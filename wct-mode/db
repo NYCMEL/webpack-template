@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wct-db
+# key: wct
+# --
+
+puts {
+    	<wc-db id="my-db" db="/Melify/mtk/dev/app/be/db/sqlite.db" class="mt-5 ml-4"></wc-db>
+
+}
