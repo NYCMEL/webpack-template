@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: w-row
-# key: w
-# --
-<div class="row">
-$0
-</div>
