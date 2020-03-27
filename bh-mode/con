@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bh-con
+# key: bh
+# --
+<div class="container${1:-fluid}">
+$0
+</div>

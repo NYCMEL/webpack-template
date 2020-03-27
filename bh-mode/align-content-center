@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bh-align-content-center
+# key: bh
+# --
+<div class="d-flex align-content-center">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>

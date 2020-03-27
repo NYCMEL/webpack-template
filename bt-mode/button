@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bt-button
+# key: bt
+# --
+button "${1:My Button}" id="${2:my-button}" class="btn btn-${2:$$(yas-choose-value '("default" "primary" "success" "info" "warning" "danger" "link"))}"

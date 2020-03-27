@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: bt-align-content-center
+# key: bt
+# --
+division class="d-flex align-content-center" {
+    division class="p-2" {
+	put "Flex item 1"
+    }
+    division class="p-2" {
+	put "Flex item 2"
+    }
+    division class="p-2" {
+	put "Flex item 3"
+    }
+}

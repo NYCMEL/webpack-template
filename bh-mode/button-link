@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bh-button-link
+# key: bh
+# --
+<a class="btn btn-${1:$$(yas-choose-value '("default" "primary" "success" "info" "warning" "danger" "link"))}" role="button">${3:Button Label}</a>$0

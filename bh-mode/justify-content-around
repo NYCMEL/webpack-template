@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bh-justify-content-around
+# key: bh
+# --
+<div class="d-flex justify-content-around">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>

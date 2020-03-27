@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bh-badge
+# key: bh
+# --
+<span class="badge badge-${1:secondary}">${2:New}</span>

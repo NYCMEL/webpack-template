@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: bt-breadcrumb
+# key: bt
+# --
+tag nav aria-label="breadcrumb" id="${1:my-breadcrumb}" {
+    number_list class="breadcrumb" {
+	li class="breadcrumb-item" [url "Home" "#"]
+	li class="breadcrumb-item" [url "Libraries" "#"]
+	li class="breadcrumb-item active" aria-current="page" "Data"
+    }
+}
+

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: bt-justify-content-between
+# key: bt
+# --
+division class="d-flex justify-content-between bg-warning" {
+    division class="p-2 border" {
+	put "Flex item I"
+    }
+    division class="p-2 border" {
+	put "Flex item II"
+    }
+    division class="p-2 border" {
+	put "Flex item II"
+    }
+}

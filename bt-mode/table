@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: bt-table
+# key: bt
+# group: twitter-bootstrap
+# --
+puts {
+<table class="table $1"${2: id="$3"}>
+  <thead>
+    $0
+  </thead>
+  <tbody>
+  </tbody>
+  <tfoot>
+  </tfoot>
+</table>
+}

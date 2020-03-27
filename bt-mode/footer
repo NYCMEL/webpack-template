@@ -1,0 +1,49 @@
+# -*- mode: snippet -*-
+# name: bt-footer
+# key: bt
+# --
+division class="bg-dark text-light" {
+    division class="container-fluid" {
+	division class="row" {
+	    division class="col-12" {
+		tag footer class="page-footer pt-4" {
+		    division class="container-fluid text-center text-md-left" {
+			division class="row" {
+			    division class="col-md-6 mt-md-0 mt-3" {
+				h5 class="text-uppercase wc-font-m" "Footer Content"
+				p "Here you can use rows and columns here to organize your footer content"
+			    }
+
+			    hr class="clearfix w-100 d-md-none pb-3"
+
+			    division class="col-md-3 mb-md-0 mb-3" {
+				h5 class="text-uppercase wc-font-r" "Links I"
+
+				bullet_list class="list-unstyled" {
+				    li [url "Link I" "#" class="text-light"]
+				    li [url "Link I" "#" class="text-light"]
+				    li [url "Link I" "#" class="text-light"]
+				}					    
+			    }
+
+			    division class="col-md-3 mb-md-0 mb-3" {
+				h5 class="text-uppercase wc-font-r" "Links II"
+
+				bullet_list class="list-unstyled" {
+				    li [url "Link IV" "#" class="text-light"]
+				    li [url "Link V" "#" class="text-light"]
+				    li [url "Link VI" "#" class="text-light"]
+				}					    
+			    }
+
+			}
+		    }
+
+		    division class="footer-copyright text-center py-3" {
+			put [url "Melify.com ©2020" "http://www.melify.com" class="text-light"]
+		    }
+		}
+	    }
+	}
+    }
+}

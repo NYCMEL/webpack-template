@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: bt-dropdown
+# key: bt
+# --
+division id="${1:my-dropdown}" class="dropdown open" {
+    button "Dropdown" id="$1-btn" class="btn btn-${2:$$(yas-choose-value '(warning info danger succcess secondary))} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+
+    division class="dropdown-menu" {
+	put [url "Separated link" "#" class="dropdown-item"]
+
+	division class="dropdown-divider"></div {
+	    put [url "Action I" "#" class="dropdown-item"]
+	    put [url "Action II" "#" class="dropdown-item"]
+	}
+    }
+}

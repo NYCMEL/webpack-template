@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: bt-card-image-bottom
+# key: bt
+# --
+division class="card" {
+    division class="card-body" {
+	h5 class="card-title" "Card title"
+	p class="card-text" "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+	put [img "${1:/tk/lib/components/w/img/tmp/pi.jpg}" class="card-img-bottom" height="170"]
+    }
+}
