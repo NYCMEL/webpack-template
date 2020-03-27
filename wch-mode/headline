@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-headline
-# key: w
+# name: wch-headline
+# key: wch
 # --
 <wc-headline id="${1:my-headline}">
     <wc-headline-title>

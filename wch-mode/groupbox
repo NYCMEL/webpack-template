@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-groupbox
-# key: w
+# name: wch-groupbox
+# key: wch
 # --
 <wc-groupbox id="${1:groupbox-1}" name="gbox" label="Choose a Fruit" columns="4,8">
     <div class="float-left">

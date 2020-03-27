@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-navbar
-# key: w
+# name: wch-navbar
+# key: wch
 # --
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">MELIFY</a>

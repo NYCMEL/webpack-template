@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: w-headline-json
-# key: w
+# name: wch-headline-json
+# key: wch
 # --
 <wc-headline id="${1:my-headline}" cfg="${2:/tk/lib/components/misc/webpack/src/w/cfg/headline/headline.json}"></wc-headline>

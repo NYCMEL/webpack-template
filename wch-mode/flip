@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-flip
-# key: w
+# name: wch-flip
+# key: wch
 # --
 <wc-flip id="${1:my-flip}">
     <wc-flip-front style="background:wheat;padding:30px;text-align:center">

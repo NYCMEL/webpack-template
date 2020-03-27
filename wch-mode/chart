@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-chart
-# key: w
+# name: wch-chart
+# key: wch
 # --
 <wc-chart id="${1:my-donut-1}"></wc-chart>
 

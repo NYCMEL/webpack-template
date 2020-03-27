@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: w-text
-# key: w
+# name: wch-text
+# key: wch
 # --
 <wc-text id="${1:text-1}" name="$2" label="First Name" columns="4,8" placeholder="${3:your first name...}" help="${4:First name is a required field}" data-error="${5:Please enter alphanumeric}" ${6:required}></wc-text>

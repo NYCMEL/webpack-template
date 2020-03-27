@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-modal
-# key: w
+# name: wch-modal
+# key: wch
 # --
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#my-modal-dialog" data-backdrop="static" data-keyboard="false">Launch my modal</button>
 

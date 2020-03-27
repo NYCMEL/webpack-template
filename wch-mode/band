@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-band
-# key: w
+# name: wch-band
+# key: wch
 # --
 <wc-band id="${1:my-band}" class="col-md-8"></wc-band>
 

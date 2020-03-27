@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-select
-# key: w
+# name: wch-select
+# key: wch
 # --
 <wc-select name="$1" id="${2:my-select}" label="Pick a color" columns="4,8" help="Please pick a color" data-error="color is a required field" searchable="true" value="1" placeholder="please select..." required>
     <option value="">[Please Select]</option>

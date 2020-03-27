@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-tile
-# key: w
+# name: wch-tile
+# key: wch
 # --
 <wc-tile id="${1:my-tile-1}" clickable="true">
     <wc-tile-title>

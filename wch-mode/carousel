@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-carousel
-# key: w
+# name: wch-carousel
+# key: wch
 # --
 <wc-carousel id="${1:my-carousel-1}" options='{"slidesToShow":3, "autoplay":true, "dots":true, "speed":1000, "initialSlide":0}' class="col-6">
     <div><a href="#"><img src="http://localhost/tk/img/business/png/cart-10.png"	   width="300" slick-caption="Picture A" alt="Picture A" /></a></div>

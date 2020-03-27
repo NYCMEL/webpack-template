@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-table-json
-# key: w
+# name: wch-table-json
+# key: wch
 # --
 <wc-table id="${1:my-table}"
 	class="table table-striped"

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-btn-submit
-# key: w
+# name: wch-btn-submit
+# key: wch
 # --
 <hr>
 <div class="form-group">

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: w-toolbar
-# key: w
+# name: wch-toolbar
+# key: wch
 # --
 <wc-toolbar id="${1:my-toolbar}" class="wc-toolbar-vertical" bg="#7CB342" fg="#FFF" isize="18px">
     <wc-toolbar-item id="tb-6" icon="save"></wc-toolbar-item>
