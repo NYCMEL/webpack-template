@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d-tinystack
+# key: d
+# type: command  
+# --
+(fset 'd-tinystack (lambda (&optional arg) "Keyboard macro." (interactive "p") (kmacro-exec-ring-item (quote ("cd /Melify/mtk/dev/app/tinystack/app.vfs/lib/app")) arg)))
+(execute-kbd-macro "cd /Melify/mtk/dev/app/tinystack/app.vfs/lib/app")
