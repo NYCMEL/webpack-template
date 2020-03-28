@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-header-2
-# key: wch
-# --
-<wc-header-2 id="${1:my-header}" menus="${2:/tk/lib/components/w/html/parts/aem}"></wc-header-2>
