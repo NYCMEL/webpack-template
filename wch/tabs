@@ -2,4 +2,4 @@
 # name: wch-tabs
 # key: wch
 # --
-<wc-tabs id="${1:my-tabs}" config="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" selected="1"></wc-tabs>
+<wc-tabs id="${1:my-tabs}" class="border" side="top" cfg="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" show="0"></wc-tabs>
