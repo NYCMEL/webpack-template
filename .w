@@ -33,7 +33,7 @@ foreach i $comps {
 
     close $f
 
-    set f [open ./wh/$t w]
+    set f [open ./w/$t w]
     puts $f $html
     close $f
 }
