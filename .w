@@ -11,7 +11,7 @@ foreach i $comps {
 
     set html [subst {# -*- mode: snippet -*-
 # name: w-$t
-# key: w-$t
+# key: w
 # --
     }]
 
