@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
-# name: wh-icon
-# key: wh
+# name: w-icon
+# key: w-icon
 # --
-<wc-icon id="${1:my-icon}" name="home" size="36px" color="indianred" class="mb-3" border="true"></wc-icon>
+    		    <wc-icon id="my-icon-1" name="home" size="36px" color="indianred" class="mb-3" border="true"></wc-icon>
+

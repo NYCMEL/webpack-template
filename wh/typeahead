@@ -1,6 +1,12 @@
 # -*- mode: snippet -*-
-# name: wh-typeahead
-# key: wh
+# name: w-typeahead
+# key: w-typeahead
 # --
-<wc-typeahead id="${1:my-typeahead}" placeholder="Large..." style="font-size:300%" url="${2:/Melify/mtk/dev/tk/lib/components/w/cfg/states.json}" name="long" value="short" class="border-all" show="${3:5}"></wc-typeahead>
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-sm-6">
+		    <wc-typeahead id="my-typeahead-11" placeholder="Typeahead Large..." style="font-size:300%" url="/tk/lib/components/w/cfg/states.json" name="long" value="short" show="5"></wc-typeahead>
+		</div>
+	    </div>
+	</div>
 

@@ -35,7 +35,7 @@ puts \{
 
     close $f
 
-    set f [open ./wct-mode/$t w]
+    set f [open ./wt/$t w]
 
     puts $f $html
     puts $f "\}"
