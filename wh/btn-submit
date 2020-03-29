@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: wh-btn-submit
+# key: wh
+# --
+<hr>
+<div class="form-group">
+    <input type="submit" name="action" value="${1:Submit}" class="btn btn-primary disabled" id="${2:my-submit-btn}" data-key="${3:mysubmitbtn}">
+</div>

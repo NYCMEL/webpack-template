@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-accordion
-# key: wct
-# --
-puts {<wc-accordion id="my-accordion" cfg="/tk/lib/components/w/cfg/accordion.json" show="0"></wc-accordion>}

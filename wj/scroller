@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-scroller
+# key: wj
+# --
+
+wc.scroller();

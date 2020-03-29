@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-row
-# key: wch
-# --
-<div class="row">
-$0
-</div>

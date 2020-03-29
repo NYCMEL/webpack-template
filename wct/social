@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-social
-# key: wct
-# --
-
-puts {
-    		    <wc-social id="my-social" socialize="Facebook Twitter Google Linkedin Reddit Pinterest Email Print"></wc-social>
-
-}

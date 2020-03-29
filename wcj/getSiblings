@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-getSiblings
-# key: wcj
-# --
-
-wc.getSiblings( elem );

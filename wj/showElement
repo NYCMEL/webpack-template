@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-showElement
+# key: wj
+# --
+
+wc.showElement(element);

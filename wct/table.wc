@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-table.wc
-# key: wct
-# --
-
-puts {
-    
-}

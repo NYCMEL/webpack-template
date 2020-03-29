@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-form
-# key: wch
-# --
-<wc-form id="${1:my-form}" name="${2:my-form}" role="form" class="form-control-${3:md}">
- $0
-</wc-form>

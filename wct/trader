@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-trader
-# key: wct
-# --
-
-puts {
-    	<wc-trader id="trader" symbol="C"></wc-trader>
-
-}

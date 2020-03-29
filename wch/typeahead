@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-typeahead
-# key: wch
-# --
-<wc-typeahead id="${1:my-typeahead}" placeholder="Large..." style="font-size:300%" url="${2:/Melify/mtk/dev/tk/lib/components/w/cfg/states.json}" name="long" value="short" class="border-all" show="${3:5}"></wc-typeahead>
-

@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: wh-card
+# key: wh
+# --
+<wc-card id="${1:my-card-1}" class="col-md-5 d-inline-block">
+    <wc-card-header>
+	Card Header (image top)
+    </wc-card-header>
+
+    <wc-card-img position="top">
+	<img src="http://localhost/tk/lib/components/w/img/tmp/12s.jpg" width="100%" />
+    </wc-card-img>
+
+    <wc-card-body>
+	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+	sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+    </wc-card-body>
+
+    <wc-card-footer>
+	Card Footer
+    </wc-card-footer>
+</wc-card>

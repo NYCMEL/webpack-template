@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-gtm
+# key: wt
+# --
+
+puts {
+    	<wc-gtm id="my-gtm" path="/tk/lib/components/misc/webpack/src/w/html/parts/gtm"></wc-gtm>
+
+}

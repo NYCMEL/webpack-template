@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-check4chrome
-# key: wcj
-# --
-
-wc.check4chrome();

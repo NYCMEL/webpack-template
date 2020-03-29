@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-dropper
-# key: wch
-# --
-<div class="text-center" style="padding:50px">
-    <a id="${1:a-driver}" style="font-size:20px">DROP ANYTHING</a>
-    
-    <wc-dropper id="${2:my-dropper-1}" driver="$1" url="/mtk/render?ajax=1&callback=tk::dummy::3" style="width:300px;padding:5px;height:300px;overflow:auto"></wc-dropper>
-</div>

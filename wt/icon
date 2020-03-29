@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-icon
+# key: wt
+# --
+
+puts {
+    		    <wc-icon id="my-icon-1" name="home" size="36px" color="indianred" class="mb-3" border="true"></wc-icon>
+
+}

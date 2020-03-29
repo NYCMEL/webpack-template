@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-displayObject
-# key: wcj
-# --
-
-wc.displayObject(id,data);

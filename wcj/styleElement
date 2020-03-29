@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-styleElement
-# key: wcj
-# --
-
-wc.styleElement(element,prop,val);

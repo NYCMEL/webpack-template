@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: wt-table2csv
+# key: wt
+# --
+
+puts {
+    
+}

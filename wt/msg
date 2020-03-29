@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: wt-msg
+# key: wt
+# --
+
+puts {
+    		    <wc-msg id="my-msg" parent="my-header" type="wc-msg-error">
+			WAITING...
+		    </wc-msg>
+
+}

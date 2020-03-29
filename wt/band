@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-band
+# key: wt
+# --
+
+puts {
+    		    <wc-band id="my-band" class="col-md-12 shadow"></wc-band>
+
+}

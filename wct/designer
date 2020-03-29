@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-designer
-# key: wct
-# --
-
-puts {
-    	<wc-designer id="my-designer" cfg="/tk/lib/components/misc/webpack/src/w/cfg/designer/designer.json"></wc-designer>
-
-}

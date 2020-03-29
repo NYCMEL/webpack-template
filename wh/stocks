@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: wh-stocks
+# key: wh
+# --
+<wc-stocks id="${1:my-stocks}" symbols="HOV,C,AAPL"></wc-stocks>

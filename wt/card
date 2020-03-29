@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-card
+# key: wt
+# --
+
+puts {
+    		    <wc-card id="my-card-2" cfg="/tk/lib/components/w/cfg/cards/card-2.json"></wc-card>
+
+}

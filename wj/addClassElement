@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-addClassElement
+# key: wj
+# --
+
+wc.addClassElement(element,name);

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wh-table-json
+# key: wh
+# --
+<wc-table id="${1:my-table}"
+	class="table table-striped"
+	json="/Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/cfg/table.2.json"
+	datatable='{"pagination":false, "search":true, "info":false, "height":300}'>
+</wc-table>

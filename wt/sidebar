@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-sidebar
+# key: wt
+# --
+
+puts {
+    	<wc-sidebar id="my-sidebar" side="left" top="0" bot="0" width="300" height="70" parts="/tk/lib/components/misc/webpack/src/w/html/parts/sidebar"></wc-sidebar>
+
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: wt-rating
+# key: wt
+# --
+
+puts {
+    		    <wc-rating id="my-rating" width="25" stroke="#CCC" rating="2.5" readOnly="false"></wc-rating>
+
+}

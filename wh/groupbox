@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: wh-groupbox
+# key: wh
+# --
+<wc-groupbox id="${1:groupbox-1}" name="gbox" label="Choose a Fruit" columns="4,8">
+    <div class="float-left">
+	<wc-radio id="radio-1" name="radio" label="Apple" required></wc-radio>
+    </div>
+    <div class="float-left">
+	<wc-radio id="radio-2" name="radio" label="Orange"></wc-radio>
+    </div>
+    <div class="float-left">
+	<wc-radio id="radio-3" name="radio" label="Peach"></wc-radio>
+    </div>
+</wc-groupbox>

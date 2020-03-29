@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-getHttpData
+# key: wj
+# --
+
+wc.getHttpData(file,func);

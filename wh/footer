@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: wh-footer
+# key: wh
+# --
+<wc-footer>
+    <img src="/tk/lib/components/misc/webpack/src/w/assets/aem/footer.png" width="100%">
+</wc-footer>

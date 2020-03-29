@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: wch-radio
-# key: wch
-# --
-<wc-radio id="${1:radio-1}" name="myradio" label="Apple" required></wc-radio>
