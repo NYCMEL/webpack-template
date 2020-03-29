@@ -8,9 +8,13 @@ puts {
   <thead>
     $0
   </thead>
+
   <tbody>
+    $0	
   </tbody>
+
   <tfoot>
+    $0	
   </tfoot>
 </table>
 }
