@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: w-blockui
+# key: w
+# --
+    		    <wc-blockui id="my-blockui" parent="#child" background="#ebebeb"></wc-blockui>
+

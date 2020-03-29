@@ -1,0 +1,57 @@
+# -*- mode: snippet -*-
+# name: w-search
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-search id="my-search-1" placeholder="I am looking for ..." class="d-block" style="margin:0 auto;max-width:900px;"></wc-search>
+		</div>
+
+		<div class="col-12 mt-5">
+		    <wc-search id="my-search-2" placeholder="I am looking for ..." class="d-block" style="margin:0 auto;max-width:900px;">
+			<div class="input-group-prepend">
+			    <button class="btn btn-outline-secondary dropdown-toggle border-0 pr-3 border-radius-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Everything</button>
+
+			    <div class="dropdown-menu shadow border-0">
+				<a class="dropdown-item active" href="#">Everything</a>
+				<a class="dropdown-item" href="#">Last Updated</a>
+				<a class="dropdown-item" href="#">Created Date</a>
+				<a class="dropdown-item" href="#">Group Stats</a>
+				<div role="separator" class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Misc Links</a>
+			    </div>
+			</div>
+		    </wc-search>
+		</div>
+
+		<div class="col-12 mt-5">
+		    <wc-search id="my-search-3" placeholder="I am looking for ..." class="d-block" style="margin:0 auto;max-width:900px;">
+			<div style="position:absolute;top:65px;left:0;right:0">
+			    <div>
+				<table>
+				    <tr>
+					<td class="padding-0 margin-0 pr-2" align="left">
+					    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Folders</a>
+					    
+					    <div class="dropdown-menu shadow border-0" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Colors</a>
+						<a class="dropdown-item" href="#">Sizes</a>
+						<a class="dropdown-item" href="#">Types</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Images</a>
+					    </div>
+					</td>
+					<td class="p-2"><a href="#">Colors</a></td>
+					<td class="p-2"><a href="#">Sizes</a></td>
+					<td class="p-2"><a href="#">Types</a></td>
+					<td class="p-2"><a href="#">Images</a></td>
+				    </tr>
+				</table>
+			    </div>
+			</div>
+		    </wc-search>
+		</div>
+	    </div>
+	</div>
+

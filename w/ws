@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: w-ws
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-msg id="my-msg">
+			WAITING...
+		    </wc-msg>
+
+		    <wc-ws id="my-ws" url="ws://localhost:2525" reconnect="5000">
+			<h4 class="mb-3 wc-font-r">PLEASE MAKE SURE SERVER IS RUNNING HERE: <small>/Melify/tools/ws/server</small></h4>
+		    </wc-ws>
+		</div>
+	    </div>
+	</div>
+

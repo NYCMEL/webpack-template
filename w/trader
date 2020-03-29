@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: w-trader
+# key: w
+# --
+    	<wc-trader id="trader" symbol="C"></wc-trader>
+

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-grider
+# key: w
+# --
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-grider id="my-grider" cfg="/tk/lib/components/w/cfg/grider.json" width="300" height="200" padding="10"></wc-grider>
+		</div>
+	    </div>
+	</div>
+

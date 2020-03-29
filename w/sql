@@ -1,0 +1,37 @@
+# -*- mode: snippet -*-
+# name: w-sql
+# key: w
+# --
+    	<script src="/tk/lib/components/misc/webpack/src/w/js/ext/sql.js"></script>
+
+	<div class="mt-5">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-12" id="result">
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<script>
+	 var sql = SQL.init("/Melify/mtk/dev/app/_all/db/sqlite.db");
+
+	 ////////////////////////////////////////////////////////////////////////////////
+	 ////
+	 ////////////////////////////////////////////////////////////////////////////////
+	 setTimeout(function(){
+	     r = sql.exec("select * from users");
+	     $("#result").append(JSON.stringify(r))
+
+	     $("#result").append("<hr>");
+
+	     r = sql.exec("select count(*) from users");
+	     $("#result").append(JSON.stringify(r[0].values[0][0]) + JSON.stringify(r))
+
+	     $("#result").append("<hr>");
+
+	     r = sql.exec("select * from usersPPP");
+	     $("#result").append(JSON.stringify(r))
+	 }, 400);
+	</script>
+

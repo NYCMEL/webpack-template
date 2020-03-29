@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: w-range
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-8 mt-5">
+		    <h4>FLAT</h4>
+		    <wc-range id="my-range-1" cfg="/tk/lib/components/misc/webpack/src/w/cfg/range/range.flat.json" value="100"></wc-range>
+
+		    <h4 class="mt-4">ROUND</h4>
+		    <wc-range id="my-range-2" cfg="/tk/lib/components/misc/webpack/src/w/cfg/range/range.round.json" value="200"></wc-range>
+
+		    <h4 class="mt-4">BIG</h4>
+		    <wc-range id="my-range-3" cfg="/tk/lib/components/misc/webpack/src/w/cfg/range/range.big.json" value="300"></wc-range>
+
+		    <h4 class="mt-4">SHARP</h4>
+		    <wc-range id="my-range-4" cfg="/tk/lib/components/misc/webpack/src/w/cfg/range/range.sharp.json" value="400"></wc-range>
+		</div>
+	    </div>
+	</div>
+

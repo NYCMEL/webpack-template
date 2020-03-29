@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: w-blank
+# key: w
+# --
+    		    <wc-blank id="my-blank" class="text-center p-4 border">
+			<h1 class="wc-font-l"><i class="fa fa-home"></i> Blank Component</h1>
+		    </wc-blank>
+

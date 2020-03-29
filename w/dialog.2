@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: w-dialog.2
+# key: w
+# --
+    		    <button id="my-btn" class="btn btn-primary m-5" onClick="$('#my-dialog').toggle()">LAUNCH DIALOG</button>
+
+		    <wc-dialog-2 id="my-dialog" width="600" height="400">
+			<div class="wc-dialog-header">
+			    <div class="wc-dialog-title">SAMPLE DIALOG</div>
+			    <div class="wc-dialog-close" title="Close" wc-data-dialog-action="hide"  onClick="$('#my-dialog').hide()">×</div>
+			</div>
+
+			<div class="wc-dialog-body" style="overflow:auto">
+			    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+			</div>
+
+			<div class="wc-dialog-footer">
+			    <button class="wc-dialog-button btn btn-danger" wc-data-dialog-action="hide" onClick="$('#my-dialog').hide()">CLOSE</button>
+			</div>
+		    </wc-dialog-2>
+

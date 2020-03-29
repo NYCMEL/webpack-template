@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-steps
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-steps id="my-steps" cfg="/tk/lib/components/w/html/parts/steps/config.json" backbutton="false" clickable="false"></wc-steps>
+		</div>
+	    </div>
+	</div>
+

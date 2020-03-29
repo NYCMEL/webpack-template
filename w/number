@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-number
+# key: w
+# --
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-4">
+		    <wc-number id="my-number" positive="true">0</wc-number>
+		</div>
+	    </div>
+	</div>
+

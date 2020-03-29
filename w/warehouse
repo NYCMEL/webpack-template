@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: w-warehouse
+# key: w
+# --
+    	<style>
+	 .container, .container-fluid {
+	     max-width: 1400px!important;
+	 }
+	 .banner {
+	     background: url(/tk/img/media/backgorunds/1.jpg) no-repeat;
+	     background-size: 100% 100%;
+	     background-attachment: fixed;
+	     background-position: center; 
+	 }
+	</style>
+
+	<div class="bg-info text-dark banner">
+	    <div class="container-fluid">
+		<div class="row">
+		    <div class="col-md-12" style="height:150px;">
+			<h2 style="line-height:150px;" class="text-uppercase text-success wc-font-r">Virtual <small>- warehouse</small></h2>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<wc-warehouse id="my-warehouse">
+	    Loading...
+	</wc-warehouse>
+

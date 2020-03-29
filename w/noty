@@ -1,0 +1,37 @@
+# -*- mode: snippet -*-
+# name: w-noty
+# key: w
+# --
+    	<style>
+	 .noty_buttons {
+	     margin-left:25px;
+	 }
+	 .clicker {
+	     min-width: 130px;
+	 }
+	</style>
+
+	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-12">
+		    <a href="#" type="info" class="clicker btn btn-outline-info" onclick="wc.infoTest()">INFO</a>
+		    <a href="#" type="warning" class="clicker btn btn-outline-warning" onclick="wc.warningTest()">WARNING</a>
+		    <a href="#" type="warning" class="clicker btn btn-outline-success" onclick="wc.dialogTest()">DIALOG</a>
+		    <a href="#" type="error" class="clicker btn btn-outline-danger" onclick="wc.errorTest()">ERROR</a>
+		    <a href="#" type="working" class="clicker btn btn-outline-secondary" onclick="wc.workingTest()">WORKING</a>
+		</div>
+	    </div>
+	</div>
+
+	<script src="../dist/wc.js"></script>
+
+	<script>
+	 yepnope({
+	     test : wc.detectIE(),
+	     yep  : ['../es5/include.js', '../es5/noty.js'],
+	     nope : [ '../js/include.js',  '../js/noty.js']
+	 });
+	</script>
+    </body>
+</html>
+

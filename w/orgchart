@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: w-orgchart
+# key: w
+# --
+    		    <h3>LEFT TO RIGHT</h3>
+		    <hr>
+		    <wc-orgchart id="my-orgchart-1"></wc-orgchart>
+

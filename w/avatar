@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-avatar
+# key: w
+# --
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-4">
+		    <wc-avatar id="my-avatar" img="/Melify/mtk/dev/tk/img/common/mel.co.png" title="Mel" width="150px" height="150px" background="#000"></wc-avatar>
+		</div>
+	    </div>
+	</div>
+

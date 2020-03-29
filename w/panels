@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: w-panels
+# key: w
+# --
+    	<style>
+	 .hex-bars:hover {
+	     cursor: pointer;
+	     color: steelblue;
+	 }
+	</style>
+
+	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-12">
+		    <div style="height:700px" id="panels-container" class="p-5 border shadow">
+			<div class="hex-bars" style="font-size:32px">&#9776;</div>
+
+			<div>
+			    <wc-include href="/mtk/render?ajax=1&callback=lorem&size=100"></wc-include>
+			</div>
+
+

@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: w-components
+# key: w
+# --
+    	<style>
+	 body {
+	     background: #EBEBEB;
+	 }
+	 .container,
+	 .container-fluid {
+	     max-width: 1400px!important;
+	 }
+	 .animated {
+	     animation-delay: 2s;
+	     animation-iteration-count: 1;
+	 }
+	</style>
+
+	<wc-components id="my-components"></wc-components>
+
+	</script>
+

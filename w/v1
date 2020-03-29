@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: w-v1
+# key: w
+# --
+    	<style>
+	 body {
+	     background: #E0F7FA;
+	 }
+	 .container, .container-fluid {
+	     max-width: 1400px;
+	 }
+
+	 .banner {
+	     background-image: linear-gradient(#26A69A, #00796B);
+	 }
+	</style>
+
+	<div class="banner">
+	    <div class="container-fluid">
+		<div class="row">
+		    <div class="col-md-12" style="height:150px;">
+			<div class="float-left">
+			    <h2 style="line-height:150px;" class="text-uppercase text-light wc-font-m">Altai<span style=color:gold>Opus</span></h2>
+			</div>
+
+			     <wc-search id="my-search" placeholder="I am looking for ..." class="d-block"></wc-search>
+			     </div> -->
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<wc-v1 id="my-v1" path="/tk/lib/components/w/html/parts/v1" page="page-0">
+	    Loading...
+	</wc-v1>
+

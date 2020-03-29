@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: w-audio
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-12">
+		    <h4>MP3,MP4 Audio Player<small>- I am responsive. go ahead and squeeze me <i class='fa fa-smile-o'></i></small></h4>
+		    
+		    <wc-audio id="my-audio-player" class="border bg-dark">
+			<source src="/tk/lib/components/w/data/sound.mp3">
+		    </wc-audio>
+		    
+		    <h5 class="pt-3">
+			<a href="/tk/lib/components/w/data/sound.mp3" class="btn btn-outline-success">View Raw Version</a>
+		    </h5>
+		</div>
+	    </div>
+	</div>
+

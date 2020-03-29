@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: w-side-slider
+# key: w
+# --
+    		    <wc-side-slider id="my-side-slider" side="left" width="30%" height="500px" class="bg-light border border-success">
+			<div class="scotch-panel-wrapper">
+			    <div class="scotch-panel text-light p-3">
+				<h3>Slide from left, right, top or bottom</h3>
+				<h5>Escape to close the panel</h5>
+			    </div>
+
+			    <div class="scotch-panel-content">
+				<div class="row">
+				    <div class="col-md-12">
+					<div class="container">
+					    <div class="row">
+						<div class="col-md-12">
+						    <h1 class="m-3"><a href="#" class="toggle-panel text-decoration-none">&#9776;</a></h1>
+
+						    <div>
+							<h3>Slide from left, right, top or bottom</h3>
+							<h5>Escape to close the panel</h5>
+						    </div>
+						</div>
+					    </div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</wc-side-slider>
+		    </div>
+

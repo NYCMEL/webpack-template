@@ -1,0 +1,47 @@
+# -*- mode: snippet -*-
+# name: w-slide
+# key: w
+# --
+    		    
+		    <wc-slide id="my-slide" toggler="toggle-menu" speed="300" search="true" title="Application Menus">
+			<wc-slide-menus>
+			    <ul>
+				<li><a id="link-1000" href="#">Card</a></li>
+				<li><a id="link-2000" href="#">Checkbox</a></li>
+				<li><a id="link-3000" href="#">Dialog</a></li>
+				<li><a id="link-4000" href="#">Dropdown</a></li>
+				<li><a id="link-5000" href="#">Form</a></li>
+				<li><a id="link-6000" href="#">Groupbox</a></li>
+				<li><a id="link-7000" href="#">Include</a></li>
+				<li><a id="link-8000" href="#">Listbox</a></li>
+				<li><a id="link-9000" href="#">Make</a></li>
+				<li><span>Panel Types</span>
+				    <ul>
+					<li><a id="link-10000" href="#">Panel</a></li>
+					<li><a id="link-11000" href="#">Accordion</a></li>
+				    </ul>
+				</li>
+			    </ul>
+			</wc-slide-menus>
+		    </wc-slide>
+		</div>
+	    </div>
+
+	    <div class="wrapper" style="padding:20px">
+		<a id="toggle-menu"><i class='fa fa-bars fa-2x'></i></a>
+		<hr>
+		<div id="main-container">
+		    <h4>
+			MENUS VIA JAVASCRIPT: <pre>document.querySelector("wc-slide").open()<BR>document.querySelector("wc-slide").close()</pre>
+		    </h4>
+		</div>
+	    </div>
+	</div>
+	
+	<script>wcAPP="wc";wcENV="dev"</script>
+
+	<script src="../dist/wc.js"></script> 
+
+	<link rel="stylesheet" href="/tk/lib/components/misc/webpack/node_modules/sidr/dist/stylesheets/jquery.sidr.light.min.css" />
+	<script src="/tk/lib/components/misc/webpack/node_modules/sidr/dist/jquery.sidr.min.js"></script>
+
