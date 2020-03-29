@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-setStats
-# key: j
-# --
-
-wc.setStats(obj,cname,version);

@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-formatMoney
-# key: j
-# --
-
-wc.formatMoney(n,c,d,t);

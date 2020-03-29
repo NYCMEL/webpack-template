@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-sortHTML
-# key: j
-# --
-
-wc.sortHTML(id,sel,sortvalue);

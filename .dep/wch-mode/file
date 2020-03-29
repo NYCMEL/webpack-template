@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: w-file
-# key: w
-# ref: https://hackerthemes.com/bootstrap-cheatsheet/#custom-file
-# --
-<div class="custom-file">
-  <input type="file" class="custom-file-input" id="${1:custom-file}">
-  <label class="custom-file-label" for="customFile">${2:Choose file}</label>
-</div>

@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-label
-# key: h
-# --
-<label for="${1:male}">${2:Mel}</label>
-

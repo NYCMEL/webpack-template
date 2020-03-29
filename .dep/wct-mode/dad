@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-dad
-# key: wct
-# --
-
-puts {
-    	<div class="container-fluid mt-5">
-
-}

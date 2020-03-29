@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-nav
-# key: h
-# --
-<nav>
-<a href="#!">HTML</a> |
-<a href="#!">CSS</a>
-</nav>

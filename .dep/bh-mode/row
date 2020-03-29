@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: bh-row
-# key: bh
-# --
-<div class="row">
-$0
-</div>

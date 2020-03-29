@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-cat-files
-# key: s
-# --
-tail -n +1 ${1:files}

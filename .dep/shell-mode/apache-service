@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-apache-service
-# key: s
-# --
-sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist

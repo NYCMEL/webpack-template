@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: bt-btn-group-horizontal
-# key: bt
-# --
-division id="${1:my-btn-group}" class="btn-group" role="group" aria-label="${1}" {
-    button "Left" class="btn btn-secondary active" 
-    button "Middle" class="btn btn-secondary" 
-    button "Right" class="btn btn-secondary" 
-}

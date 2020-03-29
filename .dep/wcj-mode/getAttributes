@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-getAttributes
-# key: wcj
-# --
-
-wc.getAttributes(node);

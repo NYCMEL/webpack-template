@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-find
-# key: s
-# --
-
-find ${1:.} -name ${2:file-name} -print

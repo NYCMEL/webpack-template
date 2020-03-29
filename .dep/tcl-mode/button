@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name : t-button
-# key: t
-# --
-button "${1:HELLO MEL}" id="${2:my-button}" class="btn btn-${3:primary}" type="button"

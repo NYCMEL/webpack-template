@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-getHttpData
-# key: j
-# --
-
-wc.getHttpData(file,func);

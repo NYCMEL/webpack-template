@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-babel
-# key: s
-# --
-babel ${1:file}.js -w -o $1.es5.js

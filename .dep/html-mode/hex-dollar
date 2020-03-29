@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-hex-dollar
-# key: h
-# --
-<span class="hex-dollar" style="font-size:48px">&#36;</span>

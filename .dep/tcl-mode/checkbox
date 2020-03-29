@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: t-checkbox
-# key: t
-# --
-division class="custom-control custom-checkbox" {
-    checkbox cb= class="custom-control-input" id="${1:my-checkbox}"
-    label class="custom-control-label" for="$1" "Check this box"
-}

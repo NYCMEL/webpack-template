@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-exist-array
-# key: j
-# --
-var ${1:myarray} = (typeof $1 != 'undefined' && $1 instanceof Array) ? $1 : []

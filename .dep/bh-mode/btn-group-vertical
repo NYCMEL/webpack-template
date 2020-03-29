@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: bh-btn-group-vertical
-# key: bh
-# --
-<div id="${1:my-btn-group}" class="btn-group-vertical" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
-</div>

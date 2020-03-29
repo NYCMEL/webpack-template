@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-pager
-# key: wct
-# --
-
-puts {
-    	<wc-pager id="my-pager" class="wc-maximize" env="dev" cfg="/tk/lib/components/w/html/parts/pager/pager.json"></wc-pager>
-
-}

@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-formatMoney
-# key: wcj
-# --
-
-wc.formatMoney(n,c,d,t);

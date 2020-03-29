@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-getClosest
-# key: j
-# --
-
-wc.getClosest( elem,selector );

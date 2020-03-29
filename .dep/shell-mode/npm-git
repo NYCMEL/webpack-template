@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-npm-git
-# key: s
-# --
-npm install -D git+${1:https://github.com/artberri/sidr.git}

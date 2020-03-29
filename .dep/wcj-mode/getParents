@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-getParents
-# key: wcj
-# --
-
-wc.getParents( elem,selector );

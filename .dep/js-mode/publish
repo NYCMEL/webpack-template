@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-publish
-# key: j
-# --
-wc.publish(this, "${1:wc-blank}", {
-    time: new Date().getTime(),
-    action: "${2:click}",
-    id: this.id
-});

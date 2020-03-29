@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-fa
-# key: h
-# --
-<i class='fa fa-${1:home}'></i>

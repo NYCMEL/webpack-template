@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: wct-stocks
-# key: wct
-# --
-
-puts {
-    		    <wc-stocks id="my-stocks-1" symbols="HOV,C,AAPL"></wc-stocks>
-
-}

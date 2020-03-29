@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: bt-badge
-# key: bt
-# --
-puts [span class="badge badge-${1:secondary}" "${2:New}"]
-

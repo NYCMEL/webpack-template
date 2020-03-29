@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-getHttpObject
-# key: j
-# --
-
-wc.getHttpObject(file,func);

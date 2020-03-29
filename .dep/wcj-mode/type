@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wcj-type
-# key: wcj
-# --
-
-wc.type(obj);

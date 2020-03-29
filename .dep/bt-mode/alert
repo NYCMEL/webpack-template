@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: bt-alert
-# key: bt
-# --
-division class="alert alert-${1:$$(yas-choose-value '(warning info danger succcess))}" role="alert" {
-    put [url "&times;" "#" class="close" data-dismiss="alert" aria-label="Close" ]
-    h3 "SHARKS!"
-    p [lorem 20]
-}
