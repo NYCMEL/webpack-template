@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-quick-links
-# key: w-quick-links
+# key: w
 # --
     		    <wc-quick-links id="my-quick-links" class="shadow border p-3">
 			<wc-quick-links-heading>

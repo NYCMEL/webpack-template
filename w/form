@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-form
-# key: w-form
+# key: w
 # --
     	<h2 class="ml-5">FORM FROM JSON FILE</h2>
 	<div class="border ml-5 mr-5 mb-5">

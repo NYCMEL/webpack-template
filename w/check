@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-check
-# key: w-check
+# key: w
 # --
     	<div class="container-fluid mt-5">
 	    <div class="row">

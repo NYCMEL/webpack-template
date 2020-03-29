@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-breadcrumb
-# key: w-breadcrumb
+# key: w
 # --
     		    <wc-breadcrumb id="my-breadcrumb">
  			<ol class='breadcrumb'>

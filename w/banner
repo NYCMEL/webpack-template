@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-banner
-# key: w-banner
+# key: w
 # --
     		    <wc-banner id="my-banner-1" background="#FFF">
 			<wc-banner-lhs class="col-md-6">

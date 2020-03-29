@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-tabs
-# key: w-tabs
+# key: w
 # --
     	<style>
 	 .wc-pager-btn-tester {

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-table
-# key: w-table
+# key: w
 # --
     	<div class="container-fluid">
 	    <div class="row">

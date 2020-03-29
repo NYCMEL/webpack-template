@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: w-dropper
-# key: w-dropper
+# key: w
 # --
     	<div class="text-center" style="padding:50px">
 	    <div style="width:200px;margin:0 auto;">
