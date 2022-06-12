@@ -1,0 +1,4 @@
+rm -rf node_modules
+rm -rf prod/*
+rm -rf build
+rm -rf package-lock.json
