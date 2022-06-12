@@ -74,7 +74,7 @@ class Blank extends HTMLElement {
 		`<h4>A BLANK TEMPLATE EMBEDED</h4>`+
 		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`+
 		`<div>`+
-		`<h1 class="btn btn-lg btn-primary wc-font-b">I AM A BOOTSTRAP BUTTON</h4>`+
+		`<h1 class="btn btn-lg btn-primary">I AM A BOOTSTRAP BUTTON</h4>`+
 		`</div>`;
 	    
 	} else {
