@@ -74,7 +74,7 @@ class Blank extends HTMLElement {
 		`<h4>A BLANK TEMPLATE EMBEDED</h4>`+
 		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`;
 	} else {
-	    // FOR DEVELOPMENT
+	    // FOR DEVELOPMENT/LOCAL TESTING
 	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
 	}
 
