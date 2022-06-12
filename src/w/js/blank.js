@@ -64,7 +64,19 @@ class Blank extends HTMLElement {
     _template() {
         wc.group("Blank.template");
 	
-	var temp = this.dom.content;
+	var temp;
+
+	// ADD COMPONENT MARKTOP
+	if (0) {
+	    // FOR PRODUCTION (convert part.html to jstr using h2j)
+	    temp =
+		`<h1>A BLANK TEMPLATE EMBEDED</h1>`+
+		`<h4>A BLANK TEMPLATE EMBEDED</h4>`+
+		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`;
+	} else {
+	    // FOR DEVELOPMENT
+	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
+	}
 
         wc.groupEnd();
         return temp;
@@ -101,17 +113,7 @@ class Blank extends HTMLElement {
     _render() {
         wc.group("Blank._render");
 	
-	// ADD COMPONENT MARKTOP
-	if (1) {
-	    // FOR PRODUCTION (convert part.html to jstr using h2j)
-	    this.innerHTML =
-		`<h1>KKKKKKKKKKKKKKK</h1>`+
-		`<h2>KKKKKKKKKKKKKKK</h2>`+
-		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`;
-	} else {
-	    // FOR DEVELOPMENT
-	    this.innerHTML = "<wc-include href=/Melify/tools/orion/webpack/src/w/html/part.html></wc-include>";
-	}
+	this.innerHTML = this._template();
 
         wc.groupEnd();
     };
