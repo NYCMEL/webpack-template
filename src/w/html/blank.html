@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	<meta charset="UTF-8" />
+	<title>Blank</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/dist/wc.css" rel="stylesheet" />
+	<link href="/Melify/fonts/fonts.css" rel="stylesheet">
+
+	<script>
+	 wcENV="dev";
+	 wcAPP="Blank";
+	 wcURL="http://www.melify.com/tk/lib/components/w";
+	</script>
+    </head>
+
+    <body id="wc">
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-6 pt-5">
+		    <!-- SAMPLE -->
+		    <wc-blank id="my-blank" class="text-center p-4 border">
+			<h1>CLICK HERE !</h1>
+		    </wc-blank>
+		    <!-- SAMPLE -->
+		</div>
+
+		<div class="col-6 pt-5 wc-blank-wrapper">
+		    <!-- FOR TESTING -->
+		    <!-- FOR TESTING -->
+		</div>
+	    </div>
+	</div>
+
+	<!-- ALL WC UTILITIES -->
+	<script src="/Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/dist/wc.js"></script> 
+	
+	<!-- APPLICATION SCRIPTS -->
+	<script>
+	 yepnope({
+	     test : wc.detectIE(),
+	     yep  : ['../es5/include.js', '../es5/blank.js'],
+	     nope : ['../js/include.js' ,  '../js/blank.js']
+	 });
+
+	 wc.subscribe("wc-blank", function(msg,data) {
+	     wc.info(`SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
+	     
+	     if (data.id == "my-blank") {
+		 b.snd("#my-blank-new",{event:"toggle"})
+	     } else {
+		 b.snd("#my-blank",{event:"toggle"})
+	     }
+	 });
+
+	 // TESING START HERE
+	 wc.timeout(function(){
+	     window.b = new Blank()
+	     b.id = "my-blank-new";
+	     b.className = "wc text-center p-4 border wc-font-b"
+	     
+	     $(".wc-blank-wrapper").append(b)
+	 }, 200, 1);
+	</script>
+    </body>
+</html>

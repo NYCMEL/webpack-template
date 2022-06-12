@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "colors";
+
+///////////////////////////////////////////
+// wc-blank
+///////////////////////////////////////////
+#wc {
+    wc-blank {
+	display: block;
+	visibility: hidden;
+
+	h1 {
+	    color: $blue-a100
+	}
+
+	&:hover {
+	    background: $blue-100;
+
+	    h1 {
+		color: $deeporange-500;
+	    }
+	}
+    }
+}
+

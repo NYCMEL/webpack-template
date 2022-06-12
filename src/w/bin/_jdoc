@@ -1,0 +1,3 @@
+cd /Melify/tools/orion/webpack/src/w/js
+
+/usr/local/bin/node /Melify/mtk/dev/tk/lib/components/misc/webpack/node_modules/jsdoc/jsdoc.js -r -d ../doc *.js

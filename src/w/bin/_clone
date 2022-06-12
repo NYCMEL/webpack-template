@@ -1,0 +1,58 @@
+cd $root/src/w/bin/
+
+###############################################
+##### 
+###############################################
+proc fread {file} {
+    set fp [open $file r]
+    set txt [read $fp]
+    close $fp
+    return $txt
+}
+
+###############################################
+##### 
+###############################################
+proc fwrite {file txt} {
+    set fp [open $file w]
+    puts $fp $txt
+    close $fp
+}
+
+################################################################################
+####
+################################################################################
+if {[llength $argv] != 3} {
+    puts "USAGE: make.clone comp-name new-comp-name"
+    exit
+}
+
+set clone [lindex $argv 1]
+set name  [lindex $argv 2]
+
+puts "\nCREATE $name COMPONENT NOW...";flush stdout
+
+# PROCESS THE HTML FILE
+puts "\tcreating $name.html...";flush stdout
+
+set r [fread "../html/$clone.html"]
+regsub -all "$clone"	$r "$name" r
+regsub -all "$clone"	$r [string totitle "$name"] r
+fwrite ../html/$name.html $r
+
+# PROCESS THE COMPONENT FILES
+puts "\tcreating $name.js...";flush stdout
+set r [fread "../js/$clone.js"]
+
+regsub -all "$clone"	$r "$name" r
+regsub -all [string totitle "$clone"] $r [string totitle "$name"] r
+fwrite ../js/$name.js $r
+
+# SCSS FILE NOW
+puts "\tcreating _$name.scss...";flush stdout
+set r [fread ../scss/_$clone.scss]
+regsub -all "$clone"	$r "$name" r
+regsub -all [string totitle "$clone"] $r [string totitle "$name"] r
+fwrite ../scss/_$name.scss $r
+
+puts "DONE.\n";flush stdout

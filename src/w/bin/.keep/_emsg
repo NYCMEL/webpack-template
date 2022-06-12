@@ -1,0 +1,18 @@
+#!/Melify/bin/mac/tclkit
+
+set r [exec find /Melify/mtk/dev/tk/lib/components/w/ -name "*.js" | xargs grep -i "EMSG("]
+
+set list [list]
+
+foreach line [split $r \n] {
+    set s [string first "EMSG(" $line];incr s 5
+
+    set line [string range $line $s end]
+    set s [string first ")" $line];incr s -1;
+    
+    set line [string range $line 0 $s]
+    lappend list $line 
+}
+
+puts "\nEMSG([expr [lindex [lsort $list] end] + 100])\n"
+

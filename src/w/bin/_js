@@ -1,0 +1,20 @@
+#!/bin/sh env tclkit
+
+cd $root/src/w/bin
+
+################################################################################
+#### wc.js
+################################################################################
+set jfiles [subst {
+    $root/node_modules/jquery/dist/jquery.js
+    $root/node_modules/jquery.cookie/src/jquery.cookie.js
+    $root/node_modules/jquery-form/dist/jquery.form.min.js
+    $root/node_modules/bootstrap-validator/dist/validator.js
+    $root/node_modules/bootstrap/dist/js/bootstrap.bundle.js
+}]
+
+puts "making wc.js ..."
+regsub -all "\\n" $jfiles "" jfiles
+eval exec cat $jfiles > ../dist/wc.js
+
+puts "ENDED."

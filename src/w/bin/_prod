@@ -1,0 +1,21 @@
+#!/Melify/bin/mac/tclkit
+
+cd /Melify/mtk/dev/tk/lib/components/misc/webpack/prod
+
+set cnt 0
+
+set root [pwd]
+
+foreach i [lsort [glob *]] {
+    if {[file isdirectory $i] == 1} {
+	puts "[incr cnt]:$i"
+
+	cd $i
+
+	catch {
+	    exec packer
+	}
+
+	cd $root
+    }
+}
