@@ -69,15 +69,13 @@ class Blank extends HTMLElement {
 	// ADD COMPONENT MARKTOP
 	if (1) {
 	    // FOR PRODUCTION (convert part.html to jstr using h2j)
-	    temp =
+	    temp = `<h1>A BLANK TEMPLATE</h1>`+
+		''+
 		`<i class="fa fa-home fa-5x"></i>`+
-		`<h1>A BLANK TEMPLATE EMBEDED</h1>`+
-		`<h4>A BLANK TEMPLATE EMBEDED</h4>`+
-		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`+
-		`<div>`+
-		`<h1 class="btn btn-lg btn-primary">I AM A BOOTSTRAP BUTTON</h4>`+
+		''+
+		`<div class="mt-3">`+
+		`    <h1 class="btn btn-lg btn-primary">I AM A BOOTSTRAP BUTTON</h4>`+
 		`</div>`;
-	    
 	} else {
 	    // FOR DEVELOPMENT/LOCAL TESTING
 	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
