@@ -70,6 +70,7 @@ class Blank extends HTMLElement {
 	if (1) {
 	    // FOR PRODUCTION (convert part.html to jstr using h2j)
 	    temp =
+		`<i class="fa fa-home fa-5x"></i>`+
 		`<h1>A BLANK TEMPLATE EMBEDED</h1>`+
 		`<h4>A BLANK TEMPLATE EMBEDED</h4>`+
 		`<img src="/Melify/mtk/dev/tk/img/common/mel.BW.png"/>`+
