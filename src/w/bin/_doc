@@ -135,6 +135,5 @@ if {0} {
 }
 
 foreach i [glob -nocomplain ../doc/*.js.html] {
-    puts >>>>>>>>>>>>$i
     file delete -force $i
 }
