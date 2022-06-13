@@ -16,9 +16,7 @@ if {$argc == 0} {
 }
 
 # SET PATHS
-set react   "/Melify/mtk/dev/tk/lib/components/misc/react"
-set angular "/Melify/mtk/dev/tk/lib/components/misc/angular"
-set webpack "/Melify/mtk/dev/tk/lib/components/misc/webpack"
+set webpack "/Melify/mtk/dev/tk/lib/components/misc/webpack-template"
 set comps   "$argv"
 
 #############################################
@@ -187,34 +185,6 @@ close $f
 regsub "<HTMLCODE/>" $r "$html" r
 
 set f [open $webpack/src/index.html w]
-puts $f $r
-close $f
-
-# 1: REACT
-################################################
-set f [open $react/src/.App.js r]
-set r [read $f]
-close $f
-
-regsub -all "<!--" $html "// <!--" html
-
-regsub "<HTMLCODE/>" $r "$html" r
-
-set f [open $react/src/App.js w]
-puts $f $r
-close $f
-
-# 1: ANGULAR
-################################################
-set f [open $angular/app/view1/.view1.html r]
-set r [read $f]
-close $f
-
-regsub -all "<!--" $html "// <!--" html
-
-regsub "<HTMLCODE/>" $r "$html" r
-
-set f [open $angular/app/view1/view1.html w]
 puts $f $r
 close $f
 
