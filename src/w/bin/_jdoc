@@ -1,3 +1,3 @@
-cd "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/js"
+cd ../js
 
 node ../../../node_modules/jsdoc/jsdoc.js -r -d ../doc *.js
