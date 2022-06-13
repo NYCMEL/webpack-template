@@ -1,5 +1,1 @@
-cd ../js
-
-cd /Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/bin
-
-jsdoc -c ./jsdoc.config.json -r ../js -d ../doc
+jsdoc -c ./jsdoc.config.json -r /Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/js -d ../doc
