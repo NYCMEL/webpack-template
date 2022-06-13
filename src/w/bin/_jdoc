@@ -1,3 +1,4 @@
 cd $PWD
 
-jsdoc -c $PWD/jsdoc.config.json -r $PWD/../js -d ../doc
+#jsdoc -c $PWD/jsdoc.config.json -r $PWD/../js -d ../doc
+node ../../../node_modules/jsdoc/jsdoc.js -c $PWD/jsdoc.config.json -r $PWD/../js -d ../doc
