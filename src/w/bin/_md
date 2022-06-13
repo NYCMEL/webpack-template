@@ -1,6 +1,6 @@
 set cmnd "/Melify/mtk/dev/tk/lib/components/misc/webpack/node_modules/jsdoc-to-markdown/bin/cli.js"
 
-cd /Melify/tools/orion/webpack/src/w/js
+cd "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/js"
 
 file delete -force /Melify/tools/orion/webpack/src/w/doc/*
 

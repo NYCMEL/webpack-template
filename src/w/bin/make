@@ -1,6 +1,6 @@
 #!/usr/bin/env tclkit
 
-set root   "/Melify/tools/orion/webpack"
+set root   "/Melify/mtk/dev/tk/lib/components/misc/webpack-template"
 set cmnd   [lindex $argv 0]
 set item   [lindex $argv 1]
 
