@@ -38,18 +38,16 @@ var Blank = function (_HTMLElement) {
 		value: function connectedCallback() {
 			wc.group("Blank.connectedCallback");
 
-			var self = this;
-
 			// ADD A RANDOM ID IF NONE EXIST
-			if (!this.id) {
-				this.id = this.constructor.name.toLowerCase() + "-" + wc.uid();
-			}
+			this.id = this.id || this.constructor.name.toLowerCase() + "-" + wc.uid();
 
 			// GET PROPERTIES AND INTERESTING ELEMENTS
 			this._initialize();
 
+			// SHOW THIS COMPONENT
 			this._render();
 
+			// CHECK | UPDATE ATTRIBUTES
 			this._attributes();
 
 			// PUBLISH ALL EVENTS OF INTEREST
@@ -60,8 +58,6 @@ var Blank = function (_HTMLElement) {
 
 			// ADD STATS AND OTHER FINAL STUFF
 			this._finalize();
-
-			ga('send', { 'hitType': 'event', 'eventCategory': 'wc-connected', 'eventAction': 'connected', 'eventLabel': this.properties.cname, 'eventValue': JSON.stringify({ 'env': wcENV, 'app': wcAPP, 'url': wcURL }) });
 
 			wc.groupEnd();
 		}
@@ -77,7 +73,16 @@ var Blank = function (_HTMLElement) {
 		value: function _template() {
 			wc.group("Blank.template");
 
-			var temp = this.dom.content;
+			var temp;
+
+			// ADD COMPONENT MARKTOP
+			if (1) {
+				// FOR PRODUCTION (convert part.html to jstr using h2j)
+				temp = "<h1>A BLANK TEMPLATE</h1>" + '' + "<i class=\"fa fa-home fa-5x\"></i>" + '' + "<div class=\"mt-3\">" + "    <h1 class=\"btn btn-lg btn-primary\">I AM A BOOTSTRAP BUTTON</h4>" + "</div>";
+			} else {
+				// FOR DEVELOPMENT/LOCAL TESTING
+				temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
+			}
 
 			wc.groupEnd();
 			return temp;
@@ -88,20 +93,22 @@ var Blank = function (_HTMLElement) {
 
 		/**
    * @private
-   * @_render
+   * @_attributes
    */
 		value: function _attributes() {
 			wc.group("Blank._attributes");
 
-			// TRANSFER ALL ATTRIBUTES NOW (below is an example)
-			// -------------------------------------------------
-			if (0) {
-				var widget = this.querySelector("input[type=text]");
+			var self = this;
 
+			if (0) {
+				// TRANSFER ALL ATTRIBUTES NOW (BELOW IS AN EXAMPLE)
+				// -------------------------------------------------
+				// SAMPLE CODE BELOW
 				for (var key in this.propertiesW) {
+					// SKIP CLASS AND ID
 					if (key != "class" && key != "id") {
 						this.removeAttribute(key);
-						widget.setAttribute(key, this.properties[key]);
+						self.setAttribute(key, this.properties[key]);
 					}
 				}
 			}
@@ -118,15 +125,7 @@ var Blank = function (_HTMLElement) {
 		value: function _render() {
 			wc.group("Blank._render");
 
-			if (0) {
-				// USE SHADOW-dom
-				var shadow = this.attachShadow({ mode: 'open' });
-
-				shadow.innerHTML = "\n\t\t<link href=\"/tk/lib/components/w/dist/wc.css\" rel=\"stylesheet\">\n\t\t<link href=\"/Melify/fonts/fonts.css\" rel=\"stylesheet\">\n\t\t<div id=\"wc\">" + this._template() + "</div>";
-			} else {
-				// ADD COMPONENT MARKTOP
-				this.innerHTML = this._template();
-			}
+			this.innerHTML = this._template();
 
 			wc.groupEnd();
 		}
@@ -206,9 +205,10 @@ var Blank = function (_HTMLElement) {
 			// SAVE WIDGET SPECIFIC PROPERTIES
 			this.propertiesW = [];
 
-			// SAVE ALL OTHER PROPERTIES
+			// GET ALL COMPONENT PROPERTIES
 			var attrs = wc.getAttributes(this);
 
+			// SAVE IN properties & propertiesW
 			for (var key in attrs) {
 				var attr = this.getAttribute(key) || this.properties.key;
 				this.properties[key] = this.getAttribute(key);
@@ -327,8 +327,6 @@ var Blank = function (_HTMLElement) {
 		value: function disconnectedCallback() {
 			wc.group("Blank.disconnectedCallback");
 
-			ga('send', { 'hitType': 'event', 'eventCategory': 'wc-disconnected', 'eventAction': 'disconnected', 'eventLabel': this.properties.cname, 'eventValue': JSON.stringify({ 'env': wcENV, 'app': wcAPP, 'url': wcURL }) });
-
 			wc.groupEnd();
 		}
 	}, {
@@ -351,8 +349,6 @@ var Blank = function (_HTMLElement) {
 			// REMOVE ITEM FROM DOM
 			this.parentNode.removeChild(this);
 
-			ga('send', { 'hitType': 'event', 'eventCategory': 'wc-destroyed', 'eventAction': 'distroy', 'eventLabel': this.properties.cname, 'eventValue': JSON.stringify({ 'env': wcENV, 'app': wcAPP, 'url': wcURL }) });
-
 			wc.groupEnd();
 		}
 	}, {
@@ -374,8 +370,6 @@ var Blank = function (_HTMLElement) {
 					time: new Date().getTime(),
 					action: "click"
 				});
-
-				ga('send', { 'hitType': 'event', 'eventCategory': 'wc-blank', 'eventAction': 'click', 'eventLabel': self.properties.cname, 'eventValue': JSON.stringify({ 'env': wcENV, 'app': wcAPP, 'url': wcURL }) });
 			});
 
 			wc.groupEnd();
@@ -437,6 +431,14 @@ var Blank = function (_HTMLElement) {
 					$(this).hide();
 					break;
 
+				case "toggle":
+					$(this).toggle();
+					break;
+
+				case "label":
+					this.innerHTML = "<h1>" + msg.str + "</h1>";
+					break;
+
 				default:
 					console.error("Component 'Blank' has no event named:" + msg.event);
 					break;
@@ -447,42 +449,18 @@ var Blank = function (_HTMLElement) {
 		}
 
 		/**
-   * @_request
-   */
-
-	}, {
-		key: "_request",
-		value: function _request(e) {
-			wc.group("Blank._request:", this.id, JSON.stringify(e.detail));
-
-			switch (e.detail.request) {
-				case "label":
-					var h1 = this.querySelector("h1");
-					h1.innerHTML = e.detail.str;
-					this._publish("labelChanged");
-					break;
-
-				default:
-					console.error("DO NOT HAVE SUCH REQUEST: " + e.detail.request);
-					break;
-			}
-
-			wc.groupEnd();
-			return true;
-		}
-	}], [{
-		key: "test",
-
-
-		/**
    * @test
    */
+
+	}], [{
+		key: "test",
 		value: function test(what) {
 			wc.group("Blank.test:", what);
 
 			switch (what) {
 				case "label":
-					wc.publish("wc-blank", { time: new Date().getTime(), requestor: "my-blank", request: "label", str: "Hello Mel !" });
+					var w = document.querySelector("#my-blank");
+					w.snd("#my-blank-new", { event: "label", str: "HEY THERE !!!" });
 					break;
 
 				default:
@@ -515,6 +493,3 @@ var Blank = function (_HTMLElement) {
 }(HTMLElement);
 
 window.customElements.define('wc-blank', Blank);
-
-// SO I CAN CALL THE STATIC METHOD GLOBALLY
-window.Blank = Blank;
