@@ -1,3 +1,5 @@
 cd ../js
 
-node ../../../node_modules/jsdoc/jsdoc.js -r -d ../doc *.js
+cd /Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/bin
+
+jsdoc -c ./jsdoc.config.json -r ../js -d ../doc
