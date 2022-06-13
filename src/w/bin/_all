@@ -1,5 +1,8 @@
 #!/bin/sh env tclkit
 
+file delete -force ./es5
+file delete -force ../doc
+
 exec touch ../scss/wc.scss
 
 after 3000
