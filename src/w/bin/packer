@@ -7,11 +7,11 @@ if {$prod != "prod"} {
 }
 
 # SET PATHS
-set react   "/Melify/mtk/dev/tk/lib/components/misc/react"
-set angular "/Melify/mtk/dev/tk/lib/components/misc/angular"
 set webpack "/Melify/mtk/dev/tk/lib/components/misc/webpack"
 set comps   [file tail [pwd]]
 puts "PACKING: $comps"
+
+set there [pwd]
 
 #############################################
 #### USAGE: delay::delay-bw 2000
@@ -150,6 +150,8 @@ puts "> Creating index.html file..."
 
 set html ""
 foreach i $comps {
+    puts =======$webpack/src/w/html/${i}.html
+
     set i [string trim $i]
     set f [open $webpack/src/w/html/${i}.html r]
     
@@ -185,34 +187,6 @@ set f [open $webpack/src/index.html w]
 puts $f $r
 close $f
 
-# 1: REACT
-################################################
-set f [open $react/src/.App.js r]
-set r [read $f]
-close $f
-
-regsub -all "<!--" $html "// <!--" html
-
-regsub "<HTMLCODE/>" $r "$html" r
-
-set f [open $react/src/App.js w]
-puts $f $r
-close $f
-
-# 1: ANGULAR
-################################################
-set f [open $angular/app/view1/.view1.html r]
-set r [read $f]
-close $f
-
-regsub -all "<!--" $html "// <!--" html
-
-regsub "<HTMLCODE/>" $r "$html" r
-
-set f [open $angular/app/view1/view1.html w]
-puts $f $r
-close $f
-
 ######################################################
 ##### CREATE INDEX.HTML FILE
 ######################################################
@@ -228,9 +202,9 @@ while {1} {
     } else {
         catch {exec killall npm}
 
-        puts "DONE WITH $argv..."
-        #eval exec open http://localhost$webpack/build/index.html
-        #eval exec say "Have no fear, Mel is here"
+	puts "DONE WITH $argv..."
+	#eval exec open http://localhost$webpack/build/index.html
+	#eval exec say "Have no fear, Mel is here"
 
 	# ADD DOCUMENT REGISTER
 	exec cat /Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/js/ext/document-register-element.js $webpack/build/wc.bundle.js > tmp
@@ -241,7 +215,6 @@ while {1} {
 	file rename $webpack/build/wc.bundle.js.gz $webpack/build/wc.bundle.gz.js
 
 	# COPY THE FILES TO COMPONENT FOLDER INSIDE PROD
-	set there [pwd]/prod/$comps
 	file copy -force $webpack/build/wc.bundle.js    $there
 	file copy -force $webpack/build/wc.bundle.gz.js $there
 
