@@ -150,8 +150,6 @@ puts "> Creating index.html file..."
 
 set html ""
 foreach i $comps {
-    puts =======$webpack/src/w/html/${i}.html
-
     set i [string trim $i]
     set f [open $webpack/src/w/html/${i}.html r]
     
@@ -215,6 +213,7 @@ while {1} {
 	# COPY THE FILES TO COMPONENT FOLDER INSIDE PROD
 	file copy -force $webpack/build/wc.bundle.js    $there
 	file copy -force $webpack/build/wc.bundle.gz.js $there
+	file copy -force $webpack/build/index.html      $there
 
         exit
     }
