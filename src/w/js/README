@@ -1,4 +1,8 @@
-PUBLISH MESSAGE TO COMPONENTS (sample)
-           COMP-TYPE   TARGET ID            EVENT TIME                  ACTION TYPE        MSG
-------------------------------------------------------------------------------------------------------------------          
-wc.publish("wc-blank", {id: "#my-blank-new", time: new Date().getTime(), action: "process", msg: {event:"toggle"}});
+// PUBLISH EVENTS
+/////////////////////////////////////////////////
+wc.publish("wc-blank" /* COMPONENT TYPE */, {
+    id: "#my-blank-new" /* TARGET ID */,
+    time: new Date().getTime() /* EVENT TIME */,
+    action: "process" /* ACTION */,
+    msg: {event:"toggle"} */ JSON MSG */
+});
