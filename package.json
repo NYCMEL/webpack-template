@@ -6,9 +6,9 @@
     "scripts": {
         "build": "webpack"
     },
-    "keywords": [],
-    "author": "",
-    "license": "",
+    "keywords": ["webpack","template"],
+    "author": "Mel M. Heravi",
+    "license": "TBD",
     "dependencies": {
         "@babel/core": "^7.18.2",
         "@babel/plugin-transform-runtime": "^7.18.2",
