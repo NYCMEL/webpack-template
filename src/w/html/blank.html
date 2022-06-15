@@ -56,22 +56,22 @@
 	 // AFTER 2 SECONDS SND A MSG
 	 wc.timeout(function(){
 	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
-	     wc.publish("wc-blank", {
-		 id: "my-blank-new",
-		 time: new Date().getTime(),
-		 action: "process",
-		 msg: {event:"toggle"}
+	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
+		 id: "my-blank-new" /* TARGET COMPONENT ID */,
+		 time: new Date().getTime() /* EVENT TIMESTAMP */,
+		 action: "process" /* ACTION KIND */,
+		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
 	     });
 	 }, 2000, 1);
 
 	 // AFTER 2 SECONDS SND A MSG
 	 wc.timeout(function(){
 	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
-	     wc.publish("wc-blank", {
-		 id: "my-blank-new",
-		 time: new Date().getTime(),
-		 action: "process",
-		 msg: {event:"toggle"}
+	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
+		 id: "my-blank-new" /* TARGET COMPONENT ID */,
+		 time: new Date().getTime() /* EVENT TIMESTAMP */,
+		 action: "process" /* ACTION KIND */,
+		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
 	     });
 	 }, 4000, 1);
 	</script>
