@@ -1,0 +1,7 @@
+// PUBLISH CLICK EVENTS
+wc.publish("wc-blank", {
+    id: "#my-blank-new",
+    time: new Date().getTime(),
+    action: "process",
+    msg: {event:"toggle"}
+});
