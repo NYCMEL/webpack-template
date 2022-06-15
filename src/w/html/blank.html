@@ -55,6 +55,7 @@
 
 	 // AFTER 2 SECONDS SND A MSG
 	 wc.timeout(function(){
+	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
 	     wc.publish("wc-blank", {
 		 id: "my-blank-new",
 		 time: new Date().getTime(),
@@ -65,6 +66,7 @@
 
 	 // AFTER 2 SECONDS SND A MSG
 	 wc.timeout(function(){
+	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
 	     wc.publish("wc-blank", {
 		 id: "my-blank-new",
 		 time: new Date().getTime(),
