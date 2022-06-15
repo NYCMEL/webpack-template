@@ -29,6 +29,7 @@ module.exports = {
     },
     
     mode: 'development',
+    devtool: 'inline-source-map',
 
     output: {
         path: PATHS.build,
