@@ -44,26 +44,6 @@
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
 
-	 wc.subscribe("wc-blank", function(msg,data) {
-	     wc.info(`SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
-	     
-	     switch(data.action) 
-	     {
-		 case "process":
-		 var tmp = document.querySelector(data.id)
-		 tmp.rcv(data.msg);
-		 break;
-		 
-		 case "click":
-		 if (data.id == "my-blank") {
-		     b.snd("#my-blank-new",{event:"toggle"})
-		 } else {
-		     b.snd("#my-blank",{event:"toggle"})
-		 }
-		 break;
-	     }
-	 });
-
 	 // TESING START HERE
 	 wc.timeout(function(){
 	     window.b = new Blank()
@@ -72,6 +52,26 @@
 	     
 	     $(".wc-blank-wrapper").append(b)
 	 }, 200, 1);
+
+	 // AFTER 2 SECONDS SND A MSG
+	 wc.timeout(function(){
+	     wc.publish("wc-blank", {
+		 id: "my-blank-new",
+		 time: new Date().getTime(),
+		 action: "process",
+		 msg: {event:"toggle"}
+	     });
+	 }, 2000, 1);
+
+	 // AFTER 2 SECONDS SND A MSG
+	 wc.timeout(function(){
+	     wc.publish("wc-blank", {
+		 id: "my-blank-new",
+		 time: new Date().getTime(),
+		 action: "process",
+		 msg: {event:"toggle"}
+	     });
+	 }, 4000, 1);
 	</script>
     </body>
 </html>

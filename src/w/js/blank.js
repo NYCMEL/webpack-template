@@ -349,6 +349,26 @@ class Blank extends HTMLElement {
 	
 	let self = this;
 
+	// THIS IS JUST AN EXAMPLE
+	wc.subscribe("wc-blank", function(msg,data) {
+	    wc.info(`SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
+	    
+	    // IF THE MSG IS FOR ME
+	    if (data.id == self.id) {
+		switch(data.action) 
+		{
+		    case "process":
+		    var tmp = document.querySelector("#" + data.id)
+		    tmp.rcv(data.msg);
+		    break;
+		    
+		    case "click":
+		    b.snd("#my-blank-new",{event:"toggle"})
+		    break;
+		}
+	    }
+	});
+	
 	wc.groupEnd();
     }
 
