@@ -349,8 +349,9 @@ class Blank extends HTMLElement {
 	
 	let self = this;
 
-	// THIS IS JUST AN EXAMPLE
+	// SUBSCRIPTION START
 	wc.subscribe("wc-blank", function(msg,data) {
+	    // THIS IS JUST AN EXAMPLE
 	    wc.info(`SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
 	    
 	    // IF THE MSG IS FOR ME
@@ -369,6 +370,7 @@ class Blank extends HTMLElement {
 		}
 	    }
 	});
+	// SUBSCRIPTION END
 	
 	wc.groupEnd();
     }
