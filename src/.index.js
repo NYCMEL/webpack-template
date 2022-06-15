@@ -14,9 +14,6 @@ import "./w/js/tk.js";
 
 import "jquery.cookie";
 
-import "./w/js/noty.js";
-import "./w/scss/_noty.scss";
-
 import "./w/js/include";
 
 ////////////////////////////////////////////////////////////////
