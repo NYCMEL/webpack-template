@@ -1,7 +1,4 @@
-// PUBLISH CLICK EVENTS
-wc.publish("wc-blank", {
-    id: "#my-blank-new",
-    time: new Date().getTime(),
-    action: "process",
-    msg: {event:"toggle"}
-});
+PUBLISH MESSAGE TO COMPONENTS (sample)
+           COMP-TYPE   TARGET ID            EVENT TIME                  ACTION TYPE        MSG
+------------------------------------------------------------------------------------------------------------------          
+wc.publish("wc-blank", {id: "#my-blank-new", time: new Date().getTime(), action: "process", msg: {event:"toggle"}});
