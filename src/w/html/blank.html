@@ -47,10 +47,20 @@
 	 wc.subscribe("wc-blank", function(msg,data) {
 	     wc.info(`SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
 	     
-	     if (data.id == "my-blank") {
-		 b.snd("#my-blank-new",{event:"toggle"})
-	     } else {
-		 b.snd("#my-blank",{event:"toggle"})
+	     switch(data.action) 
+	     {
+		 case "process":
+		 var tmp = document.querySelector(data.id)
+		 tmp.rcv(data.msg);
+		 break;
+		 
+		 case "click":
+		 if (data.id == "my-blank") {
+		     b.snd("#my-blank-new",{event:"toggle"})
+		 } else {
+		     b.snd("#my-blank",{event:"toggle"})
+		 }
+		 break;
 	     }
 	 });
 
