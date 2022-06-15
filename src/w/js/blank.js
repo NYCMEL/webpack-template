@@ -362,6 +362,7 @@ class Blank extends HTMLElement {
 		    tmp.rcv(data.msg);
 		    break;
 		    
+		    // HIDE THE OTHER BUTTON
 		    case "click":
 		    b.snd("#my-blank-new",{event:"toggle"})
 		    break;
