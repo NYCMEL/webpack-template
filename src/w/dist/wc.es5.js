@@ -479,7 +479,13 @@ var Blank = function (_HTMLElement) {
 		value: function test(what) {
 			wc.group("Blank.test:", what);
 
-			$("body").append("<div class=\"ml-3 wc-font-b\">- TESTING: " + what + "</div>");
+			// CREATE A CONTAINER FOR RESULTS
+			if ($("#blank-test-results").length == 0) {
+				$("body").prepend("<div id=\"blank-test-results\" class=\"m-3\"><h6 class=\"wc-font-b\">TEST RESULTS</h6></div>");
+			}
+
+			// ADD TEST EVENT TO RESULTS
+			$("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + "</i></div>");
 
 			switch (what) {
 				case "configure":
@@ -488,19 +494,19 @@ var Blank = function (_HTMLElement) {
 					break;
 
 				case "show":
-					/* SHOW THE COMPONENT */
+					/* SHOW */
 					var w = document.querySelector("#my-blank");
 					w.snd("#my-blank", { event: "show" });
 					break;
 
 				case "hide":
-					/* HIDE THE COMPONENT */
+					/* HIDE */
 					var w = document.querySelector("#my-blank");
 					w.snd("#my-blank", { event: "hide" });
 					break;
 
 				case "toggle":
-					/* TOGGLE THE COMPONENT */
+					/* TOGGLE */
 					var w = document.querySelector("#my-blank");
 					w.snd("#my-blank", { event: "toggle" });
 					break;
