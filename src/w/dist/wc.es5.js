@@ -3738,7 +3738,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 10:42:27 (melify)>
+//// Time-stamp: <2022-06-16 10:45:50 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
