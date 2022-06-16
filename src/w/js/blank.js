@@ -423,6 +423,7 @@ class Blank extends HTMLElement {
 
 	    default:
 	    console.error("Component 'Blank' has no event named:" + msg.event);
+	    alert("Component 'Blank' has no event named:" + msg.event)
 	    break;
 	}
 

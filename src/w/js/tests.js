@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:50:16 (melify)>
+//// Time-stamp: <2022-06-16 11:52:43 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -16,14 +16,9 @@ test.blank = function(what) {
 
     // ADD TEST EVENT TO RESULTS
 
-    try {
-	var w = document.querySelector("#my-blank");
-	w.snd("#my-blank", {event: what});
-	$("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
-    } catch(e) {
-	$("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what} <font color=red>(FAILED)</font></i></div>`);
-	console.error("TEST.BLANK: ", e.name + ' > ' + e.message);
-    }
+    var w = document.querySelector("#my-blank");
+    w.snd("#my-blank", {event: what});
+    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
 
     console.groupEnd();
 };
