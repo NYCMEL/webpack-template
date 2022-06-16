@@ -20,15 +20,10 @@
 	    <div class="row">
 		<div class="col-6 pt-5">
 		    <!-- SAMPLE -->
-		    <wc-blank id="my-blank" class="text-center p-4 border col-md-5 m-5">
+		    <wc-blank id="my-blank" class="text-center p-4 border">
 			<h1>CLICK HERE !</h1>
 		    </wc-blank>
 		    <!-- SAMPLE -->
-		</div>
-
-		<div class="col-6 pt-5 wc-blank-wrapper">
-		    <!-- FOR TESTING -->
-		    <!-- FOR TESTING -->
 		</div>
 	    </div>
 	</div>
@@ -47,7 +42,7 @@
 	 // TESING START HERE
 	 wc.timeout(function(){
 	     window.b = new Blank()
-	     b.id = "my-blank-new";
+	     b.id = "my-blank";
 	     b.className = "wc text-center p-4 border wc-font-b"
 	     
 	     $(".wc-blank-wrapper").append(b)
@@ -57,7 +52,7 @@
 	 wc.timeout(function(){
 	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
 	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
-		 id: "my-blank-new" /* TARGET COMPONENT ID */,
+		 id: "my-blank" /* TARGET COMPONENT ID */,
 		 time: new Date().getTime() /* EVENT TIMESTAMP */,
 		 action: "process" /* ACTION KIND */,
 		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
@@ -68,7 +63,7 @@
 	 wc.timeout(function(){
 	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
 	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
-		 id: "my-blank-new" /* TARGET COMPONENT ID */,
+		 id: "my-blank" /* TARGET COMPONENT ID */,
 		 time: new Date().getTime() /* EVENT TIMESTAMP */,
 		 action: "process" /* ACTION KIND */,
 		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
