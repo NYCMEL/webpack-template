@@ -226,8 +226,10 @@ class Blank extends HTMLElement {
 
 	// IF JSON VARIABLE (data) IS PROVIDED
 	if (data) {
+	    // DIRECT CALL TO ACTION
 	    this._process(data);
 	} else {
+	    // USUALLY TO INITIALIZE THE COMPONENT FROM A JSON URL
 	    let self = this;
 
 	    $.getJSON(this.properties.cfg, function(data) {
@@ -247,8 +249,9 @@ class Blank extends HTMLElement {
      *
      * SAMPLES
      * -----------------------------------------------------
-     * this.configure({action:"label", value:"HELLO MEL"})
+     * this.configure({action:"click"})
      * this.configure({action:"toggle"})
+     * this.configure({action:"label", value:"HELLO MEL"})
      */
     _process(data) {
 	wc.group("Blank._process:", data);
@@ -407,62 +410,6 @@ class Blank extends HTMLElement {
 	// SUBSCRIPTION END
 	
 	wc.groupEnd();
-    }
-
-    /**
-     * SND EVENT TO A COMPONENT
-     * @public
-     * @snd
-     */
-    snd(target,msg) {
-	wc.group("Blank.snd:", this.id + " to " + target, msg);
-	
-	let w = document.querySelector(target);
-
-	// CALL THE TARGET'S rcv METHOD
-	w.rcv(msg);
-
-	wc.groupEnd();
-    }
-
-    /**
-     * EVENT IS PUSHED TO ME
-     * @public
-     * @rcv
-     */
-    rcv(msg, value) {
-	wc.group("Blank.rcv:", this.id, msg, value);
-	
-	switch(msg.event) 
-	{
-	    case "show":
-	    $(this).show();
-	    break;
-
-	    case "hide":
-	    $(this).hide();
-	    break;
-
-	    case "toggle":
-	    $(this).toggle();
-	    break;
-
-	    case "label":
-	    this.innerHTML = `<h1>${msg.value}</h1>`;
-	    break;
-
-	    case "configure":
-	    // this.configure(...)
-	    break;
-
-	    default:
-	    console.error("Component 'Blank' has no event named:" + msg.event);
-	    alert("Component 'Blank' has no event named:" + msg.event)
-	    break;
-	}
-
-	wc.groupEnd();
-	return msg.event;
     }
 }
 
