@@ -81,7 +81,7 @@ var Blank = function (_HTMLElement) {
 				temp = "<h1>A BLANK TEMPLATE</h1>" + '' + "<i class=\"fa fa-home fa-5x\"></i>" + '' + "<div class=\"mt-3\">" + "    <h1 class=\"btn btn-lg btn-primary\">I AM A BOOTSTRAP BUTTON</h4>" + "</div>";
 			} else {
 				// FOR DEVELOPMENT/LOCAL TESTING
-				temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
+				temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/blank.part.html></wc-include>";
 			}
 
 			wc.groupEnd();

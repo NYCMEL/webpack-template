@@ -78,7 +78,7 @@ class Blank extends HTMLElement {
 		`</div>`;
 	} else {
 	    // FOR DEVELOPMENT/LOCAL TESTING
-	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/part.html></wc-include>";
+	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/blank.part.html></wc-include>";
 	}
 
         wc.groupEnd();
