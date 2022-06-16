@@ -396,8 +396,8 @@ class Blank extends HTMLElement {
      * @public
      * @rcv
      */
-    rcv(msg) {
-	wc.group("Blank.rcv:", this.id, msg);
+    rcv(msg, value) {
+	wc.group("Blank.rcv:", this.id, msg, value);
 	
 	switch(msg.event) 
 	{
@@ -414,7 +414,7 @@ class Blank extends HTMLElement {
 	    break;
 
 	    case "label":
-	    this.innerHTML = `<h1>${msg.json}</h1>`;
+	    this.innerHTML = `<h1>${msg.value}</h1>`;
 	    break;
 
 	    case "configure":

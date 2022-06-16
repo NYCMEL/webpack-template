@@ -441,8 +441,8 @@ var Blank = function (_HTMLElement) {
 
 	}, {
 		key: "rcv",
-		value: function rcv(msg) {
-			wc.group("Blank.rcv:", this.id, msg);
+		value: function rcv(msg, value) {
+			wc.group("Blank.rcv:", this.id, msg, value);
 
 			switch (msg.event) {
 				case "show":
@@ -458,7 +458,7 @@ var Blank = function (_HTMLElement) {
 					break;
 
 				case "label":
-					this.innerHTML = "<h1>" + msg.json + "</h1>";
+					this.innerHTML = "<h1>" + msg.value + "</h1>";
 					break;
 
 				case "configure":
