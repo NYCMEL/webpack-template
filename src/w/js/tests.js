@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 10:45:50 (melify)>
+//// Time-stamp: <2022-06-16 11:07:04 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -41,6 +41,30 @@ test.blank = function(what) {
 	default: /* NO SUCH COMMAND */
 	console.error("Component 'Blank' has no test for: " + what);
 	break;
+    }
+
+    console.groupEnd();
+};
+
+/////////////////////////////////////////////////////////////////////////
+//// 
+/////////////////////////////////////////////////////////////////////////////
+test.blankAll = function() {
+    console.group("test.blankAll");
+
+    // TEST THIS COMPONENT NOW
+    function test(what, timeout) {
+	wc.timeout(() => {
+	    console.log(">>>>>>>>>>>>", what);
+	    test.blank(what)
+	}, timeout, 1);
+    }
+
+    // LIST OF COMMANDS FROM Blank.test
+    var cmnds = ["configure","hide","show","toggle","toggle","FAIL-THIS"]
+
+    for (var i = 0; i < cmnds.length; i++) {
+	test(cmnds[i], (i+1)*2000)
     }
 
     console.groupEnd();
