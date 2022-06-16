@@ -467,6 +467,7 @@ var Blank = function (_HTMLElement) {
 
 				default:
 					console.error("Component 'Blank' has no event named:" + msg.event);
+					alert("Component 'Blank' has no event named:" + msg.event);
 					break;
 			}
 
@@ -3691,7 +3692,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:48:27 (melify)>
+//// Time-stamp: <2022-06-16 11:53:34 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -3707,15 +3708,10 @@ test.blank = function (what) {
    }
 
    // ADD TEST EVENT TO RESULTS
+   $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + "</i></div>");
 
-   try {
-      var w = document.querySelector("#my-blank");
-      w.snd("#my-blank", { event: what });
-      $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + "</i></div>");
-   } catch (e) {
-      $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + " <font color=red>(FAILED)</font></i></div>");
-      console.error("TEST.BLANK: ", e.name + ' > ' + e.message);
-   }
+   var w = document.querySelector("#my-blank");
+   w.snd("#my-blank", { event: what });
 
    console.groupEnd();
 };
@@ -3734,7 +3730,7 @@ test.blankAll = function () {
    }
 
    // LIST OF COMMANDS FROM Blank.test
-   var cmnds = ["FAIL-THIS", "configure", "hide", "show", "toggle", "toggle", "label"];
+   var cmnds = ["THIS SHOULD FAIL", "configure", "hide", "show", "toggle", "toggle", "label"];
 
    for (var i = 0; i < cmnds.length; i++) {
       test(cmnds[i], (i + 1) * 2000);
