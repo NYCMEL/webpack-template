@@ -40,7 +40,7 @@
 	 });
 
 	 // TEST THIS COMPONENT NOW
-	 function dothis(what, timeout) {
+	 function test(what, timeout) {
 	     wc.timeout(() => {
 		 Blank.test(what)
 	     }, timeout, 1);
@@ -50,7 +50,7 @@
 	 var cmnds = ["configure","hide","show","toggle","toggle","FAIL-THIS"]
 
 	 for (var i = 0; i < cmnds.length; i++) {
-	     dothis(cmnds[i], (i+1)*2000)
+	     test(cmnds[i], (i+1)*2000)
 	 }
 	</script>
     </body>
