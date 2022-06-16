@@ -276,6 +276,12 @@ class Blank extends HTMLElement {
 		self.innerHTML = `<h1>${data.value}</h1>`;
 		break;
 
+		case "click":
+		$(self).toggle() /* OR WHATEVER */
+		wc.info("you clicked on me ?")
+		break;
+
+
 		default:
 		console.error("Component 'Blank' has no event named:" + msg.event);
 		alert("Component 'Blank' has no event named:" + msg.event)
@@ -391,14 +397,9 @@ class Blank extends HTMLElement {
 	    if (data.id == self.id) {
 		switch(data.action) 
 		{
-		    case "process":
-		    var tmp = document.querySelector("#" + data.id)
-		    tmp.rcv(data.msg);
-		    break;
-		    
-		    // HIDE THE OTHER BUTTON
+		    // CLICK SUBSCRIPTIONS
 		    case "click":
-		    self.snd("#" + data.id, {event:"toggle"})
+		    self.configure({action:"click"});
 		    break;
 		}
 	    }
