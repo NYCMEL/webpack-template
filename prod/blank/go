@@ -1,1 +1,5 @@
-../../src/w/bin/packer 
+cd ../../src/w/bin;
+make all
+
+cd ../../../prod/blank
+../../src/w/bin/packer
