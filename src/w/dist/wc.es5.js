@@ -458,7 +458,7 @@ var Blank = function (_HTMLElement) {
 					break;
 
 				case "label":
-					this.innerHTML = "<h1>" + msg.str + "</h1>";
+					this.innerHTML = "<h1>" + msg.json + "</h1>";
 					break;
 
 				case "configure":
@@ -3691,7 +3691,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:35:18 (melify)>
+//// Time-stamp: <2022-06-16 11:48:27 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -3707,12 +3707,13 @@ test.blank = function (what) {
    }
 
    // ADD TEST EVENT TO RESULTS
-   $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + "</i></div>");
 
    try {
       var w = document.querySelector("#my-blank");
       w.snd("#my-blank", { event: what });
+      $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + "</i></div>");
    } catch (e) {
+      $("#blank-test-results").append("<div class=\"ml-3\">- TESTING: <i>" + what + " <font color=red>(FAILED)</font></i></div>");
       console.error("TEST.BLANK: ", e.name + ' > ' + e.message);
    }
 
@@ -3733,7 +3734,7 @@ test.blankAll = function () {
    }
 
    // LIST OF COMMANDS FROM Blank.test
-   var cmnds = ["configure", "hide", "show", "toggle", "toggle", "FAIL-THIS"];
+   var cmnds = ["FAIL-THIS", "configure", "hide", "show", "toggle", "toggle", "label"];
 
    for (var i = 0; i < cmnds.length; i++) {
       test(cmnds[i], (i + 1) * 2000);
