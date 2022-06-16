@@ -269,7 +269,7 @@ var Blank = function (_HTMLElement) {
    * @private
    * @_process
    *
-   * SAMPLES
+   * SAMPLES:
    * -----------------------------------------------------
    * this.configure({action:"click"})
    * this.configure({action:"toggle"})
