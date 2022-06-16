@@ -244,6 +244,11 @@ class Blank extends HTMLElement {
      * _process the instance object and artifacts
      * @private
      * @_process
+     *
+     * SAMPLES
+     * -----------------------------------------------------
+     * this.configure({action:"label", value:"HELLO MEL"})
+     * this.configure({action:"toggle"})
      */
     _process(data) {
 	wc.group("Blank._process:", data);
