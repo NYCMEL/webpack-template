@@ -13,6 +13,9 @@
 	 wcAPP="Blank";
 	 wcURL="http://www.melify.com/tk/lib/components/w";
 	</script>
+
+	// FOR LOCAL TESTING PURPOSES
+	<script src="/tk/lib/components/misc/webpack-template/src/w/js/tests.js"></script>
     </head>
 
     <body id="wc">
@@ -38,6 +41,11 @@
 	     yep  : ['../es5/include.js', '../es5/blank.js'],
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
+
+	 // LOCAL TESTING
+	 wc.timeout(function(){
+	     window.test.blankAll();
+	 }, 2000, 1);
 	</script>
     </body>
 </html>

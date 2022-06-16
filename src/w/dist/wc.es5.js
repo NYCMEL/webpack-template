@@ -3738,7 +3738,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:08:04 (melify)>
+//// Time-stamp: <2022-06-16 11:09:04 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -3798,7 +3798,6 @@ test.blankAll = function () {
 			// TEST THIS COMPONENT NOW
 			function test(what, timeout) {
 						wc.timeout(function () {
-									console.log(">>>>>>>>>>>>", what);
 									window.test.blank(what);
 						}, timeout, 1);
 			}
