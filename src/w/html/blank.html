@@ -39,27 +39,17 @@
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
 
-	 // AFTER 2 SECONDS SND A MSG
 	 wc.timeout(function(){
-	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
-	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
-		 id: "my-blank" /* TARGET COMPONENT ID */,
-		 time: new Date().getTime() /* EVENT TIMESTAMP */,
-		 action: "process" /* ACTION KIND */,
-		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
-	     });
-	 }, 2000, 1);
+	     var cmnds = ["configure","show","hide","toggle"]
 
-	 // AFTER 2 SECONDS SND A MSG
-	 wc.timeout(function(){
-	     // GLOBAL FUNCTION (CAN BE CALLED FROM ANYWHERE)
-	     wc.publish("wc-blank", /* COMPONENT TYPE */ {
-		 id: "my-blank" /* TARGET COMPONENT ID */,
-		 time: new Date().getTime() /* EVENT TIMESTAMP */,
-		 action: "process" /* ACTION KIND */,
-		 msg: {event:"toggle"} /* ACTUAL JSON MSG */
-	     });
-	 }, 4000, 1);
+	     for (var i = 0; i < cmnds.length; i++) {
+		 console.log(">>>>>>", cmnds[i]);
+		 
+		 wc.timeout(() => {
+		     Blank.test(cmnds[i])
+		 }, i*1000, 1);
+	     }
+	 }, 2000, 1);
 	</script>
     </body>
 </html>
