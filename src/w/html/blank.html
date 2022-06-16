@@ -39,14 +39,14 @@
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
 
+	 // TEST THIS COMPONENT NOW
 	 function dothis(what, timeout) {
-	     console.log(">>>>>>", what, timeout);
-	     
 	     wc.timeout(() => {
 		 Blank.test(what)
 	     }, timeout, 1);
 	 }
 
+	 // LIST OF COMMANDS FROM Blank.test
 	 var cmnds = ["configure","hide","show","toggle","toggle","FAIL-THIS"]
 
 	 for (var i = 0; i < cmnds.length; i++) {
