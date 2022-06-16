@@ -433,7 +433,7 @@ class Blank extends HTMLElement {
 	wc.group("Blank.test:", what);
 
 	if ($("#blank-test-results").length == 0) {
-	    $("body").prepend(`<div id="blank-test-results" class="m-3 wc-font-b">TEST RESULTS</div>`);
+	    $("body").prepend(`<div id="blank-test-results" class="m-3">TEST RESULTS</div>`);
 	}
 
 	$("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
