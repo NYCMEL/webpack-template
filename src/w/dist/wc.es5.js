@@ -389,6 +389,30 @@ var Blank = function (_HTMLElement) {
 
 			var self = this;
 
+			alert("A");
+
+			// SUBSCRIPTION START
+			wc.subscribe("wc-blank", function (msg, data) {
+				// THIS IS JUST AN EXAMPLE
+				wc.info("SUBSCRIPTION TRIGGERED " + JSON.stringify(data));
+
+				// IF THE MSG IS FOR ME
+				if (data.id == self.id) {
+					switch (data.action) {
+						case "process":
+							var tmp = document.querySelector("#" + data.id);
+							tmp.rcv(data.msg);
+							break;
+
+						// HIDE THE OTHER BUTTON
+						case "click":
+							b.snd("#my-blank-new", { event: "toggle" });
+							break;
+					}
+				}
+			});
+			// SUBSCRIPTION END
+
 			wc.groupEnd();
 		}
 
