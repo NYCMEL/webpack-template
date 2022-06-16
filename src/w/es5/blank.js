@@ -479,14 +479,35 @@ var Blank = function (_HTMLElement) {
 		value: function test(what) {
 			wc.group("Blank.test:", what);
 
+			$("body").append("<div class=\"ml-3 wc-font-b\">- TESTING: " + what + "</div>");
+
 			switch (what) {
-				case "label":
+				case "configure":
+					/* CONFIGURE */
 					var w = document.querySelector("#my-blank");
-					w.snd("#my-blank-new", { event: "label", str: "HEY THERE !!!" });
+					break;
+
+				case "show":
+					/* SHOW THE COMPONENT */
+					var w = document.querySelector("#my-blank");
+					w.snd("#my-blank", { event: "show" });
+					break;
+
+				case "hide":
+					/* HIDE THE COMPONENT */
+					var w = document.querySelector("#my-blank");
+					w.snd("#my-blank", { event: "hide" });
+					break;
+
+				case "toggle":
+					/* TOGGLE THE COMPONENT */
+					var w = document.querySelector("#my-blank");
+					w.snd("#my-blank", { event: "toggle" });
 					break;
 
 				default:
-					console.error("Component 'Blank' has no test for:" + what);
+					/* NO SUCH COMMAND */
+					console.error("Component 'Blank' has no test for: " + what);
 					break;
 			}
 
