@@ -245,8 +245,10 @@ var Blank = function (_HTMLElement) {
 
 			// IF JSON VARIABLE (data) IS PROVIDED
 			if (data) {
+				// DIRECT CALL TO ACTION
 				this._process(data);
 			} else {
+				// USUALLY TO INITIALIZE THE COMPONENT FROM A JSON URL
 				var self = this;
 
 				$.getJSON(this.properties.cfg, function (data) {
@@ -266,11 +268,49 @@ var Blank = function (_HTMLElement) {
    * _process the instance object and artifacts
    * @private
    * @_process
+   *
+   * SAMPLES
+   * -----------------------------------------------------
+   * this.configure({action:"click"})
+   * this.configure({action:"toggle"})
+   * this.configure({action:"label", value:"HELLO MEL"})
    */
 		value: function _process(data) {
 			wc.group("Blank._process:", data);
 
+			var self = this;
+
 			// DO WHATEVER WITH THE DATA
+			if (data.action) {
+				/* IF ACTION EXIST */
+				switch (data.action) {
+					case "show":
+						$(self).show();
+						break;
+
+					case "hide":
+						$(self).hide();
+						break;
+
+					case "toggle":
+						$(self).toggle();
+						break;
+
+					case "label":
+						self.innerHTML = "<h1>" + data.value + "</h1>";
+						break;
+
+					case "click":
+						$(self).toggle(); /* OR WHATEVER */
+						wc.info("you clicked on me ?");
+						break;
+
+					default:
+						console.error("Component 'Blank' has no event named:" + msg.event);
+						alert("Component 'Blank' has no event named:" + msg.event);
+						break;
+				}
+			}
 
 			wc.groupEnd();
 		}
@@ -397,14 +437,9 @@ var Blank = function (_HTMLElement) {
 				// IF THE MSG IS FOR ME
 				if (data.id == self.id) {
 					switch (data.action) {
-						case "process":
-							var tmp = document.querySelector("#" + data.id);
-							tmp.rcv(data.msg);
-							break;
-
-						// HIDE THE OTHER BUTTON
+						// CLICK SUBSCRIPTIONS
 						case "click":
-							self.snd("#" + data.id, { event: "toggle" });
+							self.configure({ action: "click" });
 							break;
 					}
 				}
@@ -412,67 +447,6 @@ var Blank = function (_HTMLElement) {
 			// SUBSCRIPTION END
 
 			wc.groupEnd();
-		}
-
-		/**
-   * SND EVENT TO A COMPONENT
-   * @public
-   * @snd
-   */
-
-	}, {
-		key: "snd",
-		value: function snd(target, msg) {
-			wc.group("Blank.snd:", this.id + " to " + target, msg);
-
-			var w = document.querySelector(target);
-
-			// CALL THE TARGET'S rcv METHOD
-			w.rcv(msg);
-
-			wc.groupEnd();
-		}
-
-		/**
-   * EVENT IS PUSHED TO ME
-   * @public
-   * @rcv
-   */
-
-	}, {
-		key: "rcv",
-		value: function rcv(msg, value) {
-			wc.group("Blank.rcv:", this.id, msg, value);
-
-			switch (msg.event) {
-				case "show":
-					$(this).show();
-					break;
-
-				case "hide":
-					$(this).hide();
-					break;
-
-				case "toggle":
-					$(this).toggle();
-					break;
-
-				case "label":
-					this.innerHTML = "<h1>" + msg.value + "</h1>";
-					break;
-
-				case "configure":
-					// this.configure(...)
-					break;
-
-				default:
-					console.error("Component 'Blank' has no event named:" + msg.event);
-					alert("Component 'Blank' has no event named:" + msg.event);
-					break;
-			}
-
-			wc.groupEnd();
-			return msg.event;
 		}
 	}], [{
 		key: "observedAttributes",
