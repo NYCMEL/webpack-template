@@ -432,11 +432,12 @@ class Blank extends HTMLElement {
     static test(what) {
 	wc.group("Blank.test:", what);
 
+	$("body").append(`<div class="ml-3 wc-font-b">- TESTING: ${what}</div>`);
+
 	switch(what) 
 	{
 	    case "configure": /* CONFIGURE */
 	    var w = document.querySelector("#my-blank");
-	    w.configure("#my-blank", {event:"label", str:"HEY THERE !!!"})
 	    break;
 
 	    case "show": /* SHOW THE COMPONENT */
