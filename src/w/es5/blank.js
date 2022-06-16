@@ -76,7 +76,7 @@ var Blank = function (_HTMLElement) {
 			var temp;
 
 			// ADD COMPONENT MARKTOP
-			if (1) {
+			if (0) {
 				// FOR PRODUCTION (convert part.html to jstr using h2j)
 				temp = "<h1>A BLANK TEMPLATE</h1>" + '' + "<i class=\"fa fa-home fa-5x\"></i>" + '' + "<div class=\"mt-3\">" + "    <h1 class=\"btn btn-lg btn-primary\">I AM A BOOTSTRAP BUTTON</h4>" + "</div>";
 			} else {
