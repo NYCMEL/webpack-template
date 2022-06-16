@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:35:18 (melify)>
+//// Time-stamp: <2022-06-16 11:44:27 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -41,7 +41,7 @@ test.blankAll = function() {
     }
 
     // LIST OF COMMANDS FROM Blank.test
-    var cmnds = ["configure","hide","show","toggle","toggle","FAIL-THIS"]
+    var cmnds = ["label","configure","hide","show","toggle","toggle","FAIL-THIS"]
 
     for (var i = 0; i < cmnds.length; i++) {
 	test(cmnds[i], (i+1)*2000)

@@ -414,7 +414,7 @@ class Blank extends HTMLElement {
 	    break;
 
 	    case "label":
-	    this.innerHTML = `<h1>${msg.str}</h1>`;
+	    this.innerHTML = `<h1>${msg.json}</h1>`;
 	    break;
 
 	    case "configure":
