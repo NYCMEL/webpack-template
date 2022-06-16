@@ -248,7 +248,35 @@ class Blank extends HTMLElement {
     _process(data) {
 	wc.group("Blank._process:", data);
 	
+	let self = this;
+
 	// DO WHATEVER WITH THE DATA
+	if (data.action) {
+	    /* IF ACTION EXIST */
+	    switch(data.action) 
+	    {
+		case "show":
+		$(self).show();
+		break;
+
+		case "hide":
+		$(self).hide();
+		break;
+
+		case "toggle":
+		$(self).toggle();
+		break;
+
+		case "label":
+		self.innerHTML = `<h1>${data.value}</h1>`;
+		break;
+
+		default:
+		console.error("Component 'Blank' has no event named:" + msg.event);
+		alert("Component 'Blank' has no event named:" + msg.event)
+		break;
+	    }
+	}
 	
 	wc.groupEnd();
     };
