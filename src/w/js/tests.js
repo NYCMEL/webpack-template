@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:16:08 (melify)>
+//// Time-stamp: <2022-06-16 11:35:18 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -17,30 +17,11 @@ test.blank = function(what) {
     // ADD TEST EVENT TO RESULTS
     $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
 
-    switch(what) 
-    {
-	case "configure": /* CONFIGURE */
+    try {
 	var w = document.querySelector("#my-blank");
-	break;
-
-	case "show": /* SHOW */
-	var w = document.querySelector("#my-blank");
-	w.snd("#my-blank", {event:"show"});
-	break;
-
-	case "hide": /* HIDE */
-	var w = document.querySelector("#my-blank");
-	w.snd("#my-blank", {event:"hide"});
-	break;
-
-	case "toggle": /* TOGGLE */
-	var w = document.querySelector("#my-blank");
-	w.snd("#my-blank", {event:"toggle"});
-	break;
-
-	default: /* NO SUCH COMMAND */
-	console.error("Component 'Blank' has no test for: " + what);
-	break;
+	w.snd("#my-blank", {event: what});
+    } catch(e) {
+	console.error("TEST.BLANK: ", e.name + ' > ' + e.message);
     }
 
     console.groupEnd();
