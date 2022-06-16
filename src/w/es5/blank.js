@@ -404,7 +404,7 @@ var Blank = function (_HTMLElement) {
 
 						// HIDE THE OTHER BUTTON
 						case "click":
-							b.snd("#my-blank-new", { event: "toggle" });
+							self.snd("#" + data.id, { event: "toggle" });
 							break;
 					}
 				}
