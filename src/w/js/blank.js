@@ -446,17 +446,17 @@ class Blank extends HTMLElement {
 	    var w = document.querySelector("#my-blank");
 	    break;
 
-	    case "show": /* SHOW THE COMPONENT */
+	    case "show": /* SHOW */
 	    var w = document.querySelector("#my-blank");
 	    w.snd("#my-blank", {event:"show"});
 	    break;
 
-	    case "hide": /* HIDE THE COMPONENT */
+	    case "hide": /* HIDE */
 	    var w = document.querySelector("#my-blank");
 	    w.snd("#my-blank", {event:"hide"});
 	    break;
 
-	    case "toggle": /* TOGGLE THE COMPONENT */
+	    case "toggle": /* TOGGLE */
 	    var w = document.querySelector("#my-blank");
 	    w.snd("#my-blank", {event:"toggle"});
 	    break;
