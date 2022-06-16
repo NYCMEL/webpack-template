@@ -3738,7 +3738,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:06:05 (melify)>
+//// Time-stamp: <2022-06-16 11:08:04 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -3798,7 +3798,8 @@ test.blankAll = function () {
 			// TEST THIS COMPONENT NOW
 			function test(what, timeout) {
 						wc.timeout(function () {
-									Blank.test(what);
+									console.log(">>>>>>>>>>>>", what);
+									window.test.blank(what);
 						}, timeout, 1);
 			}
 
@@ -3806,7 +3807,6 @@ test.blankAll = function () {
 			var cmnds = ["configure", "hide", "show", "toggle", "toggle", "FAIL-THIS"];
 
 			for (var i = 0; i < cmnds.length; i++) {
-						console.log(">>>>>>>>>>>>", i);
 						test(cmnds[i], (i + 1) * 2000);
 			}
 

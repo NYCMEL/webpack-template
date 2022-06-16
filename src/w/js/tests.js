@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:07:04 (melify)>
+//// Time-stamp: <2022-06-16 11:09:04 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -55,8 +55,7 @@ test.blankAll = function() {
     // TEST THIS COMPONENT NOW
     function test(what, timeout) {
 	wc.timeout(() => {
-	    console.log(">>>>>>>>>>>>", what);
-	    test.blank(what)
+	    window.test.blank(what)
 	}, timeout, 1);
     }
 
