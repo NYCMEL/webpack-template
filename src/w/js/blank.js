@@ -434,9 +434,24 @@ class Blank extends HTMLElement {
 
 	switch(what) 
 	{
-	    case "label":
+	    case "configure":
 	    var w = document.querySelector("#my-blank");
-	    w.snd("#my-blank-new",{event:"label", str:"HEY THERE !!!"})
+	    w.configure("#my-blank", {event:"label", str:"HEY THERE !!!"})
+	    break;
+
+	    case "show":
+	    var w = document.querySelector("#my-blank");
+	    w.snd("#my-blank", {event:"show"});
+	    break;
+
+	    case "hide":
+	    var w = document.querySelector("#my-blank");
+	    w.snd("#my-blank", {event:"hide"});
+	    break;
+
+	    case "toggle":
+	    var w = document.querySelector("#my-blank");
+	    w.snd("#my-blank", {event:"toggle"});
 	    break;
 
 	    default:
