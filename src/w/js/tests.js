@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:52:43 (melify)>
+//// Time-stamp: <2022-06-16 11:53:34 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -15,10 +15,10 @@ test.blank = function(what) {
     }
 
     // ADD TEST EVENT TO RESULTS
+    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
 
     var w = document.querySelector("#my-blank");
     w.snd("#my-blank", {event: what});
-    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
 
     console.groupEnd();
 };
