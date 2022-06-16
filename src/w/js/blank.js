@@ -432,7 +432,11 @@ class Blank extends HTMLElement {
     static test(what) {
 	wc.group("Blank.test:", what);
 
-	$("body").append(`<h6 class="ml-3">- TESTING: <i>${what}</i></h6>`);
+	if ($("#blank-test-results").length == 0) {
+	    $("body").prepend(`<div id="blank-test-results" class="m-3 wc-font-b">TEST RESULTS</div>`);
+	}
+
+	$("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${what}</i></div>`);
 
 	switch(what) 
 	{
