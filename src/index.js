@@ -19,13 +19,11 @@ import "./w/js/include";
 ////////////////////////////////////////////////////////////////
 // PER COMPONENT
 ////////////////////////////////////////////////////////////////
-
-import "./w/js/noty.js";
-import "./w/scss/_noty.scss";
-
+ 
 import "./w/scss/_include.scss";
-import "./w/js/include";
+		    import "./w/js/include";
+		
 
-import "./w/scss/_blank.scss";
-import "./w/js/blank";
+		    import "./w/scss/_blank.scss";
+		    import "./w/js/blank";
 

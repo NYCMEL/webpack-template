@@ -7,7 +7,7 @@ if {$prod != "prod"} {
 }
 
 # SET PATHS
-set webpack "/Melify/mtk/dev/tk/lib/components/misc/webpack"
+set webpack "/Melify/mtk/dev/tk/lib/components/misc/webpack-template"
 set comps   [file tail [pwd]]
 puts "PACKING: $comps"
 
