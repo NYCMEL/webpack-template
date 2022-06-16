@@ -387,9 +387,9 @@ var Blank = function (_HTMLElement) {
 		value: function _subscribe() {
 			wc.group("Blank._subscribe:", this.id);
 
-			var self = this;
-
 			alert("A");
+
+			var self = this;
 
 			// SUBSCRIPTION START
 			wc.subscribe("wc-blank", function (msg, data) {
