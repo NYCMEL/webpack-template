@@ -3738,7 +3738,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
 //# sourceMappingURL=noty.js.map"use strict";
 
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 11:09:04 (melify)>
+//// Time-stamp: <2022-06-16 11:16:08 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -3750,7 +3750,7 @@ test.blank = function (what) {
 
 			// CREATE A CONTAINER FOR RESULTS
 			if ($("#blank-test-results").length == 0) {
-						$("body").prepend("<div id=\"blank-test-results\" class=\"m-3\"><h6 class=\"wc-font-b\">TEST RESULTS</h6></div>");
+						$("body").prepend("<div id=\"blank-test-results\" class=\"alert alert-info m-3\"><h6 class=\"wc-font-b\">TEST RESULTS</h6></div>");
 			}
 
 			// ADD TEST EVENT TO RESULTS
