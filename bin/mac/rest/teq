@@ -1,0 +1,84 @@
+#!/Melify/bin/mac/tclkit
+
+#######################################################
+###### SERVER CODE
+#######################################################
+source /Melify/mtk/dev/tk//src/cgi/cgi.tcl
+
+if {[file exist ../app.cfg] == 0} {
+    source /Melify/mtk/dev/app/links/bin/app.cfg
+} else {
+    source ../app.cfg
+}
+
+set env(HOME) "/tmp"
+
+# DO NOT PRINT ANYTHIN TO STDOUT
+namespace eval tk {}
+proc tk::bugger {args} {}
+
+#DUMMY IT UP
+proc Trace {args} {}
+
+lappend auto_path\
+	/Melify/mtk/$ENV/tk/src\
+	/Melify/mtk/$ENV/tk/src/db\
+	/Melify/mtk/$ENV/tk/src/utl\
+	/Melify/mtk/$ENV/tk/src/eng
+
+cgi_input
+foreach i [import_list] {
+    import $i
+}
+
+put "Content-Type: application/json\n\n"
+
+#######################################
+# START DOING YOUR STUFF HERE
+#######################################
+if {$argc != 1} {
+   set host "localhost"
+} else {
+    set host "[lindex $argv 0]"
+}
+
+#puts "HOST: $host"
+
+lappend auto_path /Melify/tools/tequila
+
+ro::TraceOff
+
+set tk(started) [clock format [clock seconds]]
+
+tequila::init $host
+tequila::attach tk
+
+switch $cmnd {
+    get {
+	switch $key {
+	    "*" {
+		#cmnd=get&key=*&id=1 | GET ALL ELEMENTS WITH KEY 1,xxx
+		set rval "\["
+
+		foreach i [array names tk -regexp $id,.+] {
+		    append rval "\{'key':'$i', 'value':'$tk($i)'\},"
+		}
+
+		set rval [string replace $rval end end]
+
+		append rval "\]"
+	    }
+	    default {
+		#cmnd=get&key=1,fname
+		set rval "{'key':'tk($key)', 'value':'$tk($key)'}"
+	    }
+	}
+    }
+    set {
+	#cmnd=set&key=1,fname&value=Mel
+	set tk($key) $value
+	set rval "{'key':'tk($key)', 'value':'$tk($key)'}"
+    }
+}
+
+puts $rval

@@ -1,0 +1,28 @@
+#!/Melify/bin/mac/tclkit
+
+set cname [exec scutil --get LocalHostName]
+
+if {[file exist ".git"] == 0} {
+    puts "NO .git FOLDER FOUND"
+    exit
+}
+
+#set sdir "/drives/Dropbox/snapshots";file mkdir $sdir
+set sdir "/Users/melify/snapshots";file mkdir $sdir
+
+set folder [lindex [split [pwd] /] end];puts $folder
+
+set date [clock format [clock seconds] -format %D]
+regsub -all "/" $date "-" date
+
+if {[lindex $argv 0] == ""} {
+    set file "$sdir/$cname.$date.$folder.zip"
+} else {
+    set file "$sdir/$cname.$date.$folder.[lindex $argv 0].zip"
+}
+
+exec /usr/bin/git archive HEAD --format=zip > $file
+
+file copy -force $file /drives/Dropbox/snapshots
+
+
