@@ -254,7 +254,7 @@ class Blank extends HTMLElement {
      * @private
      * @_process
      *
-     * SAMPLES:
+     * SAMPLES CONFIGURATION:
      * -----------------------------------------------------
      * this.configure({action:"click"})
      * this.configure({action:"toggle"})
