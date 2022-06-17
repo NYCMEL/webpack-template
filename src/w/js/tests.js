@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-17 14:44:01 (melify)>
+//// Time-stamp: <2022-06-17 14:46:39 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
@@ -11,7 +11,7 @@ test.blank = function() {
 
     // CREATE A CONTAINER FOR RESULTS
     if ($("#blank-test-results").length == 0) {
-	$("body").prepend(`<div id="blank-test-results" class="m-3 alert alert-info"><h6 class="wc-font-b">TEST RESULTS</h6></div>`);
+	$("body").prepend(`<div id="blank-test-results" class="m-3 alert alert-info"><h6 class="wc-font-b">TESTING:</h6></div>`);
     }
 
     // TEST THIS COMPONENT NOW
@@ -19,7 +19,7 @@ test.blank = function() {
 	// SEND MSG TO BLANK TO CONFIGURE WITH ACTION, VALUE
 	wc.timeout(() => {
 	    // ADD TEST EVENT TO SCREEN
-	    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${test.action}, ${JSON.stringify(test.value)}</i></div>`);
+	    $("#blank-test-results").append(`<div class="ml-3">- TESTING BLANK: <i>${test.action}, ${JSON.stringify(test.value)}</i></div>`);
 	    
 	    wc.publish("wc-blank", {
 		id: "my-blank",
