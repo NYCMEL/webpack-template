@@ -57,6 +57,15 @@
 		 window.test.blankAll();
 	     }, 2000, 1);
 	 }
+
+	 wc.timeout(function(){
+	     wc.publish("wc-blank", {
+		 time: new Date().getTime(),
+		 action: "label",
+		 id: "my-blank",
+		 values: "HELLO WORLD"
+	     });
+	 }, 2000, 1);
 	</script>
     </body>
 </html>
