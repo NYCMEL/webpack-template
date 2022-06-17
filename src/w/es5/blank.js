@@ -241,7 +241,7 @@ var Blank = function (_HTMLElement) {
    * @param {string} data use data if exist else use 'this.properties.cfg' parameter
    */
 		value: function configure(data) {
-			wc.group("Blank.configure:", data);
+			wc.group("Blank.configure: data=", data);
 
 			// START TIME
 			var time1 = Date.now();
@@ -313,8 +313,8 @@ var Blank = function (_HTMLElement) {
 						break;
 
 					default:
-						console.error("Component 'Blank' has no event named:" + msg.event);
-						alert("Component 'Blank' has no event named:" + msg.event);
+						console.error("Component 'Blank' has no event named:" + data.action);
+						alert("Component 'Blank' has no event named:" + data.action);
 						break;
 				}
 			}
@@ -438,16 +438,9 @@ var Blank = function (_HTMLElement) {
 
 			// SUBSCRIPTION START
 			wc.subscribe("wc-blank", function (msg, data) {
-				// THIS IS JUST AN EXAMPLE
-				wc.info("SUBSCRIPTION TRIGGERED " + JSON.stringify(data));
-
 				// IF THE MSG IS FOR ME
 				if (data.id == self.id) {
-					switch (data.action) {
-						case "WHATEVER-YOU-EXPECT":
-							// PROCESS ACTIONS HERE
-							break;
-					}
+					self.configure(data);
 				}
 			});
 			// SUBSCRIPTION END
