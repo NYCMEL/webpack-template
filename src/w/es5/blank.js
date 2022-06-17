@@ -243,6 +243,9 @@ var Blank = function (_HTMLElement) {
 		value: function configure(data) {
 			wc.group("Blank.configure:", data);
 
+			// START TIME
+			var time1 = Date.now();
+
 			// IF JSON VARIABLE (data) IS PROVIDED
 			if (data) {
 				// DIRECT CALL TO ACTION
@@ -258,7 +261,11 @@ var Blank = function (_HTMLElement) {
 				});
 			}
 
+			// END TIME
+			var time2 = Date.now();
+
 			wc.groupEnd();
+			return "T:" + (time2 - time2);
 		}
 	}, {
 		key: "_process",
