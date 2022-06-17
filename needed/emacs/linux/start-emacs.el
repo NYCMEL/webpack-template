@@ -31,4 +31,4 @@
 (load-file "/Melify/private/emacs/common/wc.js.el")
 (load-file "/Melify/private/emacs/common/w3c.el")
 
-(load-file "/GitHub/yasnippet/yasnippet.el")
+(load-file "/Melify/private/emacs/common/yasnippet.el")
