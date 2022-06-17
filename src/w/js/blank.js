@@ -224,6 +224,9 @@ class Blank extends HTMLElement {
     configure(data) {
 	wc.group("Blank.configure:", data);
 
+	// START TIME
+	let time1 = Date.now();
+
 	// IF JSON VARIABLE (data) IS PROVIDED
 	if (data) {
 	    // DIRECT CALL TO ACTION
@@ -239,7 +242,11 @@ class Blank extends HTMLElement {
 	    });
 	}
 
+	// END TIME
+	let time2 = Date.now();
+
 	wc.groupEnd();
+	return "T:" + (time2-time2);
     };
 
     /**
