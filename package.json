@@ -6,7 +6,10 @@
     "scripts": {
         "build": "webpack"
     },
-    "keywords": ["webpack","template"],
+    "keywords": [
+        "webpack",
+        "template"
+    ],
     "author": "Mel M. Heravi",
     "license": "TBD",
     "dependencies": {
