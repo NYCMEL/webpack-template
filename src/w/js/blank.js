@@ -222,7 +222,7 @@ class Blank extends HTMLElement {
      * @param {string} data use data if exist else use 'this.properties.cfg' parameter
      */
     configure(data) {
-	wc.group("Blank.configure:", data);
+	wc.group("Blank.configure: data=", data);
 
 	// START TIME
 	let time1 = Date.now();
@@ -291,10 +291,9 @@ class Blank extends HTMLElement {
 		wc.info("you clicked on me ?")
 		break;
 
-
 		default:
-		console.error("Component 'Blank' has no event named:" + msg.event);
-		alert("Component 'Blank' has no event named:" + msg.event)
+		console.error("Component 'Blank' has no event named:" + data.action);
+		alert("Component 'Blank' has no event named:" + data.action)
 		break;
 	    }
 	}
@@ -400,19 +399,9 @@ class Blank extends HTMLElement {
 
 	// SUBSCRIPTION START
 	wc.subscribe("wc-blank", function(msg,data) {
-	    alert("A")
-
-	    // THIS IS JUST AN EXAMPLE
-	    wc.info(`>>>>>>>>>>>> SUBSCRIPTION TRIGGERED ${JSON.stringify(data)}`)
-	    
 	    // IF THE MSG IS FOR ME
 	    if (data.id == self.id) {
-		switch(data.action) 
-		{
-		    case "WHATEVER-YOU-EXPECT":
-		    // PROCESS ACTIONS HERE
-		    break
-		}
+		self.configure(data)
 	    }
 	});
 	// SUBSCRIPTION END

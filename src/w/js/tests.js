@@ -1,54 +1,48 @@
 /////////////////////////////////////////////////////////////////////////////////
-//// Time-stamp: <2022-06-16 12:08:07 (melify)>
+//// Time-stamp: <2022-06-17 14:44:01 (melify)>
 /////////////////////////////////////////////////////////////////////////////////
 window.test = {};
 
 /////////////////////////////////////////////////////////////////////////
 //// 
 /////////////////////////////////////////////////////////////////////////////
-test.blank = function(json) {
-    console.group("test.blank", json);
+test.blank = function() {
+    console.group("test.blank");
 
     // CREATE A CONTAINER FOR RESULTS
     if ($("#blank-test-results").length == 0) {
-	$("body").prepend(`<div id="blank-test-results" class="alert alert-info m-3"><h6 class="wc-font-b">TEST RESULTS</h6></div>`);
+	$("body").prepend(`<div id="blank-test-results" class="m-3 alert alert-info"><h6 class="wc-font-b">TEST RESULTS</h6></div>`);
     }
 
-    // ADD TEST EVENT TO RESULTS
-    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${json.cmnd}</i></div>`);
-
-    var w = document.querySelector("#my-blank");
-    w.snd("#my-blank", {event:json.cmnd, value:json.value});
-
-    console.groupEnd();
-};
-
-/////////////////////////////////////////////////////////////////////////
-//// 
-/////////////////////////////////////////////////////////////////////////////
-test.blankAll = function() {
-    console.group("test.blankAll");
-
     // TEST THIS COMPONENT NOW
-    function test(cmnd, timeout) {
+    function test(test, timeout) {
+	// SEND MSG TO BLANK TO CONFIGURE WITH ACTION, VALUE
 	wc.timeout(() => {
-	    window.test.blank(cmnd)
+	    // ADD TEST EVENT TO SCREEN
+	    $("#blank-test-results").append(`<div class="ml-3">- TESTING: <i>${test.action}, ${JSON.stringify(test.value)}</i></div>`);
+	    
+	    wc.publish("wc-blank", {
+		id: "my-blank",
+		time: new Date().getTime(),
+		action: test.action,
+		value: test.value
+	    });
+
 	}, timeout, 1);
     }
 
     // LIST OF COMMANDS FROM Blank.test
-    var cmnds = [
-	{cmnd:"THIS SHOULD FAIL", value:{}},
-	{cmnd:"configure",        value:{}},
-	{cmnd:"hide",             value:{}},
-	{cmnd:"show",             value:{}},
-	{cmnd:"toggle",           value:{}},
-	{cmnd:"toggle",           value:{}},
-	{cmnd:"label",   value:"HELLO MEL"},
+    var tests = [
+	{action:"hide",             value:{}},
+	{action:"show",             value:{}},
+	{action:"toggle",           value:{}},
+	{action:"toggle",           value:{}},
+	{action:"label",   value:"HELLO MEL"},
+	{action:"THIS SHOULD FAIL", value:{}},
     ]
 
-    for (var i = 0; i < cmnds.length; i++) {
-	test(cmnds[i], (i+1)*2000)
+    for (var i = 0; i < tests.length; i++) {
+	test(tests[i], (i+1)*2000)
     }
 
     console.groupEnd();

@@ -42,30 +42,24 @@
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
 
-	 // NORMALLY THIS IS USED BY APP TO SND/RCV DATA FROM BACKEND
-	 wc.subscribe("wc-blank", function(msg,data) {
-	     wc.info("'wc-blank' subscription was triggered:", JSON.stringify(data));
-	     console.info("'wc-blank' subscription was triggered:", JSON.stringify(data));
-
-	     w = document.querySelector("#" + data.id)
-	     w.configure({action:"toggle"}) /* SEND A MSG TO COMPONENT HERE */
-	 });
-
 	 // LOCAL TESTING
 	 if (0) {
 	     wc.timeout(function(){
-		 window.test.blankAll();
+		 window.test.blank();
 	     }, 2000, 1);
 	 }
 
-	 wc.timeout(function(){
-	     wc.publish("wc-blank", {
-		 time: new Date().getTime(),
-		 action: "label",
-		 id: "my-blank",
-		 values: "HELLO WORLD"
-	     });
-	 }, 2000, 1);
+	 if (0) {
+	     wc.timeout(function(){
+		 // NORMALLY THIS IS USED BY APP TO SND/RCV DATA FROM BACKEND
+		 wc.publish("wc-blank", {
+		     time: new Date().getTime(),
+		     action: "label",
+		     id: "my-blank",
+		     value: "HELLO WORLD"
+		 });
+	     }, 2000, 1);
+	 }
 	</script>
     </body>
 </html>
