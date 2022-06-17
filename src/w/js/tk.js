@@ -200,7 +200,7 @@ jQuery(document).ready(function() {
 (function( $ ){
     $.fn.tkCenter = function(options) {
 	wc.group("tkCenter:", JSON.stringify(options));
-
+	
 	var settings = $.extend({
 	    cssAttribute:   'margin-top', // the attribute to apply the calculated value to
 	    verticalOffset: 0,            // the number of pixels to offset the vertical alignment by
