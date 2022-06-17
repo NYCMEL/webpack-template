@@ -46,9 +46,9 @@
 	 wc.subscribe("wc-blank", function(msg,data) {
 	     wc.info("'wc-blank' subscription was triggered:", JSON.stringify(data));
 	     console.info("'wc-blank' subscription was triggered:", JSON.stringify(data));
-	     
+
 	     w = document.querySelector("#" + data.id)
-	     w.configure({action:"toggle"})
+	     w.configure({action:"toggle"}) /* SEND A MSG TO COMPONENT HERE */
 	 });
 
 	 // LOCAL TESTING

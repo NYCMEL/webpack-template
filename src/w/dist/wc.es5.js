@@ -444,9 +444,8 @@ var Blank = function (_HTMLElement) {
 				// IF THE MSG IS FOR ME
 				if (data.id == self.id) {
 					switch (data.action) {
-						// CLICK SUBSCRIPTIONS
-						case "click":
-							self.configure({ action: "click" });
+						case "WHATEVER-YOU-EXPECT":
+							// PROCESS ACTIONS HERE
 							break;
 					}
 				}
