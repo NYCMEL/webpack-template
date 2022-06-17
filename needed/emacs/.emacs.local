@@ -1,0 +1,15 @@
+(condition-case nil
+    (menu-bar-mode -1)
+  (error nil))
+
+(condition-case nil
+    (tool-bar-mode -1)
+  (error nil))
+
+(condition-case nil
+    (scroll-bar-mode -1)
+  (error nil))
+
+;;(scroll-bar-mode -1)
+;;(menu-bar-mode -1)
+;;(tool-bar-mode -1)

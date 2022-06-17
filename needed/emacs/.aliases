@@ -1,0 +1,125 @@
+#####################################
+#### ALIASES HELLO
+#####################################
+alias ls="ls -C"
+alias la="ls -a"
+
+alias tidy="tidy -config /Melify/private/.tidyrc"
+
+alias gcp="git gc --aggressive --prune=now;git filter-branch --tag-name-filter cat --index-filter 'git rm -r --cached --ignore-unmatch filename' --prune-empty -f -- --all;git push origin --force --all"
+
+alias gc="git commit -a -m \"committed\""
+alias ga="git add"
+alias gb="git branch"
+alias gm="git merge"
+alias gf="git fetch"
+alias gs="git status"
+alias gp="git gc --aggressive --prune=now"
+alias gps="git push"
+alias gpsf="git push --force"
+alias gpl="git pull --ff-only"
+alias gplg="git pull github master"
+alias gru="git remote update"
+alias gco="git checkout"
+alias gfb="git --bare fetch origin '+refs/heads/*:refs/heads/*'"
+alias gsy="/Melify/bin/mac/git-sync"
+alias gv="git log -p -2"
+alias gg="gc;gps;gps local;"
+
+# alias tk="cd /Melify/mtk/dev/tk"
+# alias fi="cd /Melify/mtk/dev/tk/lib/components/fi"
+# alias ch="cd /Melify/mtk/dev/tk/lib/components/ch"
+# alias spull="ssh -t melify@turnongreen.com 'cd $PWD && exec git pull'"
+# alias rsession="sudo find /Melify/mtk/dev/app -name sessions -exec rm -rf {} \;"
+alias ap="sudo rm -f /var/log/apache2/*.log;sudo apachectl stop;sudo apachectl start"
+
+#EC2 INSTANCES
+
+# alias ec2='ssh -i /Melify/private/_notes/Melify.pem ubuntu@18.213.241.43'
+# alias ec2m="sudo umount /ec2;sudo sshfs -o allow_other,defer_permissions,IdentityFile=/Melify/private/_notes/Melify.pem,loglevel=debug3 ubuntu@ec2-54-243-8-152.compute-1.amazonaws.com:/ /ec2"
+
+alias acron="sudo /Melify/private/crons/tclcron/apache.cron"
+
+alias chd="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --disable-web-security"
+
+#### LOAD METEOR ALIASES
+# alias me="/Melify/mtk/dev/tk/jquery/gits/meteor/meteor"
+# alias ml="meteor list"
+# alias ma="meteor add"
+# alias mc="meteor create"
+
+alias 777="sudo chmod -R 777 "
+
+#alias uglify="/Applications/Prepros.app/Contents/Resources/app.nw/node_modules/.bin/uglifyjs"
+#alias minify='mkdir min; rm *.min.js; for f in *.js; do short=${f%.js}; uglify $f > min/$short.min.js; done'
+#alias webtest="/Melify/mtk/dev/tk/lib/tclwebtest/tclwebtest"
+
+# alias i-s="ionic serve"
+# alias i-b="ionic build"
+# alias i-u="ionic upload"
+# alias i-g="cp null.ionic.project ionic.project;i-b;i-u;i-s"
+# alias i-a="ionic platform add ios"
+# alias i-e="/FMLabs/proto-images/bin/sim.sh"
+# alias i-r="ionic resources"
+
+alias fhide="chflags hidden"
+alias fshow="chflags nohidden"
+
+alias ssho="ssh melify@TurnOnGreen.com"
+alias sshn="ssh melify@TurnOnBlue.com"
+
+alias ws="/Melify/bin/mac/websocketd/websocketd --port=8080 /Melify/mtk/dev/app/bc/dashboard/bin/mac/websocketd.tcl"
+
+alias sshx="ssh Xcloud@46.231.201.70"
+alias shell="shellinaboxd --disable-ssl --background"
+alias ns400="netstat -anp tcp | grep 4200"
+alias du="du -csh"
+
+alias yuicompressor="java -jar /Melify/bin/mac/compressor/yui.jar"
+
+alias msass="/opt/local/bin/node-sass --watch ./ --output ../dist --source-map true"
+alias msass2="/opt/local/bin/node-sass --watch ./ --output ./ --sourcemap true"
+
+alias mbabel="babel --presets=/usr/local/lib/node_modules/babel-preset-latest --watch *.js --out-dir ../es5"
+
+alias ec2gdrive="~/.opam/system/bin/google-drive-ocamlfuse ~/GDrive-2"
+alias sup="sudo port selfupdate;sudo port upgrade outdated"
+
+alias npmb="npm run build"
+alias npms="export PORT=8000;npm start"
+alias npmi="npm install --no-audit"
+alias npmu="npm update --no-audit"
+
+# alias d-w="cd /Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/"
+# alias d-wc="cd /Melify/mtk/dev/tk/lib/components/wc/"
+# alias d-webpack="cd /Melify/mtk/dev/tk/lib/components/misc/webpack/"
+# alias d-react="cd /Melify/mtk/dev/tk/lib/components/misc/wc-react/"
+# alias d-angular="cd /Melify/mtk/dev/tk/lib/components/misc/angular/app/"
+# alias d-misc="cd /Melify/mtk/dev/tk/lib/components/misc/"
+# alias d-search="cd /Melify/mtk/dev/app/_search/app.vfs/lib/app/"
+# alias d-links="cd /Melify/mtk/dev/app/links/app.vfs/lib/app/"
+# alias d-tinystack="cd /Melify/mtk/dev/app/tinystack/app.vfs/lib/app/"
+# alias d-apps="cd /Melify/mtk/dev/app/"
+# alias d-snippets="cd /Melify/private/emacs/common/snippets"
+# alias d-melify="cd /Melify/mtk/dev/app/melify/"
+# alias d-designer="cd /Melify/mtk/dev/app/_designer/app.vfs/lib/app"
+
+alias pkill="kill \$(lsof -t -i:3000)"
+
+# alias ib="cd ~/Dropbox/IB;./bin/run.sh ~/Dropbox/IB/root/conf.yaml"
+
+alias mmssh="ssh melify@melify.com"
+
+alias yg="npx create-react-app react-t --template typescript"
+alias ya="yarn add react-wc-test"
+alias yi="yarn install"
+alias yb="yarn build"
+alias yr="yarn remove"
+alias ys="yarn start"
+
+#alias pack="packer;cp ../../build/wc.bundle.* .;gg"
+#alias cm="cd /Users/melify/.CMVolumes/Mel\ H/_MTK"
+
+alias temacs="emacs --load ~/.emacs"
+
+# alias orion="cd /Melify/tools/orion/webpack/"
