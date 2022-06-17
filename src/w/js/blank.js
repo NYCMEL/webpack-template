@@ -407,10 +407,9 @@ class Blank extends HTMLElement {
 	    if (data.id == self.id) {
 		switch(data.action) 
 		{
-		    // CLICK SUBSCRIPTIONS
-		    case "click":
-		    self.configure({action:"click"});
-		    break;
+		    case "WHATEVER-YOU-EXPECT":
+		    // PROCESS ACTIONS HERE
+		    break
 		}
 	    }
 	});
