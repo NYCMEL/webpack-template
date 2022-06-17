@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: w-wizard
+# key: w
+# --
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-wizard id="my-wizard" class="border" columns="3,9" cfg="/tk/lib/components/misc/webpack/src/w/cfg/wizard.json">
+			<div class="just-padding">
+			    <div class="list-group list-group-root well">
+				<a href="#" class="list-group-item list-group-item-action">Step 1</a>
+				
+				<a href="#" class="list-group-item list-group-item-action disabled">Step 2</a>
+				<div class="list-group">
+				    <a href="#" class="list-group-item list-group-item-action">Step 1.1</a>
+				    <a href="#" class="list-group-item list-group-item-action">Step 1.2</a>
+				    <a href="#" class="list-group-item list-group-item-action">Step 1.3</a>
+				</div>
+
+				<a href="#" class="list-group-item list-group-item-action">Step 3</a>
+			    </div>
+			</div>
+		    </wc-wizard>
+		</div>
+	    </div>
+	</div>
+

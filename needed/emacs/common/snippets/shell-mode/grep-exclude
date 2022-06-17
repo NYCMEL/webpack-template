@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: s-grep-exclude
+# key: s
+# EXCLUDE FILES
+# --
+grep -ir --exclude='$1' ${2:pattern} ${3:*}

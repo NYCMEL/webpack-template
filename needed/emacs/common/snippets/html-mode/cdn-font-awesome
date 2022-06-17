@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-cdn-font-awesome
+# key: h
+# --
+<link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet">

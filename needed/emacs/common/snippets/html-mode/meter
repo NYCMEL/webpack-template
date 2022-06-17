@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-meter
+# key: h
+# --
+<meter value="${1:75}" min="0" max="100"> Mel

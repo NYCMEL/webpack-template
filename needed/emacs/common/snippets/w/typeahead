@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-typeahead
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-sm-6">
+		    <wc-typeahead id="my-typeahead-11" placeholder="Typeahead Large..." style="font-size:300%" url="/tk/lib/components/w/cfg/states.json" name="long" value="short" show="5"></wc-typeahead>
+		</div>
+	    </div>
+	</div>
+

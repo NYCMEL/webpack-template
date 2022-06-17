@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: j-subscribe
+# key: j
+# --
+wc.subscribe("${1:wc-blank}", function(msg,data) {
+    wc.info(\`SUBSCRIPTION TRIGGERED \${JSON.stringify(data)}\`)
+});

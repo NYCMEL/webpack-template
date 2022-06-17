@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: h-table
+# key: h
+# --
+<table class="table $1"${2: id="$3"}>
+  <thead>
+	<tr class="h-0">
+	    <th class="c-0">h-0|c-0</th>
+	</tr>
+  </thead>
+
+  <tbody>
+	<tr class="r-0">
+	    <td class="c-0">r-0|c-0</td>
+	</tr>
+  </tbody>
+
+  <tfoot>
+	<tr class="f-0">
+	    <td class="c-0">f-0|c-0</td>
+	</tr>
+  </tfoot>
+</table>

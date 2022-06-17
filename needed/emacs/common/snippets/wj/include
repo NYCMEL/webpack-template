@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-include
+# key: wj
+# --
+
+wc.include(cb);

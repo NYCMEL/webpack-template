@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: wh-tile-2
+# key: wh
+# --
+<wc-tile-2 id="${1:my-tile-1}" style="width:300px;height:300px;border:2px #0277BD solid" class="m-5">
+    <wc-tile-2-front class="text-light" style="background:#1962A7">
+	<wc-tile-2-center>
+	    <h1>Front</h1>
+	    <p>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy</p>
+	    <i><b class="text-warning">ON HOVER I CHANGE SIDES</b></i>
+	</wc-tile-2-center>
+    </wc-tile-2-front>
+
+    <wc-tile-2-back class="text-light" style="background:#0277BD">
+	<wc-tile-2-center>
+	    <h1>Back</h1>
+	    <p>Sadipscing elitr sed diam nonumy Lorem ipsum dolor sit amet consetetur</p>
+	</wc-tile-2-center>
+    </wc-tile-2-back>
+</wc-tile-2>

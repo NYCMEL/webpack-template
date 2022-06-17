@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: w-floating
+# key: w
+# --
+    			<wc-form id="my-form" name="my-form" role="form" class="form-control-md">
+			    <wc-text id="text-1" placeholder="First name..." data-error="Please enter your first name" data-key="fname" required></wc-text>
+			    <wc-text id="text-2" placeholder="Last name..." data-error="Please enter your last name" data-key="lname" required></wc-text>
+
+			    <div class="clearfix">
+				<div class="float-left">
+				    <wc-check id="my-accept" name="accept" label="I Accept Terms & Conditions" data-key="accept" required></wc-check>
+				</div>
+
+				<div class="float-left ml-4">
+				    <wc-check id="my-email" name="email" label="Send Emails" data-key="email"></wc-check>
+				</div>
+			    </div>
+
+			    <hr>
+
+			    <div class="mt-4">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-primary btn-block btn-lg" id="btn-submit" />
+			    </div>
+			</wc-form>
+

@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: w-select
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-6">
+		    <wc-form id="my-form" role="form" class="form-control-md">
+			<div class="container-fluid border shadow p-4">
+			    <wc-select name="color" id="select-1" label="Pick a color" columns="4,8" help="Please pick a color" data-error="Color is a required field" searchable="false" placeholder="Please select..." required style="max-width:400px">
+				<option value="">[Please Select]</option>
+				<option value="1">Red</option>
+				<option value="2">White</option>
+				<option value="3">Blue</option>
+			    </wc-select>
+			    
+			    <hr />
+			    <div class="form-group">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-info" id="submit-btn-1">
+			    </div>
+			</div>
+		    </wc-form>
+		</div>
+	    </div>
+	</div>
+

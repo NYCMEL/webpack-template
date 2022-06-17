@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: w-text
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-5">
+		    <h3 class="h3-direction">Horizontal</h3>
+		    <wc-form role="form" id="my-form" class="form-control-md">
+			<div class="container-fluid border shadow p-4">
+			    <wc-text id="fname" label="First Name" columns="4,8" placeholder="your first name..." help="First name is a required field" data-error="Please enter alphanumeric" data-key="fname" required></wc-text>
+			    
+			    <wc-text id="lname" label="Last Name" value="Heravi" placeholder="your last name..." columns="4,8" help="Last name is a required field" data-error="Please enter alphanumeric" data-key="lname" required></wc-text>
+
+			    <hr />
+			    <div class="form-group">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-outline-primary" id="submit-btn-1">
+			    </div>
+			</div>
+		    </wc-form>
+		</div>
+	    </div>
+	</div>
+

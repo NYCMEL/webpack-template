@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: b-header
+# key: b
+# --
+<div class="mb-2" id="header-wrapper">
+    <div class="container wc-maximize">
+	<div class="row">
+	    <div class="col-12 ${1:header} ${2:wc-font-b}">
+		<h1>${3:HEADER}</h1>
+	    </div>
+	</div>
+    </div>
+</div>

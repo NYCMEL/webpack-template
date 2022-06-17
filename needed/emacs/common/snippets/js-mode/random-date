@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: j-random-date
+# key: j
+# --
+function randomDate(start, end) {
+  return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}
+
+// let dt = randomDate(new Date(2018, 0, 1), new Date());

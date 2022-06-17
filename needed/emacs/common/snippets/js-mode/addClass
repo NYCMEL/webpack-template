@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-addClass
+# key: j
+# --
+
+wc.addClass(sel,name);

@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: w-carousel
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-12">
+		    <wc-carousel id="my-carousel-1" options='{"slidesToShow":3, "autoplay":true, "dots":true, "speed":1000, "initialSlide":0}' class="col-6">
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/cart-10.png"	   width="300" slick-caption="Picture A" alt="Picture A" /></a></div>
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/barcode.png"	   width="300" slick-caption="Picture B" alt="Picture B" /></a></div>
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/calculator.png"	   width="300" slick-caption="Picture C" alt="Picture C" /></a></div>
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/bag-6.png"	   width="300" slick-caption="Picture D" alt="Picture D" /></a></div>
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/coin-10.png"	   width="300" slick-caption="Picture E" alt="Picture E" /></a></div>
+			<div><a href="#"><img src="http://localhost/tk/img/business/png/credit-card-1.png" width="300" slick-caption="Picture F" alt="Picture F" /></a></div>
+		    </wc-carousel>
+		</div>
+	    </div>
+	</div>
+

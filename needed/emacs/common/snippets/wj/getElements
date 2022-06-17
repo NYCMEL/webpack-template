@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-getElements
+# key: wj
+# --
+
+wc.getElements(id);

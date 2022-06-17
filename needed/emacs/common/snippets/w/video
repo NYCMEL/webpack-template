@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: w-video
+# key: w
+# --
+    		    <wc-video poster="/tk/img/common/mel.cartoon.png" autoplay="false" loop="false" background="#000" download="false">
+			<source src="/videos/Demo.mp4" type="video/mp4">
+		    </wc-video>
+

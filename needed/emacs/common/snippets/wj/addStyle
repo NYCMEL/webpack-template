@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-addStyle
+# key: wj
+# --
+
+wc.addStyle(sel,prop,val);

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jf-boolean
+# key: jf
+# --
+"${1:flag]": {
+  "title": "${2:Are you an adult?}",
+  "type": "boolean"
+}

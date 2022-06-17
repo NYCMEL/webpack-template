@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: h-lorem
+# key: h
+# --
+${1:<script type="text/javascript" src="/GitHub/loremjs/lorem.js"></script>}
+<div data-lorem="${100-150w}"></div>

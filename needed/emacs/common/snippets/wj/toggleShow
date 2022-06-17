@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-toggleShow
+# key: wj
+# --
+
+wc.toggleShow(sel);

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: w-rss
+# key: w
+# --
+	<wc-rss id="my-rss" cfg="/tk/lib/components/w/html/parts/rss/config.json"></wc-rss>

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-angle-right
+# key: h
+# --
+<span class="hex-angle-right" style="font-size:48px">&raquo;</span>

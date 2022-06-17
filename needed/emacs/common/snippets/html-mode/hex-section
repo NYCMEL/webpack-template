@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-section
+# key: h
+# --
+<span class="hex-section" style="font-size:48px">&sect;</span>

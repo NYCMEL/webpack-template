@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-kill-port
+# key: s
+# --
+kill \$(lsof -t -i:${1:8080})

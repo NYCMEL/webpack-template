@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: j-event-listener
+# key: j
+# --
+this.addEventListener("click", e => {
+    $0			       
+});

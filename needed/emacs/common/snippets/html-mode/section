@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: h-section
+# key: h
+# --
+<section>
+    $0
+</section>

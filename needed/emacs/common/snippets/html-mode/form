@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: h-form
+# key: h
+# --
+<form>
+    $0
+</form>

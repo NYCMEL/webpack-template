@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: h-bullets
+# key: h
+# --
+<${1:$$(yas-choose-value '(ul ol))} id="${2:my-list}">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</$1>

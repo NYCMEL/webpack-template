@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: jf-template
+# key: jf
+# --
+"schema": {
+  $0	  
+},
+onSubmit: function (errors, values) {
+    if (errors) {
+      $('#res').html('<p>I beg your pardon?</p>');
+    }
+    else {
+        console.log(">>>>>>>", values);
+    }
+}

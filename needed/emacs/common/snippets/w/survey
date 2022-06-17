@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: w-survey
+# key: w
+# --
+    	<wc-survey id="my-survey-1" label="VERINT-1" side="top" height="230px" iframe="true" src="https://secure.opinionlab.com/ccc01/comment_card_d.asp?referer=https://jleray-testing.successqa.com/jpmc_card_modal_checkboxes_only"></wc-survey>
+	<wc-survey id="my-survey-2" label="VERINT-2" side="bottom" height="190px" iframe="true" src="https://secure.opinionlab.com/ccc01/comment_card_d.asp?referer=https%3A%2F%2Fjleray-testing.successqa.com/jpmc_card_modal_comment_only"></wc-survey>
+
+	<wc-survey id="my-survey-3" side="left" src="/tk/lib/components/w/html/parts/survey/1.html"></wc-survey>
+	<wc-survey id="my-survey-4" side="right" src="/tk/lib/components/w/html/parts/survey/1.html"></wc-survey>
+

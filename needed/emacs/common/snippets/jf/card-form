@@ -1,0 +1,34 @@
+# -*- mode: snippet -*-
+# name: jf-card-form
+# key: jf
+# --
+     form: [
+		 {
+		     key: "wcsave",
+		     placeholder: "save your changes"
+		 },
+		 {
+		     key: "header",
+		     placeholder: "enter card header..."
+		 },
+		 {
+		     key: "footer",
+		     placeholder: "enter card footer..."
+		 },
+		 {
+		     key: "body",
+		     placeholder: "enter card body text or HTML..."
+		 },
+		 {
+		     key: "image",
+		     placeholder: "image url"
+		 },
+		 {
+		     key: "position",
+		     value: "Top"
+		 },
+		 {
+		     type: "submit",
+		     title: "PUSH ME WHEN DONE!"
+		 }
+	     ]

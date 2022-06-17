@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-radio
+# key: h
+# --
+<input type="radio" name="${1:gender}" value="${2:male}" ${3:checked}> $0

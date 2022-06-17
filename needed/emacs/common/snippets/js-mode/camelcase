@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-camelcase
+# key: j
+# --
+${1:mystring}.toCamelCase();

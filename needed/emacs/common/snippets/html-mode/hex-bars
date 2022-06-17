@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-bars
+# key: h
+# --
+<span class="hex-bars" style="font-size:32px">&#9776;</span>

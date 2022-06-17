@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: w-accordion
+# key: w
+# --
+<wc-accordion id="my-accordion-2" cfg="/tk/lib/components/w/cfg/accordion.json" show="0" class="wc-accordion-sm"></wc-accordion>

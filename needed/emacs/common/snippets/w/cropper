@@ -1,0 +1,80 @@
+# -*- mode: snippet -*-
+# name: w-cropper
+# key: w
+# --
+    	<div class="container-fluid mb-5">
+	    <div class="row">
+		<div class="col-lg-6">
+		    <label for="cropper-file-chooser" class="btn btn-outline-danger btn-lg" style="width:150px;">BROWSE</label>
+		    <hr>
+
+		    <div style="background:indianred;height:390px;background:#f0f0f0">
+			<wc-cropper id="my-cropper" maxzoom="2.0" savesize="1.0" style="display:none"></wc-cropper>
+		    </div>
+		</div>
+
+		<div class="col-lg-6">
+		    <button class="btn btn-success btn-lg" id="save-image" style="width:150px;margin-bottom:5px;">SAVE IMAGE</button>
+		    <hr>
+
+		    <div style="overflow:auto;overflow-wrap:break-word;;height:390px" class="alert alert-info text-center pt-5">
+			<div id="data-image">
+			</div>
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="row">
+		<div class="col-lg-12">
+		    <hr>
+		    <div style="overflow:auto;overflow-wrap:break-word;height:390px;" class="alert alert-warning">
+			<div id="data-content">
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	
+	<script>
+	 // YOU DO NOT NEED TIMEOUT IN YOUR CODE
+	 wc.timeout(function(){
+	     wc.subscribe("wc-cropper", function(e) {
+		 wc.info("CROPPER SUBSCRIPTION WAS TRIGGERED:", JSON.stringify(e.detail));
+		 
+		 // THESE ARE ALL THE PUBLISHED EVENTS
+		 switch(e.detail.action) 
+		 {
+		     case "file":
+		     // POPUP YOUR DIALOG HERE. REPLACE THIS CODE WITH YOURS TO SHOW THE MODAL DIALOG
+		     $("wc-cropper").show();  // FOR MEL'S DEMO (IGNORE)
+		     break;
+
+		     case "save":
+		     // SAVE BASE64 IMAGE - e.detail.img HAS YOUR BASE64 IMAGE
+
+		     $("#data-image").html("<img src=" + e.detail.img + " style='border:3px lime dashed;'>") // FOR MEL'S DEMO (IGNORE)
+		     $("#data-content").html(JSON.stringify(e.detail.img)); // FOR MEL'S DEMO (IGNORE)
+		     break;
+
+		     case "error":
+		     // IMAGE SIZE ERROR. REPLACE IT WITH YOUR ERROR MESSGE (NOT MY ALERT)
+		     alert("SELECTED IMAGE IS TOO SMALL");  // FOR MEL'S DEMO (IGNORE)
+		     break;
+
+		     default:
+		     // ANYTHING ELSE IS IGNORED
+		     break;
+		 }
+	     })
+
+	     // SAVE IMAGE BUTTON CLICK
+	     $("#save-image").on("click", function() {
+		 // GET THE HANDLE TO CROPPER
+		 var c = document.querySelector("#my-cropper");
+
+		 // CALL SAVE METHOD. THIS WILL PUBLISH EVENT LIKE ABOVE
+		 c.save();
+	     });
+	 }, 1000);
+	</script>
+

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-find-r
+# key: s
+# --
+find ${1:.} -name "${2:.svn}" -exec rm -rf {} \;

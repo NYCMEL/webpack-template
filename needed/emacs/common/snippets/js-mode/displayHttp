@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-displayHttp
+# key: j
+# --
+
+wc.displayHttp(id,file);

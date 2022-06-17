@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: b-footer2
+# key: b
+# --
+<div class="mt-2" id="footer-wrapper">
+    <div class="container wc-maximize">
+	<div class="row">
+	    <div class="col-12 ${1:footer} ${2:wc-font-b}">
+	    	${3:FOOTER}
+	    </div>
+	</div>
+    </div>
+</div>
+

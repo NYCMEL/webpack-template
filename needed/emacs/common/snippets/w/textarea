@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: w-textarea
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-6">
+		    <h3 class="h3-direction">Horizontal</h3>
+		    <wc-form name="my-form" role="form" id="my-form" class="form-control-md">
+			<div class="container-fluid border shadow p-4">
+			    <wc-textarea id="my-notes" label="Enter your Notes" columns="4,8" placeholder="Your notes ..."  help="Notes is a required field" required></wc-textarea>
+			    
+			    <div class="form-group">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-info" id="submit-btn-1">
+			    </div>
+			</div>
+		    </wc-form>
+		</div>
+	    </div>
+

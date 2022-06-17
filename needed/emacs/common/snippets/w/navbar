@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: w-navbar
+# key: w
+# --
+    		    <wc-navbar id="my-navbar" cfg="/tk/lib/components/misc/webpack/src/w/cfg/navbar.json"></wc-navbar>
+

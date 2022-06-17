@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: w-markdown
+# key: w
+# --
+    	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-12">
+		    <wc-markdown id="my-markdown" file="/tk/lib/components/misc/webpack/src/w/data/markdown/markdown.md"></wc-markdown>
+		</div>
+	    </div>
+	</div>
+

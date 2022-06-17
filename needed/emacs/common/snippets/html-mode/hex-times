@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-hex-times
+# key: h
+# --
+<span class="hex-times" style="font-size:48px">&times;</span>

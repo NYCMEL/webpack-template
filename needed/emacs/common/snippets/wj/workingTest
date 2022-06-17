@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-workingTest
+# key: wj
+# --
+
+wc.workingTest();

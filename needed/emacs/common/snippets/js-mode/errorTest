@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-errorTest
+# key: j
+# --
+wc.errorTest();

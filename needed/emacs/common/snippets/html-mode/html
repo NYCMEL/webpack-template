@@ -1,0 +1,34 @@
+# -*- mode: snippet -*-
+# name: h-html
+# key: h
+# --
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>${1:Web Component Title}</title>
+
+	<!-- REQUIRED BY W3C STATS -->
+	<script>
+	 wcENV="dev";
+	 wcAPP="${2:YOUR APPLICATION NAME GOES HERE}";
+	 wcURL="${3:http://www.melify.com/tk/lib/components/w}";
+	</script>
+	
+	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
+	<link href="/Melify/fonts/fonts.css" rel="stylesheet">
+    </head>
+
+    <body id="wc">
+        ${4:<div class="container">
+	    <div class="row">
+		<div class="col-12">
+		    $0
+		</div>
+	    </div>
+	</div>}
+	
+	<script type="text/javascript" src="/tk/bundles/wc.bundle.gz.js"></script>
+    </body>
+</html>

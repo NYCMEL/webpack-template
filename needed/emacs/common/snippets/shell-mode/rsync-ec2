@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-rsync-ec2
+# key: s
+# --
+rsync -av --progress -e "ssh -i /Melify/private/_notes/Melify.pem" ${1:node_modules/} ${2:ubuntu@melify.com:/Melify/mtk/dev/tk/lib/components/misc/webpack}

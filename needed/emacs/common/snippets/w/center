@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: w-center
+# key: w
+# --
+    		    <div style="width:600px;height:300px;background:wheat">
+			<wc-center id="my-center-1">
+			    <div style="background:lime;text-align:center">
+				<h1>HELLO MEL</h1>
+				<p>DEVELOPER CONSOLE HAS A LOT OF GOODIES :)</p>
+			    </div>
+			</wc-center>
+		    </div>
+

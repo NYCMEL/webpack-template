@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-displayObject
+# key: wj
+# --
+
+wc.displayObject(id,data);

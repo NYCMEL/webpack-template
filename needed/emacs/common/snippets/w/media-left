@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: wh-media-left
+# key: wh
+# --
+<div class="media" id="${1:my-media}">
+  <img class="d-flex align-self-start mr-3" src="/tk/img/common/placeholder.png" alt="Generic placeholder image" style="width:100px">
+  <div class="media-body">
+    <h5 class="mt-0 wc-frr">Top-aligned media</h5>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+  </div>
+</div>

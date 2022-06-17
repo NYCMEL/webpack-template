@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: h-card-image-bottom
+# key: h
+# --
+<div class="card col-4">
+  <div class="card-body"> Some more card content </div>
+  <img class="card-img-bottom" src="/tk/img/common/placeholder.png" alt="Card image cap">
+</div>

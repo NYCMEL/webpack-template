@@ -1,0 +1,49 @@
+# -*- mode: snippet -*-
+# name: w-tabs
+# key: w
+# --
+    	<style>
+	 .wc-pager-btn-tester {
+	     display: none!important;
+	 }
+	 .wc-tabs-mid {
+	     height: 500px;
+	     overflow: auto;
+	 }
+	</style>
+
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-md-6">
+		    <div  style="zoom:0.5">
+			<h1 class="wc-font-fb">TOP</h1>
+			<wc-tabs id="my-tabs-top" class="border" side="top" cfg="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" show="0"></wc-tabs>
+		    </div>
+		</div>
+
+		<div class="col-md-6">
+		    <div  style="zoom:0.5">
+			<h1 class="wc-font-fm">BOT</h1>
+			<wc-tabs id="my-tabs-bot" class="border" side="bot" cfg="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" show="0"></wc-tabs>
+		    </div>
+		</div>
+	    </div>
+	</div>
+
+	<div class="container-fluid">
+	    <div class="row mt-5">
+		<div class="col-md-6">
+		    <div  style="zoom:0.5">
+			<h1 class="wc-font-fm">LEFT</h1>
+			<wc-tabs id="my-tabs-lhs" class="border" side="lhs" cfg="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" show="0"></wc-tabs>
+		    </div>
+		</div>		    
+		<div class="col-md-6">
+		    <div  style="zoom:0.5">
+			<h1 class="wc-font-fm">RIGHT</h1>
+			<wc-tabs id="my-tabs-rhs" class="border" side="rhs" cfg="/tk/lib/components/misc/webpack/src/w/cfg/tabs.json" show="0"></wc-tabs>
+		    </div>
+		</div>
+	    </div>
+	</div>
+

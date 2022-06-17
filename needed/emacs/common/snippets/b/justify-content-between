@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: b-justify-content-between
+# key: b
+# --
+<div class="d-flex justify-content-between">
+  <div class="p-2">Flex item 1</div>
+  <div class="p-2">Flex item 2</div>
+  <div class="p-2">Flex item 3</div>
+</div>

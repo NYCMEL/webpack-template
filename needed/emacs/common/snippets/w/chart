@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: w-chart
+# key: w
+# --
+    			<wc-chart class="border shadow" id="my-donut-1"></wc-chart>
+
+			<script src="/tk/lib/components/w/ext/highcharts/highcharts.js"></script>
+			<script src="/Melify/mtk/dev/tk/lib/components/w/cfg/chart.donut.json"></script>
+			<script>
+
+			 setTimeout(function(){
+			     let c = document.querySelector("#my-donut-1");
+			     c.configure(cdata);
+			 }, 500);
+			</script>
+

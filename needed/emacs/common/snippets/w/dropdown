@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: w-dropdown
+# key: w
+# --
+    		    <wc-dropdown id="my-dropdown" style="width:300px" btn="btn-outline-secondary" selected="eur">
+			<a href="#" id="usd">US Dollar ($)</a>
+			<a href="#" id="gbp">Sterling (£)</a>
+			<a href="#" id="eur">Euro (€)</a>
+			<a href="#" id="cny" data-fixed-columns="5">Chinese Yuan (￥)</a>
+			<a href="#" id="sek">Swedish Krona (kr)</a>
+			<a href="#" id="jpy">Japanese Yen – JPY (¥)</a>
+			<a href="#" id="aud">Australian Dollar – AUD (A$)</a>
+		    </wc-dropdown>
+

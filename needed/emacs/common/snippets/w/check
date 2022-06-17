@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: w-check
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-4">
+		    <wc-form name="my-form" role="form" id="my-form" class="form-control-md">
+			<div class="container-fluid border shadow p-4">
+			    <div class="clearfix">
+				<div class="float-sm-left">
+				    <wc-check id="my-check-1" name="agree" label="I Agree with Terms" required></wc-check>
+				</div>
+				<div class="float-sm-left">
+				    <wc-check id="my-check-2" name="signup" label="Newsletter ?"></wc-check>
+				</div>
+			    </div>
+
+			    <hr />
+			    <div class="form-group">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-info" id="submit-btn-1">
+			    </div>
+			</div>
+		    </wc-form>
+		</div>
+	    </div>
+	</div>
+

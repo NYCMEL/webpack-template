@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: w-login
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-12">
+		    <form class="form-lg">
+			<div>
+			    <wc-login id="my-login" class="login-normal" aname="My Application Name" style="visibility:visible"></wc-login>
+			</div>
+
+			<wc-modal id="my-modal">
+			    <wc-modal-body>
+				<wc-login id="my-login" class="login-normal" aname="My Application Name" style="visibility:visible"></wc-login>
+			    </wc-modal-body>
+			</wc-modal>
+		    </form>
+		</div>
+	    </div>
+

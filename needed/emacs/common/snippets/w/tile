@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: w-tile
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-12">
+		    <wc-tile id="my-tile-1" style="width:300px;height:300px;">
+			<wc-tile-front class="text-light">
+			    <wc-tile-center>
+				<h1>Front</h1>
+				<p>Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy</p>
+				<b class="text-dark wc-font-fam">ON CLICK I CHANGE SIDES</b>
+			    </wc-tile-center>
+			</wc-tile-front>
+
+			<wc-tile-back class="text-light">
+			    <wc-tile-center>
+				<h1>Back</h1>
+				<p>Sadipscing elitr sed diam nonumy Lorem ipsum dolor sit amet consetetur</p>
+			    </wc-tile-center>
+			</wc-tile-back>
+		    </wc-tile>
+
+		    <wc-tile id="my-tile" style="width:300px;height:300px;margin-top:20px;">
+			<wc-tile-front class="text-light bg-primary">
+			    <wc-tile-center>
+				<h1>I am static</h1>
+				<p>Consetetur sadipscing elitr sed diam nonumy. Lorem ipsum</p>
+			    </wc-tile-center>
+			</wc-tile-front>
+		    </wc-tile>
+		</div>
+	    </div>
+	</div>
+

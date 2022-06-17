@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: b-row
+# key: b
+# --
+    <div class="row">
+	<div class="col-${3:12}">
+	    $0
+	</div>
+    </div>

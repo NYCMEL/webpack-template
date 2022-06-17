@@ -1,0 +1,47 @@
+# -*- mode: snippet -*-
+# name: jf-card
+# key: jf
+# --
+"wcsave": {
+    "title": "SAVE TO FILE",
+    "type": "string",
+    "default": "test.json",
+    "required": true
+},
+"header": {
+    "title": "Card Header",
+    "type": "string",
+    "default": "Header",
+    "value": "Header"
+},
+"footer": {
+    "title": "Card Footer",
+    "type": "string",
+    "default": "Footer",
+    "value": "Footer",
+},
+
+"body": {
+    "title": "Card Body",
+    "type": "textarea",
+    "required": true,
+    "default": "Body"
+},
+
+"image": {
+    "title": "Image URL",
+    "type": "string",
+    "default": "/tk/img/common/placeholder.png"
+},
+
+"imageposition": {
+    "title": "Image Position",
+    "type": "string",
+    "default": "Top",
+    "enum": [
+	"",
+	"Top",
+	"Bottom",
+	"Cover"
+    ]
+}

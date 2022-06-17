@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: w-aem
+# key: w
+# --
+    		    <wc-banner id="my-banner-1" background="#FFF">
+			<wc-banner-lhs class="col-md-6">
+			    <div style="background:#FFF" class="p-3">
+				<wc-banner-title class="display-4">
+				    Banner example
+				</wc-banner-title>
+
+				<wc-banner-subtitle class="lead">
+				    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+				    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+				</wc-banner-subtitle>
+
+				<p>
+				    <hr class="my-4">
+				    Hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+				</p>
+
+				<wc-banner-actions class="lead">
+				    <a id="btn-more-1" class="btn btn-primary btn-action" href="#" role="button">More I</a>
+				    <a id="btn-more-2" class="btn btn-primary btn-action" href="#" role="button">More II</a>
+				</wc-banner-actions>
+			    </div>
+			</wc-banner-lhs>
+
+			<wc-banner-rhs class="col-md-6 cover" style="background:url(/tk/lib/components/misc/webpack/src/w/assets/tmp/dots.png)">
+			</wc-banner-rhs>
+		    </wc-banner>
+

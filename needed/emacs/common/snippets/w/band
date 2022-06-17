@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: w-band
+# key: w
+# --
+    		    <wc-band id="my-band" class="col-md-12 shadow"></wc-band>
+

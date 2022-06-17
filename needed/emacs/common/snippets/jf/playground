@@ -1,0 +1,100 @@
+# -*- mode: snippet -*-
+# name: jf-playground
+# key: jf
+# --
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSON2Form</title>
+
+	<!-- REQUIRED BY W3C STATS -->
+	<script>
+	 wcENV="dev";
+	 wcAPP="JSON2Form";
+	 wcURL="";
+	</script>
+	
+	<!-- DO NOT INCLUDE IF ALREADY HAVE IT -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="/GitHub/document-register/build/document-register-element.js"></script>
+    </head>
+
+    <body id="wc">
+        <div class="container mt-5">
+	    <div class="row">
+		<div class="col-4">
+		    <form></form>
+		</div>
+	    </div>
+	</div>
+	
+	<style>
+	 @import url("/GitHub/jsonform/deps/opt/bootstrap.css");
+	 @import url("/GitHub/jsonform/deps/opt/bootstrap-wysihtml5.css");
+	 @import url("/GitHub/jsonform/deps/opt/spectrum.css");
+
+	 .glyphicon-list {
+	     display: none;
+	 }
+
+	 .glyphicon, input {
+	     font-size: 24px!important;
+	 }
+
+	 input {
+	     height:40px!important;
+	     line-height:40px!important;
+	     font-size: 18px!important;
+	 }
+
+	 .expandable > legend:before {
+             content: '\25B8';
+             padding-right: 5px;
+	 }
+	 .expanded > legend:before {
+             content: '\25BE';
+	 }
+
+	 .jsonform-required > label:after {
+             content: ' *';
+             color: red;
+	 }
+
+	 form.jsonform-hasrequired:after {
+             content: '* Required field';
+             display: block;
+             color: red;
+             padding-top: 1em;
+	 }
+	</style>
+
+	<script type="text/javascript" src="/Melify/mtk/dev/tk/lib/components/misc/webpack/prod/all/wc.bundle.gz.js"></script>
+
+	<script src="/GitHub/jsonform/deps/underscore.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jsv.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jquery.ui.core.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jquery.ui.widget.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jquery.ui.mouse.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jquery.ui.sortable.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/bootstrap-dropdown.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/bootstrap-wysihtml5.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/spectrum.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/ace.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-json.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-html.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-css.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-javascript.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-less.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/ace/mode-markdown.js"></script>
+	<script src="/GitHub/jsonform/deps/opt/jquery.transloadit2.js"></script>
+	<script src="/GitHub/jsonform/lib/jsonform.js"></script>
+
+	<script type="text/javascript">
+	 $('form').jsonForm({
+	     $0
+	 });
+	</script>
+    </body>
+</html>

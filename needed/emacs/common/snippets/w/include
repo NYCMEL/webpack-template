@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: wh-include
+# key: wh
+# --
+<wc-include href="/mtk/render?ajax=1&callback=lorem&size=${1:100}"></wc-include>

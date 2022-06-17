@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-submit
+# key: h
+# --
+<input type="submit" name="${1:action}" value="${2:LET'S GO}" class="btn btn-${3:primary}" id="${4:btn-submit}" />

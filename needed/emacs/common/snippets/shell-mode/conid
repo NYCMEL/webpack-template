@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-conid
+# key: s
+# --
+curl -k -X POST "https://localhost:5000/v1/portal/iserver/secdef/search" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"symbol\": \"${1:file}\", \"name\": false, \"secType\": \"STK\"}"

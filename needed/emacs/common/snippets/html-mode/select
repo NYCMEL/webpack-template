@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: h-select
+# key: h
+# --
+<select id="${1:my-select}" class="form-control">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+</select>

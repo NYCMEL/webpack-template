@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-fadeOut
+# key: j
+# --
+
+wc.fadeOut(elem,ms);

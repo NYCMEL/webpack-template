@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wj-load
+# key: wj
+# --
+
+wc.load(element,url);

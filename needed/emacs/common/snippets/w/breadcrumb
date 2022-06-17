@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: w-breadcrumb
+# key: w
+# --
+	<div class="container wc-maximize">
+	    <div class="row">
+		<wc-breadcrumb id="my-breadcrumb">
+ 		    <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#" id="breadcrumb-home">Home</a></li>
+			<li class="breadcrumb-item"><a href="#" id="breadcrumb-products">Products</a></li>
+			<li class="breadcrumb-item active">Audios</li>
+		    </ol>
+		</wc-breadcrumb>
+	    </div>
+	</div>

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: h-checkbox
+# key: h
+# --
+<input type="checkbox" name="${1:car}" value="${2:ford}" ${3:checked}> $0

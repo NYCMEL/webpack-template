@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: jf-string
+# key: jf
+# --
+"${1:name}": {
+    "title": "${2:Name}",
+    "type": "string",
+    "required": ${3:true}
+},

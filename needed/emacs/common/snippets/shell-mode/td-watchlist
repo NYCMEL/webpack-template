@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: s-td-watchlist
+# key: s
+# --
+curl -X GET --header "Authorization: Bearer " "https://api.tdameritrade.com/v1/accounts/490902254/watchlists"

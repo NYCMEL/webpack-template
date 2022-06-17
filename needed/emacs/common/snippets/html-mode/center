@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: h-cener
+# key: h
+# --
+<div class="media" style="width:1000px;height:400px;background:orange">
+    <div class="d-flex align-self-center ml-auto mr-auto bg-warning">
+	<div class="text-center">
+	    <h1>HELLO</h1>
+	</div>
+    </div>
+</div>

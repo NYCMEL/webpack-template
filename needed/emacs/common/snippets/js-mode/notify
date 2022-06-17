@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-notify
+# key: j
+# --
+wc.notify(options);

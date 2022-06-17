@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: w-mask
+# key: w
+# --
+    		    <style>
+		     input {
+			 padding: 10px!important;
+			 font-size: 24px!important;
+		     }
+		    </style>
+
+		    <wc-mask id="my-mask" mask="'alias':'numeric', 'groupSeparator':',', 'digits':2, 'digitsOptional':true, 'prefix':'$ ', 'placeholder':'0', 'min':'1000', 'max':'10000'" mode="numeric"></wc-mask>
+

@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: w-quick-links
+# key: w
+# --
+    		    <wc-quick-links id="my-quick-links" class="shadow border p-3">
+			<wc-quick-links-heading>
+			    Quick Links
+			</wc-quick-links-heading>
+
+			<wc-quick-links-content>
+			    <ul>
+				<li id="link-1">Link I</li>
+				<li id="link-2">Link II</li>
+				<li id="link-3">Link III</li>
+				<li id="link-4">Link IV</li>
+				<li id="link-5">Link V</li>
+			    </ul>
+			</wc-quick-links-content>
+		    </wc-quick-links>
+

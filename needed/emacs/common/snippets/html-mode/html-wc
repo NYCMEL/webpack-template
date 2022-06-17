@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: h-html-wc
+# key: h
+# --
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	<meta charset="UTF-8" />
+	<title>${1:TITILE}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/Melify/mtk/dev/tk/lib/components/w/dist/wc.css" rel="stylesheet" />
+	<link href="/Melify/fonts/fonts.css" rel="stylesheet">
+    </head>
+
+    <body id="wc">
+        ${2:<div class="container">
+	    <div class="row">
+		<div class="col-12">
+		    $0
+		</div>
+	    </div>
+	</div>}
+
+	<!-- ALL WC UTILITIES -->
+	<script src="/Melify/mtk/dev/tk/lib/components/w/dist/wc.js"></script> 
+    </body>
+</html>

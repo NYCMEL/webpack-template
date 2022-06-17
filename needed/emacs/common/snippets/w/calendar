@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: w-calendar
+# key: w
+# --
+    	<div class="container-fluid mt-5">
+	    <div class="row">
+		<div class="col-md-4">
+		    <h3 class="h3-direction">Horizontal</h3>
+		    <wc-form name="my-form" role="form" id="my-form" class="form-control-md">
+			<div class="container-fluid border shadow p-4">
+			    <wc-calendar id="my-calendar" name="adate" label="Date" columns="4,8" placeholder="pick a date" help="date is a required field" data-error="must be a date format..." required></wc-calendar>
+			    
+			    <hr />
+			    <div class="form-group">
+				<input type="submit" name="action" value="LET'S GO" class="btn btn-outline-primary" id="submit-btn-1">
+			    </div>
+			</div>
+		    </wc-form>
+		</div>
+	    </div>
+	</div>
+

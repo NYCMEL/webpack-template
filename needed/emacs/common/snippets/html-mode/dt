@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name : h-dt
+# key: h
+# --
+<style>
+dd {
+     margin-top:10px;
+     margin-left:30px!important;
+}
+</style>
+
+<dl>
+  <dt>COFFEE</dt>
+  <dd>Black hot drink</dd>
+  <dd>White cold drink</dd>
+</dl>

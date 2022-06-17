@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: j-uglify
+# key: j
+# --
+# npm install -g uglify-js 
+uglifyjs ${1:file}.js  -c -m --mangle-props -o $1.uglified.js

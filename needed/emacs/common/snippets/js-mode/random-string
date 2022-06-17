@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: j-random-string
+# key: j
+# --
+let ${1:name} = [...Array(${2:10})].map(i=>(~~(Math.random()*36)).toString(36)).join('')

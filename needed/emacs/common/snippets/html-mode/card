@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: h-card
+# key: h
+# --
+<div class="card">
+    <div class="card-body">
+	<h4 class="card-title">Card title</h4>
+	<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+	<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+	<a href="#!" class="card-link">Card link</a>
+	<a href="#!" class="card-link">Another link</a>
+    </div>
+</div>
