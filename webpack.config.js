@@ -39,9 +39,12 @@ module.exports = {
 
     module: {
         rules: [
-	    { 
-		test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-		type: 'asset/resource',
+	    {
+		test: /\.(jpe?g|png|gif|svg)$/i, 
+		loader: 'file-loader',
+		options: {
+		    name: '/img/[name].[ext]'
+		}
 	    },
 	    {
 		test: /\.m?js$/,
