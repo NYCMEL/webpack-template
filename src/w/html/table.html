@@ -53,6 +53,22 @@
 	     nope : ['../js/include.js' ,  '../js/table.js']
 	 });
 	</script>
+
+	<script>
+	 $(document).ready(function () {
+	     $('#tableDiv').DataTable({
+		 dom:		  "ltpr" /* TURN INFO OFF */,
+		 ajax:       './data.js',
+		 scrollY:        "500px",
+		 scrollX:           true,
+		 scrollCollapse:    true,
+		 paging:           false,
+		 fixedColumns: {
+		     left:  1
+		 }
+	     });
+	 });
+	</script>
     </body>
 </html>
 
