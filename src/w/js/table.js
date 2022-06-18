@@ -67,13 +67,7 @@ class Table extends HTMLElement {
 	var temp;
 
 	// ADD COMPONENT MARKTOP
-	if (0) {
-	    // FOR PRODUCTION (convert part.html to jstr using h2j)
-	    temp = `<h1>COMING SOON</h1>`;
-	} else {
-	    // FOR DEVELOPMENT/LOCAL TESTING
-	    temp = "<wc-include href=/tk/lib/components/misc/webpack-template/src/w/html/table.part.html></wc-include>";
-	}
+	temp = `<div id="tableDiv"></div>`;
 
         wc.groupEnd();
         return temp;
