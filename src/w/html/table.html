@@ -16,6 +16,17 @@
 
 	<!-- FOR LOCAL TESTING PURPOSES -->
 	<script src="/tk/lib/components/misc/webpack-template/src/w/js/tests.js"></script>
+
+	<!-- TEMPORARY -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/4.1.0/css/fixedColumns.bootstrap5.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+	<script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"s></script>
+	<!-- TEMPORARY -->
     </head>
 
     <body id="wc">
@@ -23,7 +34,7 @@
 	    <div class="row">
 		<div class="col-4 pt-5">
 		    <!-- SAMPLE -->
-		    <wc-table id="my-table" class="text-center p-4 border" data="../data/data.js">
+		    <wc-table id="my-table" class="text-center p-4 border" cfg="../data/data.js">
 			<h1>CLICK HERE !</h1>
 		    </wc-table>
 		    <!-- SAMPLE -->
@@ -41,25 +52,6 @@
 	     yep  : ['../es5/include.js', '../es5/table.js'],
 	     nope : ['../js/include.js' ,  '../js/table.js']
 	 });
-
-	 // LOCAL TESTING
-	 if (0) {
-	     wc.timeout(function(){
-		 window.test.table();
-	     }, 2000, 1);
-	 }
-
-	 if (0) {
-	     wc.timeout(function(){
-		 // NORMALLY THIS IS USED BY APP TO SND/RCV DATA FROM BACKEND
-		 wc.publish("wc-table", {
-		     time: new Date().getTime(),
-		     action: "label",
-		     id: "my-table",
-		     value: "HELLO WORLD"
-		 });
-	     }, 2000, 1);
-	 }
 	</script>
     </body>
 </html>
