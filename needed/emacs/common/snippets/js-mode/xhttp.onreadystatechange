@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-xhttp.onreadystatechange
-# key: j
-# --
-
-wc.xhttp.onreadystatechange();

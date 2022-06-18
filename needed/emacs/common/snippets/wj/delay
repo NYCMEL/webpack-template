@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-delay
-# key: wj
-# --
-
-wc.delay(ms);

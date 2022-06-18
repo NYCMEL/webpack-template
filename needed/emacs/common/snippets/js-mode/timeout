@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-timeout
-# key: j
-# --
-wc.timeout(function(){
-     alert("HELLO")
-}, 2000, 1);

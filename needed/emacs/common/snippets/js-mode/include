@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-include
-# key: j
-# --
-
-wc.include(cb);

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-tidy
-# key: s
-# --
-tidy -raw ${1:infile}.html > ${2:outfile}.html

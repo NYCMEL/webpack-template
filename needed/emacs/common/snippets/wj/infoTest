@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-infoTest
-# key: wj
-# --
-
-wc.infoTest();

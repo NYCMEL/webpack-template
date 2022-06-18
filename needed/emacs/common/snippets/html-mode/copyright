@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-copyright
-# key: h
-# --
-<span class="hex-copyr-ght" style="font-size:48px">&copy;</span>

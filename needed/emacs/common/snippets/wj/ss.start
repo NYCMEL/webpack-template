@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-ss.start
-# key: wj
-# --
-
-wc.ss.start();

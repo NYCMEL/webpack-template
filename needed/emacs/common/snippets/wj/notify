@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-notify
-# key: wj
-# --
-
-wc.notify(options);

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: s-scp-ect
-# key: s
-# --
-scp -i /Melify/private/_notes/Melify.pem -r ${1:myfile} ubuntu@melify.com:/${2}

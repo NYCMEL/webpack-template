@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-ss.next
-# key: wj
-# --
-
-wc.ss.next();

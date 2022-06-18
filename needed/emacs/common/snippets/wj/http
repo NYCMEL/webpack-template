@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-http
-# key: wj
-# --
-
-wc.http(target,readyfunc,xml,method);

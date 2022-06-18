@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: w-msg
-# key: w
-# --
-    		    <wc-msg id="my-msg" parent="my-header" type="wc-msg-error">
-			WAITING...
-		    </wc-msg>
-

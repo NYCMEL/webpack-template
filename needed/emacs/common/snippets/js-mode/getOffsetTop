@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-getOffsetTop
-# key: j
-# --
-
-wc.getOffsetTop( elem );

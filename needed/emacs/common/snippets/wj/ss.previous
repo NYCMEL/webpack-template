@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-ss.previous
-# key: wj
-# --
-
-wc.ss.previous();

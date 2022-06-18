@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-when
-# key: wj
-# --
-
-wc.when(condition,wait,times,deferred);

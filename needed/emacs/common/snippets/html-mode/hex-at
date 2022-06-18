@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: h-hex-at
-# key: h
-# --
-<span class="hex-at" style="font-size:48px">&#64;</span>

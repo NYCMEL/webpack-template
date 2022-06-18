@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-toggleClassElement
-# key: wj
-# --
-
-wc.toggleClassElement(element,c1,c2);

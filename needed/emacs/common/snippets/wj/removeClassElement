@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-removeClassElement
-# key: wj
-# --
-
-wc.removeClassElement(element,name);

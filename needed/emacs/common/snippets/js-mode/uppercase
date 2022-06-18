@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-uppercase
-# key: j
-# --
-
-toUpperCase();

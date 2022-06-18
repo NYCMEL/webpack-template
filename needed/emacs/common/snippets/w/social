@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: w-social
-# key: w
-# --
-    		    <wc-social id="my-social" socialize="Facebook Twitter Google Linkedin Reddit Pinterest Email Print"></wc-social>
-

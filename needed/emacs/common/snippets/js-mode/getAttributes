@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: j-getAttributes
-# key: j
-# --
-
-wc.getAttributes(node);

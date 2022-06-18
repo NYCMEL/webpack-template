@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-forEach
-# key: wj
-# --
-
-wc.forEach( collection,callback,scope );

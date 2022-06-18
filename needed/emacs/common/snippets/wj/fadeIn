@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-fadeIn
-# key: wj
-# --
-
-wc.fadeIn(elem,ms);

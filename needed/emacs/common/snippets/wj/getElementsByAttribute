@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: wj-getElementsByAttribute
-# key: wj
-# --
-
-wc.getElementsByAttribute(x,att);
