@@ -59,6 +59,7 @@
 	     $.ajax({
                  "url": '../data/data.js',
                  "success": function(json) {
+		     alert("AAAAAAAAAAAAA")
                      var tableHeaders;
                      $.each(json.columns, function(i, val){
                          tableHeaders += "<th>" + val + "</th>";
