@@ -29,7 +29,6 @@ module.exports = {
         path: PATHS.app
     },
     
-    mode: 'production',
     devtool: 'inline-source-map',
 
     output: {
