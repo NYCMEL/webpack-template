@@ -1,7 +1,7 @@
 const path              = require('path');
 const webpack           = require('webpack');
 const htmlPlugin        = require('html-webpack-plugin');
-//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
     app: path.join(__dirname, 'src'),
