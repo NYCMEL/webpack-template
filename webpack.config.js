@@ -1,6 +1,6 @@
-const path              = require('path');
-const webpack           = require('webpack');
-const htmlPlugin        = require('html-webpack-plugin');
+const path                 = require('path');
+const webpack              = require('webpack');
+const htmlPlugin           = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
@@ -39,6 +39,10 @@ module.exports = {
 
     module: {
         rules: [
+	    { 
+		test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+		type: 'asset/resource',
+	    },
 	    {
 		test: /\.m?js$/,
 		exclude: /(node_modules|bower_components)/,

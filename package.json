@@ -3,19 +3,15 @@
     "description": "Mel's webpack template",
     "author": "Mel M. Heravi",
     "main": "src/index.js",
-
     "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"dev": "webpack --mode development",
-	"build": "webpack --mode production"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production"
     },
-
     "keywords": [
         "webpack"
     ],
-
     "license": "MIT",
-
     "dependencies": {
         "@babel/core": "^7.18.2",
         "@babel/plugin-transform-runtime": "^7.18.2",
@@ -41,8 +37,8 @@
         "webpack": "^5.73.0",
         "webpack-bundle-analyzer": "^4.5.0"
     },
-
     "devDependencies": {
+        "clean-webpack-plugin": "^4.0.0",
         "webpack-cli": "^4.9.2"
     }
 }
