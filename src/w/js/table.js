@@ -258,31 +258,6 @@ class Table extends HTMLElement {
 	    /* IF ACTION EXIST */
 	    switch(data.action) 
 	    {
-		case "show":
-		$(self).show();
-		break;
-
-		case "hide":
-		$(self).hide();
-		break;
-
-		case "toggle":
-		$(self).toggle();
-		break;
-
-		case "label":
-		self.innerHTML = `<h1>${data.value}</h1>`;
-		break;
-
-		case "click":
-		$(self).toggle() /* OR WHATEVER */
-		wc.info("you clicked on me ?")
-		break;
-
-		default:
-		console.error("Component 'Table' has no event named:" + data.action);
-		alert("Component 'Table' has no event named:" + data.action)
-		break;
 	    }
 	}
 	
