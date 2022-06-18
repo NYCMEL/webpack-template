@@ -2,6 +2,7 @@
     "name": "webpack-template",
     "version": "1.0.0",
     "description": "Mel's webpack template",
+    "author": "Mel M. Heravi",
     "main": "src/index.js",
     "scripts": {
         "build": "webpack"
