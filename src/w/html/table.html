@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	<meta charset="UTF-8" />
+	<title>Table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/dist/wc.css" rel="stylesheet" />
+	<link href="/Melify/fonts/fonts.css" rel="stylesheet">
+
+	<script>
+	 wcENV="dev";
+	 wcAPP="Table";
+	 wcURL="http://www.melify.com/tk/lib/components/w";
+	</script>
+
+	<!-- FOR LOCAL TESTING PURPOSES -->
+	<script src="/tk/lib/components/misc/webpack-template/src/w/js/tests.js"></script>
+    </head>
+
+    <body id="wc">
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-4 pt-5">
+		    <!-- SAMPLE -->
+		    <wc-table id="my-table" class="text-center p-4 border">
+			<h1>CLICK HERE !</h1>
+		    </wc-table>
+		    <!-- SAMPLE -->
+		</div>
+	    </div>
+	</div>
+
+	<!-- ALL WC UTILITIES -->
+	<script src="/Melify/mtk/dev/tk/lib/components/misc/webpack/src/w/dist/wc.js"></script> 
+	
+	<!-- APPLICATION SCRIPTS -->
+	<script>
+	 yepnope({
+	     test : wc.detectIE(),
+	     yep  : ['../es5/include.js', '../es5/table.js'],
+	     nope : ['../js/include.js' ,  '../js/table.js']
+	 });
+
+	 // LOCAL TESTING
+	 if (0) {
+	     wc.timeout(function(){
+		 window.test.table();
+	     }, 2000, 1);
+	 }
+
+	 if (0) {
+	     wc.timeout(function(){
+		 // NORMALLY THIS IS USED BY APP TO SND/RCV DATA FROM BACKEND
+		 wc.publish("wc-table", {
+		     time: new Date().getTime(),
+		     action: "label",
+		     id: "my-table",
+		     value: "HELLO WORLD"
+		 });
+	     }, 2000, 1);
+	 }
+	</script>
+    </body>
+</html>
+
