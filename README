@@ -1,2 +1,4 @@
-https://github.com/joaotavora/yasnippet.git
+GENERATE WEBPACK STATS (open result in browser)
+------------------------------------------------
+/Melify/mtk/dev/tk/lib/components/misc/webpack-template/node_modules/webpack-cli/bin/cli.js --profile --json > compilation-stats.json
 
