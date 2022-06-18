@@ -1,6 +1,7 @@
 const path              = require('path');
 const webpack           = require('webpack');
 const htmlPlugin        = require('html-webpack-plugin');
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
     app: path.join(__dirname, 'src'),
@@ -74,6 +75,8 @@ module.exports = {
     },
 
     plugins: [
+	//new BundleAnalyzerPlugin(),
+
         new htmlPlugin({
             template:path.join(PATHS.app,'index.html'),
             inject:'body'
