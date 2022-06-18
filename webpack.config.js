@@ -34,7 +34,7 @@ module.exports = {
 
     output: {
         path: PATHS.build,
-        filename: 'wc.bundle.js'
+        filename: "wc.bundle.js"
     },
 
     module: {
