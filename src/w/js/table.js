@@ -94,7 +94,7 @@ class Table extends HTMLElement {
             "dataType": "json",
             "url": cfg,
             "success": function(json) {
-		let str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
+		let str = "<table class='display cell-border' cellspacing='0' width='100%'><thead><tr>";
 
 		$.each(json.columns, function(i, val){
                     str += "<th>" + val + "</th>";
