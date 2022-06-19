@@ -122,10 +122,11 @@ class Table extends HTMLElement {
 		    serverSide: false,
 		    info: false,
 		    fixedColumns: json.fixed,
-		    aoColumns: json.align
 		});
             },
 	});
+
+	//aoColumns: json.align
 
         wc.groupEnd();
     };
