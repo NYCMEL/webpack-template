@@ -29,7 +29,7 @@ import "/tk/lib/components/misc/webpack-template/node_modules/bootstrap/dist/css
 import "/Melify/_needed/DataTables//DataTables-1.12.1/css/dataTables.bootstrap5.min.css";
 import "/Melify/_needed/DataTables/FixedColumns-4.1.0/css/fixedColumns.bootstrap.min.css";
 
-import "/Melify/_needed/DataTables/DataTables-1.12.1/js/jquery.dataTables.min.js";
+import "/tk/lib/components/misc/webpack-template/node_modules/datatables.net-fixedcolumns/css/fixedColumns.bootstrap5.scss";
 import "/Melify/_needed/DataTables/DataTables-1.12.1/js/dataTables.bootstrap5.min.js";
 import "/Melify/_needed/DataTables/FixedColumns-4.1.0/js/dataTables.fixedColumns.min.js";
 

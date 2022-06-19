@@ -89,6 +89,7 @@ class Table extends HTMLElement {
 	
 	let cfg = this.properties.cfg;
 
+	wc.timeout(function(){
 	$.ajax({
             "dataType": "json",
             "url": cfg,
@@ -126,7 +127,7 @@ class Table extends HTMLElement {
 		});
             },
 	});
-
+	}, 2000, 1);
 
         wc.groupEnd();
     };
