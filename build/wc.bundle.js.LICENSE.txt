@@ -37,10 +37,15 @@
  * Date: 2021-03-02T17:08Z
  */
 
-/*! DataTables 1.12.1
- * ©2008-2022 SpryMedia Ltd - datatables.net/license
+/*!
+ FixedColumns 4.1.0
+ 2019-2022 SpryMedia Ltd - datatables.net/license
+*/
+
+/*! DataTables 1.10.18
+ * ©2008-2018 SpryMedia Ltd - datatables.net/license
  */
 
-/*! DataTables Bootstrap 5 integration
- * 2020 SpryMedia Ltd - datatables.net/license
+/*! DataTables 1.12.1
+ * ©2008-2022 SpryMedia Ltd - datatables.net/license
  */
