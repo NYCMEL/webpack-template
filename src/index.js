@@ -25,8 +25,7 @@ import "./w/js/tests";
 import "./w/scss/_include.scss";
 import "./w/js/include";
 
-import "datatables";
-//import "datatables.net-fixedcolumns";
+import "datatables.net-bs5";
 
 // import "/tk/lib/components/misc/webpack-template/node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "/Melify/_needed/DataTables//DataTables-1.12.1/css/dataTables.bootstrap5.min.css";
