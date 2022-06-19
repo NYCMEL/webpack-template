@@ -127,7 +127,7 @@ class Table extends HTMLElement {
 		});
             },
 	});
-	}, 2000, 1);
+	}, 0, 1);
 
         wc.groupEnd();
     };
