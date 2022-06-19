@@ -1,4 +1,9 @@
 {
+    "fixed": {
+	"left":1,
+	"right":1
+    },
+
     "columns": [
         ["Name"],
         ["Position"],
@@ -7,6 +12,7 @@
         ["Date"],
         ["Salary"]
     ],
+
     "data": [
 	[
 	    "Tiger Nixon",

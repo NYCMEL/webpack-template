@@ -104,6 +104,8 @@ class Table extends HTMLElement {
 		$("wc-table").empty();
 		$("wc-table").append(str);
 		
+		alert(JSON.stringify(json.fixed));
+
 		$("wc-table table").dataTable({
 		    data: json.data,
 		    scrollY: "300px",
@@ -117,10 +119,7 @@ class Table extends HTMLElement {
 		    deferRender: true,
 		    serverSide: false,
 		    info: false,
-		    fixedColumns: {
-			left: 1,
-			right: 1
-		    },
+		    fixedColumns: json.fixed
 		});
             },
 	});
