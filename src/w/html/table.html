@@ -60,7 +60,7 @@
                  "dataType": "json",
                  "url": '../data/data.js',
                  "success": function(json) {
-		     let str = "<table id='displayTable' class='display' cellspacing='0' width='100%'><thead><tr>";
+		     let str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
 
 		     $.each(json.columns, function(i, val){
                          str += "<th>" + val + "</th>";
@@ -71,7 +71,7 @@
 		     $("wc-table").empty();
 		     $("wc-table").append(str);
 		     
-		     $('#displayTable').dataTable(json);
+		     $("wc-table table").dataTable(json);
                  },
 	     });
 	 }, 1000, 1);
