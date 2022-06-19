@@ -4,7 +4,7 @@
         [ "Position" ],
         [ "Office" ],
         [ "Extn." ],
-        [ "Start date" ],
+        [ "Date" ],
         [ "Salary" ]
     ],
     "data": [

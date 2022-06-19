@@ -72,7 +72,7 @@
 		     $("#tableDiv").append('<table id="displayTable" class="display" cellspacing="0" width="100%"><thead><tr>' + ths + '</tr></thead></table>');
 		     $("#tableDiv").find("table thead tr").append(ths);  
 		     
-		     console.log(">>>>>>", ths);
+		     console.log(">>>>>>", ths.length, ths);
 		     $('#displayTable').dataTable(json);
                  },
 	     });
