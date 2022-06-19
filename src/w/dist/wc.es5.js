@@ -3765,45 +3765,42 @@ var Table = function (_HTMLElement) {
 
 			var cfg = this.properties.cfg;
 
-			wc.timeout(function () {
-				$.ajax({
-					"dataType": "json",
-					"url": cfg,
-					"success": function success(json) {
-						var str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
+			$.ajax({
+				"dataType": "json",
+				"url": cfg,
+				"success": function success(json) {
+					var str = "<table class='display cell-border' cellspacing='0' width='100%'><thead><tr>";
 
-						$.each(json.columns, function (i, val) {
-							str += "<th>" + val + "</th>";
-						});
+					$.each(json.columns, function (i, val) {
+						str += "<th>" + val + "</th>";
+					});
 
-						str += '</tr></thead></table>';
+					str += '</tr></thead></table>';
 
-						$("wc-table").empty();
-						$("wc-table").append(str);
+					$("wc-table").empty();
+					$("wc-table").append(str);
 
-						json.fixed = json.fixed || false;
-						json.align = json.align || null;
-						console.log(">>>>>>>>", json.align);
+					json.fixed = json.fixed || false;
+					json.align = json.align || null;
 
-						$("wc-table table").dataTable({
-							data: json.data,
-							scrollY: "300px",
-							scrollX: true,
-							scrollCollapse: true,
-							responsive: true,
-							paging: false,
-							autoWidth: true,
-							searching: true,
-							processing: true,
-							deferRender: true,
-							serverSide: false,
-							info: false,
-							fixedColumns: json.fixed,
-							aoColumns: json.align
-						});
-					}
-				});
-			}, 0, 1);
+					$("wc-table table").dataTable({
+						data: json.data,
+						scrollY: "300px",
+						scrollX: true,
+						scrollCollapse: true,
+						responsive: true,
+						paging: false,
+						autoWidth: true,
+						searching: true,
+						processing: true,
+						deferRender: true,
+						serverSide: false,
+						info: false,
+						fixedColumns: json.fixed,
+						aoColumns: json.align
+					});
+				}
+			});
 
 			wc.groupEnd();
 		}
