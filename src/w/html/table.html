@@ -71,18 +71,23 @@
 		     $("wc-table").empty();
 		     $("wc-table").append(str);
 		     
-		     console.log(">>>>>>", json);
-
 		     $("wc-table table").dataTable({
 			 data: json.data,
-			 dom: "ltpr" /* TURN INFO OFF */,
-			 scrollY: "400px",
+			 scrollY: "300px",
 			 scrollX: true,
 			 scrollCollapse: true,
+			 responsive: true,
 			 paging: false,
+			 autoWidth: true,
+			 searching: true,
+			 processing: true,
+			 deferRender: true,
+			 serverSide: false,
+			 info: false,
 			 fixedColumns: {
-			     left:  1
-			 }
+			     left: 1,
+			     right: 1
+			 },
 		     });
                  },
 	     });
