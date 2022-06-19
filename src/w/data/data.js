@@ -1,11 +1,11 @@
 {
     "align": [ 
-        {"sClass": "left"},
-        {"sClass": "left"},
-        {"sClass": "left"},
-        {"sClass": "center"},
-        {"sClass": "right"}
-    },
+        {"sClass": "dt-left"},
+        {"sClass": "dt-left"},
+        {"sClass": "dt-left"},
+        {"sClass": "dt-justify"},
+        {"sClass": "d-right"}
+    ],
     
     "fixed": {
 	"left":1,

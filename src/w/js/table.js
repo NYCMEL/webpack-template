@@ -105,8 +105,7 @@ class Table extends HTMLElement {
 		$("wc-table").append(str);
 		
 		json.fixed = json.fixed || false;
-		json.align = json.align || false;
-		alert(json.align);
+		json.align = json.align || null;
 		console.log(">>>>>>>>", json.align);
 
 		$("wc-table table").dataTable({
