@@ -32,7 +32,7 @@
     <body id="wc">
 	<div class="container-fluid">
 	    <div class="row">
-		<div class="col-4 pt-5">
+		<div class="col-12">
 		    <!-- SAMPLE -->
 		    <wc-table id="my-table" class="text-center p-4 border" cfg="../data/data.js">
 			<h1>CLICK HERE !</h1>
@@ -60,19 +60,17 @@
                  "dataType": "json",
                  "url": '../data/data.js',
                  "success": function(json) {
-		     var ths = "";
+		     let str = "<table id='displayTable' class='display' cellspacing='0' width='100%'><thead><tr>";
 
-		     console.log(">>>>>>>>>", json.columns)
-		     
 		     $.each(json.columns, function(i, val){
-                         ths += "<th>" + val + "</th>";
+                         str += "<th>" + val + "</th>";
 		     });
 		     
+		     str += '</tr></thead></table>';
+
 		     $("#tableDiv").empty();
-		     $("#tableDiv").append('<table id="displayTable" class="display" cellspacing="0" width="100%"><thead><tr>' + ths + '</tr></thead></table>');
-		     $("#tableDiv").find("table thead tr").append(ths);  
+		     $("#tableDiv").append(str);
 		     
-		     console.log(">>>>>>", ths.length, ths);
 		     $('#displayTable').dataTable(json);
                  },
 	     });
