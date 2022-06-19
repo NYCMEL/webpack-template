@@ -71,7 +71,19 @@
 		     $("wc-table").empty();
 		     $("wc-table").append(str);
 		     
-		     $("wc-table table").dataTable(json);
+		     console.log(">>>>>>", json);
+
+		     $("wc-table table").dataTable({
+			 data: json.data,
+			 dom: "ltpr" /* TURN INFO OFF */,
+			 scrollY: "400px",
+			 scrollX: true,
+			 scrollCollapse: true,
+			 paging: false,
+			 fixedColumns: {
+			     left:  1
+			 }
+		     });
                  },
 	     });
 	 }, 1000, 1);
