@@ -89,7 +89,6 @@ class Table extends HTMLElement {
 	
 	let cfg = this.properties.cfg;
 
-	wc.timeout(function(){
 	$.ajax({
             "dataType": "json",
             "url": cfg,
@@ -107,7 +106,6 @@ class Table extends HTMLElement {
 		
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;
-		console.log(">>>>>>>>", json.align);
 
 		$("wc-table table").dataTable({
 		    data: json.data,
@@ -127,7 +125,6 @@ class Table extends HTMLElement {
 		});
             },
 	});
-	}, 0, 1);
 
         wc.groupEnd();
     };
