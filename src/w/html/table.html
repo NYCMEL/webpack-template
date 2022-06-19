@@ -62,8 +62,8 @@
                  "success": function(json) {
 		     var ths = "";
 
-		     console.log(">>>>>>>>>", json)
-
+		     console.log(">>>>>>>>>", json.columns)
+		     
 		     $.each(json.columns, function(i, val){
                          ths += "<th>" + val + "</th>";
 		     });
