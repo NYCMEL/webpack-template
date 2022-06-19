@@ -87,9 +87,11 @@ class Table extends HTMLElement {
     _render() {
         wc.group("Table._render");
 	
+	let cfg = this.properties.cfg;
+
 	$.ajax({
             "dataType": "json",
-            "url": '../data/data.js',
+            "url": cfg,
             "success": function(json) {
 		let str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
 
