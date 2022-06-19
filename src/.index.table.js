@@ -26,15 +26,12 @@ import "./w/scss/_include.scss";
 import "./w/js/include";
 
 import "datatables";
-//import "datatables.net-fixedcolumns";
 
-// import "/tk/lib/components/misc/webpack-template/node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import "/Melify/_needed/DataTables//DataTables-1.12.1/css/dataTables.bootstrap5.min.css";
-// import "/Melify/_needed/DataTables/FixedColumns-4.1.0/css/fixedColumns.bootstrap.min.css";
+import "./w/js/ext/DataTables/datatables.min.css";
+import "./w/js/ext/DataTables/FixedColumns-4.1.0/css/fixedColumns.bootstrap.min.css";
 
-// import "/tk/lib/components/misc/webpack-template/node_modules/datatables.net-fixedcolumns/css/fixedColumns.bootstrap5.scss";
-// import "/Melify/_needed/DataTables/DataTables-1.12.1/js/dataTables.bootstrap5.min.js";
-// import "/Melify/_needed/DataTables/FixedColumns-4.1.0/js/dataTables.fixedColumns.min.js";
+import "./w/js/ext/DataTables/datatables.min.js";
+import "./w/js/ext/DataTables/FixedColumns-4.1.0/js/dataTables.fixedColumns.min.js";
 
 import "./w/scss/_table.scss";
 import "./w/js/table";
