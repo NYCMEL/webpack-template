@@ -1,11 +1,11 @@
 {
     "columns": [
-        [ "Name" ],
-        [ "Position" ],
-        [ "Office" ],
-        [ "Extn." ],
-        [ "Date" ],
-        [ "Salary" ]
+        ["Name"],
+        ["Position"],
+        ["Office"],
+        ["Extn."],
+        ["Date"],
+        ["Salary"]
     ],
     "data": [
 	[
