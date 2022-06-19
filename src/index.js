@@ -25,6 +25,8 @@ import "./w/js/tests";
 import "./w/scss/_include.scss";
 import "./w/js/include";
 
+import "datatables";
+
 import "./w/js/ext/DataTables/datatables.min.css";
 import "./w/js/ext/DataTables/FixedColumns-4.1.0/css/fixedColumns.bootstrap.min.css";
 
