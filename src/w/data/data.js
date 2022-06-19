@@ -1,4 +1,12 @@
 {
+    "align": [ 
+        {"sClass": "left"},
+        {"sClass": "left"},
+        {"sClass": "left"},
+        {"sClass": "center"},
+        {"sClass": "right"}
+    },
+    
     "fixed": {
 	"left":1,
 	"right":1
