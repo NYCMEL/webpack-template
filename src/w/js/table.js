@@ -67,7 +67,7 @@ class Table extends HTMLElement {
 	var temp;
 
 	// ADD COMPONENT MARKTOP
-	temp = `<div id="tableDiv">AAAAAAAAAAAAAAA</div>`;
+	temp = "";
 
         wc.groupEnd();
         return temp;
