@@ -57,23 +57,6 @@ class Table extends HTMLElement {
     };
 
     /**
-     * Initial Markup
-     * @private
-     * @_template
-     */
-    _template() {
-        wc.group("Table.template");
-	
-	var temp;
-
-	// ADD COMPONENT MARKTOP
-	temp = "";
-
-        wc.groupEnd();
-        return temp;
-    };
-
-    /**
      * @private
      * @_attributes
      */
@@ -104,7 +87,41 @@ class Table extends HTMLElement {
     _render() {
         wc.group("Table._render");
 	
-	this.innerHTML = this._template();
+	$.ajax({
+            "dataType": "json",
+            "url": '../data/data.js',
+            "success": function(json) {
+		let str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
+
+		$.each(json.columns, function(i, val){
+                    str += "<th>" + val + "</th>";
+		});
+		
+		str += '</tr></thead></table>';
+
+		$("wc-table").empty();
+		$("wc-table").append(str);
+		
+		$("wc-table table").dataTable({
+		    data: json.data,
+		    scrollY: "300px",
+		    scrollX: true,
+		    scrollCollapse: true,
+		    responsive: true,
+		    paging: false,
+		    autoWidth: true,
+		    searching: true,
+		    processing: true,
+		    deferRender: true,
+		    serverSide: false,
+		    info: false,
+		    fixedColumns: {
+			left: 1,
+			right: 1
+		    },
+		});
+            },
+	});
 
         wc.groupEnd();
     };

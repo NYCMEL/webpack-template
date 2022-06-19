@@ -49,46 +49,6 @@
 	 });
 	</script>
 
-	<script>
-	 wc.timeout(function(){
-	     $.ajax({
-                 "dataType": "json",
-                 "url": '../data/data.js',
-                 "success": function(json) {
-		     let str = "<table class='display' cellspacing='0' width='100%'><thead><tr>";
-
-		     $.each(json.columns, function(i, val){
-                         str += "<th>" + val + "</th>";
-		     });
-		     
-		     str += '</tr></thead></table>';
-
-		     $("wc-table").empty();
-		     $("wc-table").append(str);
-		     
-		     $("wc-table table").dataTable({
-			 data: json.data,
-			 scrollY: "300px",
-			 scrollX: true,
-			 scrollCollapse: true,
-			 responsive: true,
-			 paging: false,
-			 autoWidth: true,
-			 searching: true,
-			 processing: true,
-			 deferRender: true,
-			 serverSide: false,
-			 info: false,
-			 fixedColumns: {
-			     left: 1,
-			     right: 1
-			 },
-		     });
-                 },
-	     });
-	 }, 400, 1);
-	</script>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
