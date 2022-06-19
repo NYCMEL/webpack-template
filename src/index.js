@@ -26,6 +26,6 @@ import "./w/scss/_include.scss";
 		    import "./w/js/include";
 		
 
-		    import "./w/scss/_blank.scss";
-		    import "./w/js/blank";
+		    import "./w/scss/_table.scss";
+		    import "./w/js/table";
 
