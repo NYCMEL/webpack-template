@@ -104,7 +104,7 @@ class Table extends HTMLElement {
 		$("wc-table").empty();
 		$("wc-table").append(str);
 		
-		alert(JSON.stringify(json.fixed));
+		json.fixed = json.fixed || false
 
 		$("wc-table table").dataTable({
 		    data: json.data,
