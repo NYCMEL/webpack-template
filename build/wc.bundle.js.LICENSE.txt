@@ -42,10 +42,6 @@
  2019-2022 SpryMedia Ltd - datatables.net/license
 */
 
-/*! DataTables 1.10.18
- * ©2008-2018 SpryMedia Ltd - datatables.net/license
- */
-
 /*! DataTables 1.12.1
  * ©2008-2022 SpryMedia Ltd - datatables.net/license
  */
