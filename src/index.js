@@ -35,4 +35,3 @@ import "./w/js/ext/DataTables/Buttons-2.2.3/js/buttons.bootstrap5.min.js";
 
 import "./w/scss/_table.scss";
 import "./w/js/table";
-
