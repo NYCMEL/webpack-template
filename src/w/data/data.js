@@ -3,6 +3,7 @@
         {"sClass": "dt-left"},
         {"sClass": "dt-left"},
         {"sClass": "dt-left"},
+	{"sClass": "dt-left"},
         {"sClass": "dt-justify"},
         {"sClass": "d-right"}
     ],
