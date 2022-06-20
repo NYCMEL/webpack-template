@@ -81,6 +81,37 @@ class Table extends HTMLElement {
     };
 
     /**
+     * Initial Markup
+     * @private
+     * @_template
+     */
+    _template() {
+        wc.group("Table.template");
+	
+	var temp = `<table class="table" id="">`+
+	    `    <thead>`+
+	`	<tr>`+
+	`	</tr>`+
+	`    </thead>`+
+	''+
+	`    <tbody>`+
+	`	<tr>`+
+	`	</tr>`+
+	`    </tbody>`+
+	''+
+	`    <tfoot>`+
+	`	<tr>`+
+	`	    <td>FFFFFFFFFFF</td>`+
+	`	</tr>`+
+	`    </tfoot>`+
+	`</table>`
+
+        wc.groupEnd();
+        return temp;
+    };
+
+
+    /**
      * @private
      * @_render
      */
@@ -93,16 +124,13 @@ class Table extends HTMLElement {
             "dataType": "json",
             "url": cfg,
             "success": function(json) {
-		let str = "<table class='display cell-border' cellspacing='0' width='100%'><thead><tr>";
+		let str = "";
 
 		$.each(json.columns, function(i, val){
                     str += "<th>" + val + "</th>";
 		});
 		
-		str += '</tr></thead></table>';
-
-		$("wc-table").empty();
-		$("wc-table").append(str);
+		$("wc-table thead tr").append(str);
 		
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;

@@ -3753,6 +3753,23 @@ var Table = function (_HTMLElement) {
 			wc.groupEnd();
 		}
 	}, {
+		key: "_template",
+
+
+		/**
+   * Initial Markup
+   * @private
+   * @_template
+   */
+		value: function _template() {
+			wc.group("Table.template");
+
+			var temp = "<table class=\"table\" id=\"\">" + "    <thead>" + "\t<tr>" + "\t</tr>" + "    </thead>" + '' + "    <tbody>" + "\t<tr>" + "\t</tr>" + "    </tbody>" + '' + "    <tfoot>" + "\t<tr>" + "\t    <td>FFFFFFFFFFF</td>" + "\t</tr>" + "    </tfoot>" + "</table>";
+
+			wc.groupEnd();
+			return temp;
+		}
+	}, {
 		key: "_render",
 
 
@@ -3769,16 +3786,13 @@ var Table = function (_HTMLElement) {
 				"dataType": "json",
 				"url": cfg,
 				"success": function success(json) {
-					var str = "<table class='display cell-border' cellspacing='0' width='100%'><thead><tr>";
+					var str = "";
 
 					$.each(json.columns, function (i, val) {
 						str += "<th>" + val + "</th>";
 					});
 
-					str += '</tr></thead></table>';
-
-					$("wc-table").empty();
-					$("wc-table").append(str);
+					$("wc-table thead tr").append(str);
 
 					json.fixed = json.fixed || false;
 					json.align = json.align || null;
