@@ -88,17 +88,7 @@ class Table extends HTMLElement {
     _template() {
         wc.group("Table.template");
 	
-	var temp = 
-	    `<table style="width:100%">`+
-	    `    <thead>`+
-	    `    </thead>`+
-	    ''+
-	    `    <tbody>`+
-	    `    </tbody>`+
-	    ''+
-	    `    <tfoot>`+
-	    `    </tfoot>`+
-	    `</table>`;
+	var temp = "<table></table>";
 
         wc.groupEnd();
         return temp;
@@ -120,14 +110,18 @@ class Table extends HTMLElement {
             "dataType": "json",
             "url": cfg,
             "success": function(json) {
-		let str = "";
+		json.fixed = json.fixed || false;
+		json.align = json.align || null;
+
+		let str = "<thead>";
 
 		$.each(json.columns, function(i, val){
                     str += "<th>" + val + "</th>";
 		});
 		
-		json.fixed = json.fixed || false;
-		json.align = json.align || null;
+		str += "</thead>";
+
+		str += "<tbody>";
 
 		for (var i = 0; i < json.data.length; i++) {
 		    str += "<tr>";
@@ -145,7 +139,10 @@ class Table extends HTMLElement {
 		    str += "</tr>";
 		}
 
+		str += "</tbody>";
 		console.log(">>>>>>>", str)
+
+		$("wc-table table").html(str);
 
 		// $("wc-table table").dataTable({
 		//     scrollY: "300px",
