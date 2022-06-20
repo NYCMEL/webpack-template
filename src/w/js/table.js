@@ -88,14 +88,28 @@ class Table extends HTMLElement {
     _template() {
         wc.group("Table.template");
 	
-	var temp = `<table class="table" id="">`+
+	var temp = `<table style="width:100%">`+
 	    `    <thead>`+
-	    `	<tr>`+
-	    `	</tr>`+
+	    `        <tr>`+
+	    `            <th>Name</th>`+
+	    `            <th>Position</th>`+
+	    `            <th>Office</th>`+
+	    `            <th>Extn.</th>`+
+	    `            <th>Start date</th>`+
+	    `            <th>Salary</th>`+
+	    `        </tr>`+
 	    `    </thead>`+
-	    ''+
-	    `    <tbody>`+
-	    `    </tbody>`+
+	    `` +
+	    `    <tfoot>`+
+	    `        <tr>`+
+	    `            <th>Name</th>`+
+	    `            <th>Position</th>`+
+	    `            <th>Office</th>`+
+	    `            <th>Extn.</th>`+
+	    `            <th>Start date</th>`+
+	    `            <th>Salary</th>`+
+	    `        </tr>`+
+	    `    </tfoot>`+
 	    `</table>`;
 	
         wc.groupEnd();
@@ -124,7 +138,7 @@ class Table extends HTMLElement {
                     str += "<th>" + val + "</th>";
 		});
 		
-		$("wc-table thead tr").append(str);
+		//$("wc-table thead tr").append(str);
 		
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;
