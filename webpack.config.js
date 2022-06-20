@@ -1,8 +1,8 @@
 const path               = require('path');
 const webpack           = require('webpack');
 const htmlPlugin        = require('html-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackCdnPlugin = require('webpack-cdn-plugin');
+
+// UNCOMMENT FOR ANALYZER TO WORK
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
@@ -83,20 +83,8 @@ module.exports = {
     },
 
     plugins: [
-	// UNCOMMENT FOR ANALYZER
-	//new BundleAnalyzerPlugin(),
-
-	// ALLOW LOADING OF CDN PACKAGES
-	new HtmlWebpackPlugin(),
-	new WebpackCdnPlugin({
-	    modules: [],
-	    publicPath: '/node_modules'
-	}),
-
-        new htmlPlugin({
-            template:path.join(PATHS.app,'index.html'),
-            inject:'body'
-        }),
+	// UNCOMMENT FOR ANALYZER TO WORK
+	// new BundleAnalyzerPlugin(),
 
 	// Provides jQuery for other JS bundled with Webpack
 	new webpack.ProvidePlugin({
