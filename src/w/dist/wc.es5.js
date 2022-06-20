@@ -3788,14 +3788,6 @@ var Table = function (_HTMLElement) {
 				"dataType": "json",
 				"url": cfg,
 				"success": function success(json) {
-					var str = "";
-
-					$.each(json.columns, function (i, val) {
-						str += "<th>" + val + "</th>";
-					});
-
-					$("wc-table thead tr").append(str);
-
 					json.fixed = json.fixed || false;
 					json.align = json.align || null;
 
