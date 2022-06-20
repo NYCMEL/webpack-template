@@ -88,20 +88,7 @@ class Table extends HTMLElement {
     _template() {
         wc.group("Table.template");
 	
-	var temp = `<table style="width:100%">`+
-	    `    <thead>`+
-	    `        <tr>`+
-	    `        </tr>`+
-	    `    </thead>`+
-	    `` +
-	    `    <tbody>` +
-	    `    </tbody>` +
-	    `` +
-	    `    <tfoot>`+
-	    `        <tr>`+
-	    `        </tr>`+
-	    `    </tfoot>`+
-	    `</table>`;
+	var temp = `<table style="width:100%"></table>`;
 	
         wc.groupEnd();
         return temp;
@@ -129,9 +116,6 @@ class Table extends HTMLElement {
                     str += "<th>" + val + "</th>";
 		});
 		
-		$("wc-table thead tr").append(str);
-		$("wc-table tfoot tr").append(str);
-		
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;
 
@@ -151,6 +135,12 @@ class Table extends HTMLElement {
 		    fixedColumns: json.fixed,
 		    aoColumns: json.align
 		});
+
+		
+		setTimeout(function(){
+		    $("wc-table table tbody").before("<thead><tr>" + str + "</tr></thead>");
+		    $("wc-table table tbody").after("<tfoot><tr>" + str + "</tr></tfoot>");
+		}, 4000);
             },
 	});
 
