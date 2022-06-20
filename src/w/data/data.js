@@ -2,8 +2,8 @@
     "footer": true,
     
     "fixed": {
-	"left":1,
-	"right":1
+	"leftColumns": 1,
+	"rightColumns": 1
     },
 
     "align": [ 
