@@ -8,11 +8,11 @@
 
     "align": [ 
         {"sClass": "dt-left"},
-        {"sClass": "dt-center"},
+        {"sClass": "dt-left"},
         {"sClass": "dt-center"},
 	{"sClass": "dt-right"},
         {"sClass": "dt-center"},
-        {"sClass": "d-right"}
+        {"sClass": "dt-right"}
     ],
     
     "columns": [
