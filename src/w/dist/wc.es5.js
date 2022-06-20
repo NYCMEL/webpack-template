@@ -3801,7 +3801,7 @@ var Table = function (_HTMLElement) {
 					json.align = json.align || null;
 
 					$("wc-table table").dataTable({
-						data: json.data,
+						aaData: json.data,
 						scrollY: "300px",
 						scrollX: true,
 						scrollCollapse: true,
