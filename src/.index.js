@@ -2,21 +2,21 @@
 // REQUIRED BY ALL
 ////////////////////////////////////////////////////////////////
 import "bootstrap";
-import "pubsub-js";
-
 import "./w/scss/_bootstrap.scss"
 
-import "./w/scss/_wc.scss";
-import "./w/js/wc";
+import "pubsub-js"; /* PUBLISHER SUBSCRIBER */
 
-import "./w/scss/_tk.scss";
-import "./w/js/tk.js";
+import "./w/scss/_wc.scss"; /* GENERAL STYLES */
+import "./w/js/wc"; /* COMMON JS FUNCTION */
 
-import "jquery.cookie";
+import "./w/scss/_tk.scss"; /* LOADING STYLES */
+import "./w/js/tk.js"; /* DATA BINDING, LOADING ETC. */
 
-import "./w/js/include";
+import "jquery.cookie"; /* COOKIE SETTER/GETTER */
 
-import "./w/js/tests";
+import "./w/js/include"; /* ALLOW TO INCLUDE URL(S) */
+
+import "./w/js/tests"; /* COMPONENT TESTER */
 
 ////////////////////////////////////////////////////////////////
 // PER COMPONENT

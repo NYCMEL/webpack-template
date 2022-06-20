@@ -26,10 +26,6 @@ import "./w/scss/_include.scss";
 		    import "./w/js/include";
 		
 
-        import "./w/scss/ext/_dataTables.scss";
-	import "datatables";
-	import "./w/js/ext/dataTables.fixedColumns.min.js";
-	
-        import "./w/scss/_table.scss";
-        import "./w/js/table";
+		    import "./w/scss/_blank.scss";
+		    import "./w/js/blank";
 
