@@ -1,5 +1,8 @@
+dir=$(pwd)
+echo $dir
+
 cd ../../src/w/bin;
 make all
 
-cd ../../../prod/blank
+cd $dir
 ../../src/w/bin/packer
