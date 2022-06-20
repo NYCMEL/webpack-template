@@ -134,17 +134,10 @@ foreach i $comps {
     }
 }
 
-set x ""
-if {[file exist ../req/$comp] == 1} {
-    set f [open ../req/$comp read]
-    set x [read $f]
-    close $f
-}
-
 set f [open $webpack/src/.index.js r]
 set r [read $f];
 close $f
-regsub -all "<BUNDLED>" $r $str r\n$x
+regsub -all "<BUNDLED>" $r $str r
 
 set f [open $webpack/src/index.js w]
 puts $f $r;
