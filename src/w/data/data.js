@@ -1,4 +1,6 @@
 {
+    "footer": true,
+    
     "align": [ 
         {"sClass": "dt-left"},
         {"sClass": "dt-center"},

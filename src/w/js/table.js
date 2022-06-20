@@ -110,14 +110,23 @@ class Table extends HTMLElement {
             "dataType": "json",
             "url": cfg,
             "success": function(json) {
-		json.fixed = json.fixed || false;
-		json.align = json.align || null;
+		json.fixed  = json.fixed  || false;
+		json.align  = json.align  || null;
+		json.footer = json.footer || null;
 
 		let str = "<thead>";
 		$.each(json.columns, function(i, val){
                     str += "<th>" + val + "</th>";
 		});
 		str += "</thead>";
+
+		if (json.footer) {
+		    str += "<tfoot>";
+		    $.each(json.columns, function(i, val){
+			str += "<th>" + val + "</th>";
+		    });
+		    str += "</tfoot>";
+		}
 
 		str += "<tbody>";
 		for (var i = 0; i < json.data.length; i++) {
