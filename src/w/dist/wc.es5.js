@@ -3764,7 +3764,7 @@ var Table = function (_HTMLElement) {
 		value: function _template() {
 			wc.group("Table.template");
 
-			var temp = "<table class=\"table\" id=\"\">" + "    <thead>" + "\t<tr>" + "\t</tr>" + "    </thead>" + '' + "    <tbody>" + "\t<tr>" + "\t</tr>" + "    </tbody>" + '' + "    <tfoot>" + "\t<tr>" + "\t    <td>FFFFFFFFFFF</td>" + "\t</tr>" + "    </tfoot>" + "</table>";
+			var temp = "<table class=\"table\" id=\"\">" + "    <thead>" + "\t<tr>" + "\t</tr>" + "    </thead>" + '' + "    <tbody>" + "    </tbody>" + "</table>";
 
 			wc.groupEnd();
 			return temp;
@@ -3779,6 +3779,8 @@ var Table = function (_HTMLElement) {
    */
 		value: function _render() {
 			wc.group("Table._render");
+
+			this.innerHTML = this._template();
 
 			var cfg = this.properties.cfg;
 

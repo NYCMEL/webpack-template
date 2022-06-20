@@ -90,22 +90,14 @@ class Table extends HTMLElement {
 	
 	var temp = `<table class="table" id="">`+
 	    `    <thead>`+
-	`	<tr>`+
-	`	</tr>`+
-	`    </thead>`+
-	''+
-	`    <tbody>`+
-	`	<tr>`+
-	`	</tr>`+
-	`    </tbody>`+
-	''+
-	`    <tfoot>`+
-	`	<tr>`+
-	`	    <td>FFFFFFFFFFF</td>`+
-	`	</tr>`+
-	`    </tfoot>`+
-	`</table>`
-
+	    `	<tr>`+
+	    `	</tr>`+
+	    `    </thead>`+
+	    ''+
+	    `    <tbody>`+
+	    `    </tbody>`+
+	    `</table>`;
+	
         wc.groupEnd();
         return temp;
     };
@@ -118,6 +110,8 @@ class Table extends HTMLElement {
     _render() {
         wc.group("Table._render");
 	
+	this.innerHTML = this._template();
+
 	let cfg = this.properties.cfg;
 
 	$.ajax({
