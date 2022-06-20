@@ -1,6 +1,11 @@
 {
     "footer": true,
     
+    "fixed": {
+	"left":1,
+	"right":1
+    },
+
     "align": [ 
         {"sClass": "dt-left"},
         {"sClass": "dt-center"},
@@ -10,11 +15,6 @@
         {"sClass": "d-right"}
     ],
     
-    "fixed": {
-	"left":1,
-	"right":1
-    },
-
     "columns": [
         ["Name"],
         ["Position"],
