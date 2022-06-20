@@ -7080,5 +7080,7 @@ body {
 #wc wc-table {
   display: block;
   visibility: hidden; }
+  #wc wc-table table {
+    background: #FFF; }
 
 /*# sourceMappingURL=wc.css.map */
