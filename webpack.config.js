@@ -1,8 +1,6 @@
-const path               = require('path');
-const webpack           = require('webpack');
-const htmlPlugin        = require('html-webpack-plugin');
-
-// UNCOMMENT FOR ANALYZER TO WORK
+const path                 = require('path');
+const webpack              = require('webpack');
+const htmlPlugin           = require('html-webpack-plugin');
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
@@ -83,8 +81,12 @@ module.exports = {
     },
 
     plugins: [
-	// UNCOMMENT FOR ANALYZER TO WORK
-	// new BundleAnalyzerPlugin(),
+	//new BundleAnalyzerPlugin(),
+
+        new htmlPlugin({
+            template:path.join(PATHS.app,'index.html'),
+            inject:'body'
+        }),
 
 	// Provides jQuery for other JS bundled with Webpack
 	new webpack.ProvidePlugin({
