@@ -21,11 +21,7 @@ import "./w/js/tests";
 ////////////////////////////////////////////////////////////////
 // PER COMPONENT
 ////////////////////////////////////////////////////////////////
- 
-import "./w/scss/_include.scss";
-		    import "./w/js/include";
-		
+import "datatables";
 
-		    import "./w/scss/_table.scss";
-		    import "./w/js/table";
-
+import "./w/scss/_table.scss";
+import "./w/js/table";

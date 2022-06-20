@@ -3764,7 +3764,7 @@ var Table = function (_HTMLElement) {
 		value: function _template() {
 			wc.group("Table.template");
 
-			var temp = "<table style=\"width:100%\" id=\"xxx\">" + "    <thead>" + "        <tr>" + "            <th>Name</th>" + "            <th>Position</th>" + "            <th>Office</th>" + "            <th>Extn.</th>" + "            <th>Start date</th>" + "            <th>Salary</th>" + "        </tr>" + "    </thead>" + "    <tfoot>" + "        <tr>" + "            <th>Name</th>" + "            <th>Position</th>" + "            <th>Office</th>" + "            <th>Extn.</th>" + "            <th>Start date</th>" + "            <th>Salary</th>" + "        </tr>" + "    </tfoot>" + "</table>";
+			var temp = "<table style=\"width:100%\">" + "    <thead>" + "        <tr>" + "        </tr>" + "    </thead>" + "" + "    <tfoot>" + "        <tr>" + "        </tr>" + "    </tfoot>" + "</table>";
 
 			wc.groupEnd();
 			return temp;
@@ -3794,12 +3794,13 @@ var Table = function (_HTMLElement) {
 						str += "<th>" + val + "</th>";
 					});
 
-					//$("wc-table thead tr").append(str);
+					$("wc-table thead tr").append(str);
+					$("wc-table tfoot tr").append(str);
 
 					json.fixed = json.fixed || false;
 					json.align = json.align || null;
 
-					$("#xxx").dataTable({
+					$("wc-table table").dataTable({
 						data: json.data,
 						scrollY: "300px",
 						scrollX: true,

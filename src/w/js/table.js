@@ -91,23 +91,11 @@ class Table extends HTMLElement {
 	var temp = `<table style="width:100%">`+
 	    `    <thead>`+
 	    `        <tr>`+
-	    `            <th>Name</th>`+
-	    `            <th>Position</th>`+
-	    `            <th>Office</th>`+
-	    `            <th>Extn.</th>`+
-	    `            <th>Start date</th>`+
-	    `            <th>Salary</th>`+
 	    `        </tr>`+
 	    `    </thead>`+
 	    `` +
 	    `    <tfoot>`+
 	    `        <tr>`+
-	    `            <th>Name</th>`+
-	    `            <th>Position</th>`+
-	    `            <th>Office</th>`+
-	    `            <th>Extn.</th>`+
-	    `            <th>Start date</th>`+
-	    `            <th>Salary</th>`+
 	    `        </tr>`+
 	    `    </tfoot>`+
 	    `</table>`;
@@ -138,7 +126,8 @@ class Table extends HTMLElement {
                     str += "<th>" + val + "</th>";
 		});
 		
-		//$("wc-table thead tr").append(str);
+		$("wc-table thead tr").append(str);
+		$("wc-table tfoot tr").append(str);
 		
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;
