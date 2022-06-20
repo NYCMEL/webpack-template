@@ -3764,7 +3764,7 @@ var Table = function (_HTMLElement) {
 		value: function _template() {
 			wc.group("Table.template");
 
-			var temp = "<table style=\"width:100%\">" + "    <thead>" + "        <tr>" + "        </tr>" + "    </thead>" + "" + "    <tfoot>" + "        <tr>" + "        </tr>" + "    </tfoot>" + "</table>";
+			var temp = "<table style=\"width:100%\">" + "    <thead>" + "        <tr>" + "        </tr>" + "    </thead>" + "" + "    <tbody>" + "    </tbody>" + "" + "    <tfoot>" + "        <tr>" + "        </tr>" + "    </tfoot>" + "</table>";
 
 			wc.groupEnd();
 			return temp;

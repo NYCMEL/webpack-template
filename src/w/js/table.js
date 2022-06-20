@@ -94,6 +94,9 @@ class Table extends HTMLElement {
 	    `        </tr>`+
 	    `    </thead>`+
 	    `` +
+	    `    <tbody>` +
+	    `    </tbody>` +
+	    `` +
 	    `    <tfoot>`+
 	    `        <tr>`+
 	    `        </tr>`+
