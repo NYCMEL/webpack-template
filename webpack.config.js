@@ -1,6 +1,8 @@
-const path                 = require('path');
-const webpack              = require('webpack');
-const htmlPlugin           = require('html-webpack-plugin');
+const path               = require('path');
+const webpack           = require('webpack');
+const htmlPlugin        = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackCdnPlugin = require('webpack-cdn-plugin');
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const PATHS = {
@@ -81,7 +83,15 @@ module.exports = {
     },
 
     plugins: [
+	// UNCOMMENT FOR ANALYZER
 	//new BundleAnalyzerPlugin(),
+
+	// ALLOW LOADING OF CDN PACKAGES
+	new HtmlWebpackPlugin(),
+	new WebpackCdnPlugin({
+	    modules: [],
+	    publicPath: '/node_modules'
+	}),
 
         new htmlPlugin({
             template:path.join(PATHS.app,'index.html'),

@@ -28,6 +28,7 @@
         "datatables.net-fixedcolumns": "github:DataTables/FixedColumns",
         "datatables.net-responsive-bs5": "^2.3.0",
         "datatables.net-select-bs5": "^1.4.0",
+        "dynamic-cdn-webpack-plugin": "github:mastilver/dynamic-cdn-webpack-plugin",
         "expose-loader": "^4.0.0",
         "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.5.0",
@@ -40,7 +41,8 @@
         "sass-loader": "^13.0.0",
         "style-loader": "^3.3.1",
         "webpack": "^5.73.0",
-        "webpack-bundle-analyzer": "^4.5.0"
+        "webpack-bundle-analyzer": "^4.5.0",
+        "webpack-cdn-plugin": "^3.3.1"
     },
     "devDependencies": {
         "clean-webpack-plugin": "^4.0.0",
