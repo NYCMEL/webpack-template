@@ -88,7 +88,7 @@ class Table extends HTMLElement {
     _template() {
         wc.group("Table.template");
 	
-	var temp = "<table></table>";
+	var temp = `<table width="100%"></table>`;
 
         wc.groupEnd();
         return temp;
@@ -114,54 +114,42 @@ class Table extends HTMLElement {
 		json.align = json.align || null;
 
 		let str = "<thead>";
-
 		$.each(json.columns, function(i, val){
                     str += "<th>" + val + "</th>";
 		});
-		
 		str += "</thead>";
 
 		str += "<tbody>";
-
 		for (var i = 0; i < json.data.length; i++) {
 		    str += "<tr>";
 
 		    let t = json.data[i];
 
-		    console.log(">>>>>>", t);
-
 		    for (var j = 0; j < t.length; j++) {
-			console.log(">>>>>>", t[j]);
-
 			str += `<td>${t[j]}</td>`
 		    }
 
 		    str += "</tr>";
 		}
-
 		str += "</tbody>";
-		console.log(">>>>>>>", str)
 
 		$("wc-table table").html(str);
 
-		// $("wc-table table").dataTable({
-		//     scrollY: "300px",
-		//     scrollX: true,
-		//     scrollCollapse: true,
-		//     responsive: true,
-		//     paging: false,
-		//     autoWidth: true,
-		//     searching: true,
-		//     processing: true,
-		//     deferRender: true,
-		//     serverSide: false,
-		//     info: false,
-		//     fixedColumns: json.fixed,
-		//     aoColumns: json.align
-		// });
-
-		//$("wc-table table tbody").before("<thead><tr>" + str + "</tr></thead>");
-		//$("wc-table table tbody").after("<tfoot><tr>" + str + "</tr></tfoot>");
+		$("wc-table table").dataTable({
+		    scrollY: "300px",
+		    scrollX: true,
+		    scrollCollapse: true,
+		    responsive: true,
+		    paging: false,
+		    autoWidth: true,
+		    searching: true,
+		    processing: true,
+		    deferRender: true,
+		    serverSide: false,
+		    info: false,
+		    fixedColumns: json.fixed,
+		    aoColumns: json.align
+		});
             },
 	});
 

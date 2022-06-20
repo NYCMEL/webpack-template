@@ -3764,7 +3764,7 @@ var Table = function (_HTMLElement) {
 		value: function _template() {
 			wc.group("Table.template");
 
-			var temp = "<table style=\"width:100%\">" + "    <thead>" + "    </thead>" + '' + "    <tbody>" + "    </tbody>" + '' + "    <tfoot>" + "    </tfoot>" + "</table>";
+			var temp = "<table width=\"100%\"></table>";
 
 			wc.groupEnd();
 			return temp;
@@ -3788,17 +3788,32 @@ var Table = function (_HTMLElement) {
 				"dataType": "json",
 				"url": cfg,
 				"success": function success(json) {
-					var str = "";
-
-					$.each(json.columns, function (i, val) {
-						str += "<th>" + val + "</th>";
-					});
-
 					json.fixed = json.fixed || false;
 					json.align = json.align || null;
 
+					var str = "<thead>";
+					$.each(json.columns, function (i, val) {
+						str += "<th>" + val + "</th>";
+					});
+					str += "</thead>";
+
+					str += "<tbody>";
+					for (var i = 0; i < json.data.length; i++) {
+						str += "<tr>";
+
+						var t = json.data[i];
+
+						for (var j = 0; j < t.length; j++) {
+							str += "<td>" + t[j] + "</td>";
+						}
+
+						str += "</tr>";
+					}
+					str += "</tbody>";
+
+					$("wc-table table").html(str);
+
 					$("wc-table table").dataTable({
-						aaData: json.data,
 						scrollY: "300px",
 						scrollX: true,
 						scrollCollapse: true,
@@ -3813,11 +3828,6 @@ var Table = function (_HTMLElement) {
 						fixedColumns: json.fixed,
 						aoColumns: json.align
 					});
-
-					setTimeout(function () {
-						$("wc-table table tbody").before("<thead><tr>" + str + "</tr></thead>");
-						$("wc-table table tbody").after("<tfoot><tr>" + str + "</tr></tfoot>");
-					}, 4000);
 				}
 			});
 
