@@ -21,10 +21,6 @@ import "./w/js/tests";
 ////////////////////////////////////////////////////////////////
 // PER COMPONENT
 ////////////////////////////////////////////////////////////////
-
-import "./w/scss/_include.scss";
-import "./w/js/include";
-
 import "./w/js/ext/DataTables/DataTables-1.12.1/css/dataTables.bootstrap5.css";
 import "./w/js/ext/DataTables/DataTables-1.12.1/js/dataTables.bootstrap5.min.js";
 
