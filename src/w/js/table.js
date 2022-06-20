@@ -129,28 +129,42 @@ class Table extends HTMLElement {
 		json.fixed = json.fixed || false;
 		json.align = json.align || null;
 
-		$("wc-table table").dataTable({
-		    aaData: json.data,
-		    scrollY: "300px",
-		    scrollX: true,
-		    scrollCollapse: true,
-		    responsive: true,
-		    paging: false,
-		    autoWidth: true,
-		    searching: true,
-		    processing: true,
-		    deferRender: true,
-		    serverSide: false,
-		    info: false,
-		    fixedColumns: json.fixed,
-		    aoColumns: json.align
-		});
+		for (var i = 0; i < json.data.length; i++) {
+		    str += "<tr>";
 
-		
-		setTimeout(function(){
-		    $("wc-table table tbody").before("<thead><tr>" + str + "</tr></thead>");
-		    $("wc-table table tbody").after("<tfoot><tr>" + str + "</tr></tfoot>");
-		}, 4000);
+		    let t = json.data[i];
+
+		    console.log(">>>>>>", t);
+
+		    for (var j = 0; j < t.length; j++) {
+			console.log(">>>>>>", t[j]);
+
+			str += `<td>${t[j]}</td>`
+		    }
+
+		    str += "</tr>";
+		}
+
+		console.log(">>>>>>>", str)
+
+		// $("wc-table table").dataTable({
+		//     scrollY: "300px",
+		//     scrollX: true,
+		//     scrollCollapse: true,
+		//     responsive: true,
+		//     paging: false,
+		//     autoWidth: true,
+		//     searching: true,
+		//     processing: true,
+		//     deferRender: true,
+		//     serverSide: false,
+		//     info: false,
+		//     fixedColumns: json.fixed,
+		//     aoColumns: json.align
+		// });
+
+		//$("wc-table table tbody").before("<thead><tr>" + str + "</tr></thead>");
+		//$("wc-table table tbody").after("<tfoot><tr>" + str + "</tr></tfoot>");
             },
 	});
 
