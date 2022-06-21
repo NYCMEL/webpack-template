@@ -4,9 +4,10 @@ cd "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/js"
 
 file delete -force "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/doc/*"
 
-foreach f [glob *.js] {
+foreach f [glob -nocomplain ../js/*.js] {
     set fo [file rootname $f]
-    
-    exec /usr/local/bin/node $cmnd $f > ../doc/$fo.md
+    puts >>>>>>>>>>>>$fo
+
+    exec node $cmnd $f > ../doc/$fo.md
     puts "../doc/$f.md"
 }
