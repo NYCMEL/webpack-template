@@ -2,9 +2,9 @@ set cmnd "/Melify/mtk/dev/tk/lib/components/misc/webpack/node_modules/jsdoc-to-m
 
 cd "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/js"
 
-file delete -force "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/doc/*"
+//file delete -force "/Melify/mtk/dev/tk/lib/components/misc/webpack-template/src/w/doc/*"
 
-foreach f [glob -nocomplain ../js/*.js] {
+foreach f [glob -nocomplain *.js] {
     set fo [file rootname $f]
     puts >>>>>>>>>>>>$fo
 
