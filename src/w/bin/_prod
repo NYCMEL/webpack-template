@@ -1,6 +1,6 @@
 #!/Melify/bin/mac/tclkit
 
-cd /Melify/mtk/dev/tk/lib/components/misc/webpack/prod
+cd /Melify/mtk/dev/tk/lib/components/misc/webpack-template/prod
 
 set cnt 0
 
