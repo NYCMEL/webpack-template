@@ -8,7 +8,12 @@ cd $root/src/w/bin
 set jfiles [subst {
     $root/node_modules/jquery/dist/jquery.js
     $root/node_modules/jquery.cookie/jquery.cookie.js
-    $root/node_modules/bootstrap/dist/js/bootstrap.bundle.js
+
+    ../js/ext/wc.js
+    ../js/ext/tk.js
+    ../js/ext/yepnope.js
+    ../js/ext/wc.utils.js
+    ../js/ext/publish.js
 }]
 
 puts "making wc.js ..."
