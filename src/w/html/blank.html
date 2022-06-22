@@ -41,25 +41,6 @@
 	     yep  : ['../es5/include.js', '../es5/blank.js'],
 	     nope : ['../js/include.js' ,  '../js/blank.js']
 	 });
-
-	 // LOCAL TESTING
-	 if (0) {
-	     wc.timeout(function(){
-		 window.test.blank();
-	     }, 2000, 1);
-	 }
-
-	 if (0) {
-	     wc.timeout(function(){
-		 // NORMALLY THIS IS USED BY APP TO SND/RCV DATA FROM BACKEND
-		 wc.publish("wc-blank", {
-		     time: new Date().getTime(),
-		     action: "label",
-		     id: "my-blank",
-		     value: "HELLO WORLD"
-		 });
-	     }, 2000, 1);
-	 }
 	</script>
     </body>
 </html>
