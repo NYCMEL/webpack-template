@@ -9,10 +9,10 @@ set jfiles [subst {
     $root/node_modules/jquery/dist/jquery.js
     $root/node_modules/jquery.cookie/jquery.cookie.js
     
+    ../js/ext/yepnope.js
     ../js/ext/publish.js
     ../js/ext/wc.js
     ../js/ext/tk.js
-    ../js/ext/yepnope.js
     ../js/ext/wc.utils.js
 }]
 
