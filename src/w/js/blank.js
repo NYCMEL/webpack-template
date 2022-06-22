@@ -67,7 +67,7 @@ class Blank extends HTMLElement {
 	var temp;
 
 	// ADD COMPONENT MARKTOP
-	if (0) {
+	if (1) {
 	    // FOR PRODUCTION (convert part.html to jstr using h2j)
 	    temp = `<h1>A BLANK TEMPLATE</h1>`+
 		''+
